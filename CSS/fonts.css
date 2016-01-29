@@ -20,6 +20,15 @@ p {
 	font-size: 18px;
 }
 
+
+.profile-desciption{
+	color: #FFFFFF;
+	font-size: 14px;
+	text-align: justify;
+	padding-left: 2px;
+	padding-top: 5px;	
+}
+
 a {
 	text-decoration: none;
 }
