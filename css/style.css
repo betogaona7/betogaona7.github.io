@@ -1,0 +1,78 @@
+
+@import '../fonts/fonts.min.css';
+@import '../fonts/spartan/stylesheet.css';
+
+body{
+	color: #FFF;
+}
+
+h1{
+	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
+	font-size: 54px;
+	font-weight: 300;
+	text-transform: lowercase;
+	line-height: 0.5;
+	text-align: right;
+	padding-right: 25px;
+}
+
+h2{
+	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
+	font-size: 70px;
+	font-weight: 300;
+	text-align: left;
+	padding-left: 25px;
+}
+
+.footer{
+	color: #f3f3f3;
+	width: 100%;
+	padding: 0.5% 0;
+	display: block;
+	/*background: #1c1d25;*/
+	background-color: #000;
+	border-top: 1px solid #FFF;
+}
+
+.inner-container{
+	width: 100%;
+	position: relative;
+	font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
+	line-height: 1.5;
+	text-align: center !important;
+}
+
+.footer-links{
+	display: block;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.footer-links li{
+	display: inline-block;
+	margin-right: 60px;
+}
+
+.footer-links a{
+	display: block;
+	padding: 15px 0;
+	font-family: League Spartan,Helvetica,Arial,sans-serif;
+	position: relative;
+	/*color: #f3f3f3;*/
+	color: #FFF;
+	transition: color .3s ease;
+	text-decoration: none;
+	background-color: transparent;
+	font-size: 20px;
+}
+
+.footer-copy{
+	width: 100%;
+	padding-top: 5px;
+	text-align: center;
+	font-size: .75em;
+	color: #FFF;
+	font-family: Helvetica,Arial,sans-serif;
+}
