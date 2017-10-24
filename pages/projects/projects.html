@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <title>Alberto Gaona | Projects</title>
+    
+    <link href='../../img/icon.ico' rel='shortcut icon' type='image/ico'/>
+
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+
+    <style type="text/css" media="screen">
+        #trailer .modal-dialog {
+            margin-top: 200px;
+            width: 640px;
+            height: 480px;
+        }
+        .hanging-close {
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            z-index: 9001;
+        }
+        #trailer-video {
+            width: 100%;
+            height: 100%;
+        }
+        .movie-tile {
+            margin-bottom: 20px;
+            padding-top: 20px;
+        }
+        .movie-tile:hover {
+            background-color: #EEE;
+            cursor: pointer;
+        }
+        .scale-media {
+            padding-bottom: 56.25%;
+            position: relative;
+        }
+        .scale-media iframe {
+            border: none;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            background-color: white;
+        }
+    </style>
+
+    <script type="text/javascript" charset="utf-8">
+        // Pause the video when the modal is closed
+        $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
+            // Remove the src so the player itself gets removed, as this is the only
+            // reliable way to ensure the video stops playing in IE
+            $("#trailer-video-container").empty();
+        });
+        // Start playing the video whenever the trailer modal is opened
+        $(document).on('click', '.movie-tile', function (event) {
+            var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
+            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+            $("#trailer-video-container").empty().append($("<iframe></iframe>", {
+              'id': 'trailer-video',
+              'type': 'text-html',
+              'src': sourceUrl,
+              'frameborder': 0
+            }));
+        });
+        // Animate in the movies when the page loads
+        $(document).ready(function () {
+          $('.movie-tile').hide().first().show("fast", function showNext() {
+            $(this).next("div").show("fast", showNext);
+          });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Trailer Video Modal -->
+    <div class="modal" id="trailer">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+          </a>
+          <div class="scale-media" id="trailer-video-container">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+        <h1>Alberto Gaona</h1>
+        <h2>Projects</h2>
+    <div>
+        
+    <div class="container">
+        
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Here we will write the full information and my opinion about the project, this is the full information about the project" data-toggle="modal" data-target="#trailer">
+    <img src="https://media.giphy.com/media/r5ULIvOOtdIWs/giphy.gif" width="370" height="250">
+    <h3>Bike share</h3>
+    <h4>Imagine yourself owning of a bike sharing company like CycleHop and you want to predict how many bikes you need because if you have too few you're losing money from potential riders or vice versa if you have too many you're wasting money on bikes that are just sitting around. </h4>
+    <h5>Read more...</h5>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Here we will write the full information and my opinion about the project, this is the full information about the project" data-toggle="modal" data-target="#trailer">
+    <img src="https://media.giphy.com/media/PnabT7xYZ3ffG/giphy.gif" width="370" height="250">
+    <h3>Image classification</h3>
+    <h4>Classify images from CIFAR-10 dataset using a CNN</h4>
+    <h5>Read more...</h5>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Here we will write the full information and my opinion about the project, this is the full information about the project" data-toggle="modal" data-target="#trailer">
+    <img src="http://media3.giphy.com/media/kEKcOWl8RMLde/giphy.gif" width="370" height="250">
+    <h3>TV scripts generator</h3>
+    <h4>Use deep learning to generate new scripts for your favorite TV shows</h4>
+    <h5>Read more...</h5>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Here we will write the full information and my opinion about the project, this is the full information about the project" data-toggle="modal" data-target="#trailer">
+    <img src="https://media.giphy.com/media/tu54GM19sqJOw/giphy.gif" width="370" height="250">
+    <h3>Traductor Frensh-English</h3>
+    <h4>translate frome one language to another</h4>
+    <h5>Read more...</h5>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Here we will write the full information and my opinion about the project, this is the full information about the project" data-toggle="modal" data-target="#trailer">
+    <img src="https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif" width="370" height="250">
+    <h3>Create Faces</h3>
+    <h4>Compete two neural networjs against each other to generat realistic faces.</h4>
+    <h5>Read more...</h5>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Here we will write the full information and my opinion about the project, this is the full information about the project" data-toggle="modal" data-target="#trailer">
+    <img src="https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif" width="370" height="250">
+    <h3>Create Faces</h3>
+    <h4>Compete two neural networjs against each other to generat realistic faces.</h4>
+    <h5>Read more...</h5>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Here we will write the full information and my opinion about the project, this is the full information about the project" data-toggle="modal" data-target="#trailer">
+    <img src="https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif" width="370" height="250">
+    <h3>Create Faces</h3>
+    <h4>Compete two neural networjs against each other to generat realistic faces.</h4>
+    <h5>Read more...</h5>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Here we will write the full information and my opinion about the project, this is the full information about the project" data-toggle="modal" data-target="#trailer">
+    <img src="https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif" width="370" height="250">
+    <h3>Create Faces</h3>
+    <h4>Compete two neural networjs against each other to generat realistic faces.</h4>
+    <h5>Read more...</h5>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Here we will write the full information and my opinion about the project, this is the full information about the project" data-toggle="modal" data-target="#trailer">
+    <img src="https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif" width="370" height="250">
+    <h3>Create Faces</h3>
+    <h4>Compete two neural networjs against each other to generat realistic faces.</h4>
+    <h5>Read more...</h5>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Here we will write the full information and my opinion about the project, this is the full information about the project" data-toggle="modal" data-target="#trailer">
+    <img src="https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif" width="370" height="250">
+    <h3>Create Faces</h3>
+    <h4>Compete two neural networjs against each other to generat realistic faces.</h4>
+    <h5>Read more...</h5>
+</div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="inner-container">
+            <ul class="footer-links">
+                <li><a href="http://www.facebook.com/betogaona07" target="_blank" rel="noopener"> Facebook </a></li>
+                <li><a href="http://www.github.com/betogaona7" target="_blank" rel="noopener"> Github </a></li>
+                <li><a href="http://www.instagram.com/betogaona7" target="_blank" rel="noopener"> Instagram </a></li>
+                <li><a href="http://www.instagram.com/betogaona7" target="_blank" rel="noopener"> Blog </a></li>
+            </ul>
+        </div>
+
+        <div class="footer-copy">
+            2018 Alberto Gaona - <a href="mailto:albertoo_3c@hotmail.com"> Contact </a>
+        </div>
+    </footer>
+</body>
+</html>
