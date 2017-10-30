@@ -31,8 +31,10 @@
             height: 100%;
         }
         .movie-tile {
-            margin-bottom: 20px;
-            padding-top: 20px;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            padding-left: 0px;
+            padding-right: 0px;
         }
         .movie-tile:hover {
             background-color: #EEE;
@@ -49,7 +51,7 @@
             width: 100%;
             left: 0;
             top: 0;
-            background-color: white;
+            background-color: black;
         }
     </style>
 
@@ -63,13 +65,19 @@
         // Start playing the video whenever the trailer modal is opened
         $(document).on('click', '.movie-tile', function (event) {
             var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
-            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+            //var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+
+            var sourceUrl = 'https://player.vimeo.com/video/195152250';
             $("#trailer-video-container").empty().append($("<iframe></iframe>", {
-              'id': 'trailer-video',
-              'type': 'text-html',
+              //'id': 'trailer-video',
+              //'type': 'text-html',
               'src': sourceUrl,
+              'width':'640',
+              'height':'360',
               'frameborder': 0
             }));
+
+
         });
         // Animate in the movies when the page loads
         $(document).ready(function () {
@@ -102,72 +110,72 @@
     <div class="container">
         
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Here we will write the full information and my opinion about the project, this is the full information about the project" data-toggle="modal" data-target="#trailer">
-    <img src="https://media.giphy.com/media/r5ULIvOOtdIWs/giphy.gif" width="370" height="250">
+    <img src="https://media.giphy.com/media/r5ULIvOOtdIWs/giphy.gif" width="370" height="250" >
     <h3>Bike share</h3>
-    <h4>Imagine yourself owning of a bike sharing company like CycleHop and you want to predict how many bikes you need because if you have too few you're losing money from potential riders or vice versa if you have too many you're wasting money on bikes that are just sitting around. </h4>
+    <h4>Imagine yourself owning of a bike sharing company like CycleHop and you want to predict how many bikes you need because if you have too few you're losing money from potential riders or vice versa if you have too many you're wasting money on bikes that are just sitting around.</h4>
     <h5>Read more...</h5>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Here we will write the full information and my opinion about the project, this is the full information about the project" data-toggle="modal" data-target="#trailer">
-    <img src="https://media.giphy.com/media/PnabT7xYZ3ffG/giphy.gif" width="370" height="250">
+    <img src="https://media.giphy.com/media/PnabT7xYZ3ffG/giphy.gif" width="370" height="250" >
     <h3>Image classification</h3>
-    <h4>Classify images from CIFAR-10 dataset using a CNN</h4>
+    <h4>Vision is the main way humans gain information about the world. In this project I build a Convolutional Network with tensorflow and it recognizes objects and images, I train it using the CIFAR-10 dataset consist of 60,000 images of ten different objects.</h4>
     <h5>Read more...</h5>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Here we will write the full information and my opinion about the project, this is the full information about the project" data-toggle="modal" data-target="#trailer">
-    <img src="http://media3.giphy.com/media/kEKcOWl8RMLde/giphy.gif" width="370" height="250">
+    <img src="http://media3.giphy.com/media/kEKcOWl8RMLde/giphy.gif" width="370" height="250" >
     <h3>TV scripts generator</h3>
-    <h4>Use deep learning to generate new scripts for your favorite TV shows</h4>
+    <h4>Imagine you work for a production company and your job is to write a script for one of your television shows. You can write the script manually or you could just have a computer to do it for you. This project generate a TV script using a Recurrent Neural Network.</h4>
     <h5>Read more...</h5>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Here we will write the full information and my opinion about the project, this is the full information about the project" data-toggle="modal" data-target="#trailer">
-    <img src="https://media.giphy.com/media/tu54GM19sqJOw/giphy.gif" width="370" height="250">
-    <h3>Traductor Frensh-English</h3>
-    <h4>translate frome one language to another</h4>
+    <img src="https://media.giphy.com/media/tu54GM19sqJOw/giphy.gif" width="370" height="250" >
+    <h3>Machine translation</h3>
+    <h4>Language is the backbone of our civilitation in early history, we use it to exchange goods. Without written records of previous scientific discoveries, we could never accomplish great events like traveling to space. We've accomplish a lot in the world where 13 of the most common languages are natively spoken by less than 50 percent of the population. What the would the world be like if we could all work together without a language barrier?</h4>
     <h5>Read more...</h5>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Here we will write the full information and my opinion about the project, this is the full information about the project" data-toggle="modal" data-target="#trailer">
-    <img src="https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif" width="370" height="250">
+    <img src="https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif" width="370" height="250" >
     <h3>Create Faces</h3>
-    <h4>Compete two neural networjs against each other to generat realistic faces.</h4>
+    <h4>Imagine you work for a movie production company, and your job is to design the characters in a movie. You would usually draw a bunch of different concepts before arriving at the final design. What if you had a Neural Network that could do this for you. In this project I build a Generative Adversarial Network that generate new faces using celebrity images</h4>
     <h5>Read more...</h5>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Here we will write the full information and my opinion about the project, this is the full information about the project" data-toggle="modal" data-target="#trailer">
-    <img src="https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif" width="370" height="250">
-    <h3>Create Faces</h3>
-    <h4>Compete two neural networjs against each other to generat realistic faces.</h4>
+    <img src="https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif" width="370" height="250" >
+    <h3>The sodoku puzzle</h3>
+    <h4>An play-game agent for solve Sodoku puzzles.</h4>
     <h5>Read more...</h5>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Here we will write the full information and my opinion about the project, this is the full information about the project" data-toggle="modal" data-target="#trailer">
-    <img src="https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif" width="370" height="250">
-    <h3>Create Faces</h3>
-    <h4>Compete two neural networjs against each other to generat realistic faces.</h4>
+    <img src="https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif" width="370" height="250" >
+    <h3>Isolation game</h3>
+    <h4>A game-playing agent to win at the game, Isolation.</h4>
     <h5>Read more...</h5>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Here we will write the full information and my opinion about the project, this is the full information about the project" data-toggle="modal" data-target="#trailer">
-    <img src="https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif" width="370" height="250">
-    <h3>Create Faces</h3>
-    <h4>Compete two neural networjs against each other to generat realistic faces.</h4>
+    <img src="https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif" width="370" height="250" >
+    <h3>AirCargo planner</h3>
+    <h4>Solve a group of problems in PDDL (Planning Domain Language) for the AirCargo domain.</h4>
     <h5>Read more...</h5>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Here we will write the full information and my opinion about the project, this is the full information about the project" data-toggle="modal" data-target="#trailer">
-    <img src="https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif" width="370" height="250">
-    <h3>Create Faces</h3>
-    <h4>Compete two neural networjs against each other to generat realistic faces.</h4>
+    <img src="https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif" width="370" height="250" >
+    <h3>Recognize ASL</h3>
+    <h4>In process</h4>
     <h5>Read more...</h5>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Here we will write the full information and my opinion about the project, this is the full information about the project" data-toggle="modal" data-target="#trailer">
-    <img src="https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif" width="370" height="250">
-    <h3>Create Faces</h3>
-    <h4>Compete two neural networjs against each other to generat realistic faces.</h4>
+    <img src="https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif" width="370" height="250" >
+    <h3>Mariya</h3>
+    <h4>A machine-translator</h4>
     <h5>Read more...</h5>
 </div>
 

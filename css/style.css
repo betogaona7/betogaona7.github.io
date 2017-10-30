@@ -63,7 +63,12 @@ button{
 	margin-bottom: 40px; 
 	font-weight: bold;
 
-	outline: none;
+	outline: 0px;
+	cursor: pointer;
+}
+
+button:focus {
+	outline: 0px;
 }
 
 a:focus {

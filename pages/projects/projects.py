@@ -39,8 +39,10 @@ main_page_head = '''
             height: 100%;
         }
         .movie-tile {
-            margin-bottom: 20px;
-            padding-top: 20px;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            padding-left: 0px;
+            padding-right: 0px;
         }
         .movie-tile:hover {
             background-color: #EEE;
@@ -57,7 +59,7 @@ main_page_head = '''
             width: 100%;
             left: 0;
             top: 0;
-            background-color: white;
+            background-color: black;
         }
     </style>
 
@@ -71,13 +73,19 @@ main_page_head = '''
         // Start playing the video whenever the trailer modal is opened
         $(document).on('click', '.movie-tile', function (event) {
             var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
-            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+            //var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+
+            var sourceUrl = 'https://player.vimeo.com/video/195152250';
             $("#trailer-video-container").empty().append($("<iframe></iframe>", {
-              'id': 'trailer-video',
-              'type': 'text-html',
+              //'id': 'trailer-video',
+              //'type': 'text-html',
               'src': sourceUrl,
+              'width':'640',
+              'height':'360',
               'frameborder': 0
             }));
+
+
         });
         // Animate in the movies when the page loads
         $(document).ready(function () {
@@ -135,7 +143,7 @@ main_page_content = '''
 # A single movie entry html template
 project_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{project_information}" data-toggle="modal" data-target="#trailer">
-    <img src="{project_animation}" width="370" height="250">
+    <img src="{project_animation}" width="370" height="250" >
     <h3>{project_title}</h3>
     <h4>{project_storyline}</h4>
     <h5>Read more...</h5>
