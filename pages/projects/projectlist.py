@@ -3,16 +3,15 @@ import projects
 
 DL_project1 = media.Project("Bike share",
 
-						  "Imagine yourself owning of a bike sharing company like CycleHop and you want to predict how many bikes "\
+						  "Imagine yourself owning of a bike sharing company like CycleHop and you want to predict how many bikes "  \
 						  "you need because if you have too few you're losing money from potential riders or vice versa if you have "\
-						  "too many you're wasting money on bikes that are just sitting around.",
+						  "too many you're wasting money on bikes that are just sitting around. This project predict the number of " \
+						  "bikeshare users on a given day from historical data, so you can know how many bikes you will need in the "\
+						  "near future.",
 
-						  #"So you want to predict from historical "\
-						  #"data how many bikes you'll need in the near future."
-						  
 						  "https://media.giphy.com/media/r5ULIvOOtdIWs/giphy.gif",
-						  "Here we will write the full information and my opinion about the project, this is the full information about the project",
-						  "https://github.com/betogaona7")
+						  "Not available yet ... ",
+						  "https://github.com/betogaona7/bikeshare")
 
 
 # Imagine yourself owning a bike sharing company like Cycle hop. You want to predict how many bikes you need because
@@ -23,12 +22,15 @@ DL_project1 = media.Project("Bike share",
 # predict the number of bikeshare users on a givenday
 
 DL_project2 = media.Project("Image classification",
-						  "Vision is the main way humans gain information about the world. In this project I build a Convolutional Network "\
-						  "with tensorflow and it recognizes objects and images, I train it using the CIFAR-10 dataset consist of 60,000 "\
-						  "images of ten different objects.",
+
+						  "Vision is the main way humans gain information about the world, with the passage of time we have been able "  \
+						  "to give eyes to the machines, from that, amazing applications have been created. For example, a company "	 \
+						  "called Orbital Insigths analyze satellite imagery to count cars and oil tank levels automatically to predict "\
+						  "such things as mall sales and oil production. In this project I developed a program capable of recognize and "\
+						  "classify ten different types of images.",
 
 						  "https://media.giphy.com/media/PnabT7xYZ3ffG/giphy.gif",
-						  "Here we will write the full information and my opinion about the project, this is the full information about the project",
+						  "Not available yet...",
 						  "https://github.com/betogaona7")
 
 """
@@ -39,7 +41,6 @@ the CIFAR-10 Dataset which consist of 60,000  images of ten different objects.
 
 Today, we want automated cars to be able to distinguish between people, and trees, and the road. We're enabling our cars to do
 this using Convolutional netrowks 
-
 Airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck 
 """
 
@@ -49,7 +50,7 @@ DL_project3 = media.Project("TV scripts generator",
 						  "using a Recurrent Neural Network.",
 
 						  "http://media3.giphy.com/media/kEKcOWl8RMLde/giphy.gif",
-						  "Here we will write the full information and my opinion about the project, this is the full information about the project",
+						  "Not available yet...",
 						  "https://github.com/betogaona7")
 
 """

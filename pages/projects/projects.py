@@ -61,6 +61,7 @@ main_page_head = '''
             top: 0;
             background-color: black;
         }
+
     </style>
 
     <script type="text/javascript" charset="utf-8">
@@ -119,7 +120,9 @@ main_page_content = '''
     <div>
         
     <div class="container">
-        {project_tiles}
+        <div class="row">
+            {project_tiles}
+        </div>
     </div>
 
     <footer class="footer">
@@ -142,7 +145,7 @@ main_page_content = '''
 
 # A single movie entry html template
 project_tile_content = '''
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{project_information}" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center size" data-trailer-youtube-id="{project_information}" data-toggle="modal" data-target="#trailer">
     <img src="{project_animation}" width="370" height="250" >
     <h3>{project_title}</h3>
     <h4>{project_storyline}</h4>
@@ -163,6 +166,7 @@ def create_project_tiles_content(projects):
             project_storyline=project.storyline,
             project_link=project.link
         )
+            
     return content
 
 
