@@ -1,7 +1,7 @@
 import media 
 import projects
 
-DL_project1 = media.Project("Bike share",
+DL_project1 = media.Project("Bike Share",
 
 						  "Imagine yourself owning of a bike sharing company like CycleHop and you want to predict how many bikes "  \
 						  "you need because if you have too few you're losing money from potential riders or vice versa if you have "\
@@ -10,18 +10,10 @@ DL_project1 = media.Project("Bike share",
 						  "near future.",
 
 						  "https://media.giphy.com/media/r5ULIvOOtdIWs/giphy.gif",
-						  "Not available yet ... ",
+						  "Technical description not available yet -",
 						  "https://github.com/betogaona7/bikeshare")
 
-
-# Imagine yourself owning a bike sharing company like Cycle hop. You want to predict how many bikes you need because
-# if you have too few you're losing money from potenitial riders. If you have too many you're wasting money on bikes that 
-# are just sitting around.   So you want to predict from historial data how many bikes you'll need in the near future. 
-# A good way to do this is with a neural network 
-# Finally you'll compare your networks predictions with actual data 
-# predict the number of bikeshare users on a givenday
-
-DL_project2 = media.Project("Image classification",
+DL_project2 = media.Project("Image Classification",
 
 						  "Vision is the main way humans gain information about the world, with the passage of time we have been able "  \
 						  "to give eyes to the machines, from that, amazing applications have been created. For example, a company "	 \
@@ -30,116 +22,93 @@ DL_project2 = media.Project("Image classification",
 						  "classify ten different types of images.",
 
 						  "https://media.giphy.com/media/PnabT7xYZ3ffG/giphy.gif",
-						  "Not available yet...",
+						  "Technical description not available yet -",
 						  "https://github.com/betogaona7")
 
-"""
-Vision is the main way humans gain information about world. I see a cup of tea, I pick up the cup of tea. Ever since humans 
-started imagining machines moving around, and  iteracting with the world we've given them eyes 
-In this project I build a Convulutional Network with Tensorflow and it recognnize objects and images, we train it using the 
-the CIFAR-10 Dataset which consist of 60,000  images of ten different objects.
+DL_project3 = media.Project("TV Scripts Generator",
 
-Today, we want automated cars to be able to distinguish between people, and trees, and the road. We're enabling our cars to do
-this using Convolutional netrowks 
-Airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck 
-"""
-
-DL_project3 = media.Project("TV scripts generator",
-						  "Imagine you work for a production company and your job is to write a script for one of your television shows. You "\
-						  "can write the script manually or you could just have a computer to do it for you. This project generate a TV script "\
-						  "using a Recurrent Neural Network.",
+						  "The way to write a script for a TV show is to actually write a script. A pen is useful, typing is also good. "   \
+						  "Keep putting words on the page, but if for some reason you don't feel good, you're sick or you just feel stuck, "\
+						  "try to use a computer that writes it for you. This project generates an original piece of writing after being "  \
+						  "trained using your existing scripts, therefore, the new piece will conserve your own writing style.",
 
 						  "http://media3.giphy.com/media/kEKcOWl8RMLde/giphy.gif",
-						  "Not available yet...",
+						  "Technical description not available yet -",
 						  "https://github.com/betogaona7")
 
-"""
-Imagine you work for a production company and your job is to write a script for one of their television shows. You can write the script 
-manually or you could just have a computer do it for you. This project generate a TV script using a recurrent neural network .
-You will train the network on existing scripts the use it to generate an original piece of writing 
-"""
+DL_project4 = media.Project("Machine Translation",
 
-DL_project4 = media.Project("Machine translation",
-						  "Language is the backbone of our civilitation in early history, we use it to exchange goods. Without written records of "\
-						  "previous scientific discoveries, we could never accomplish great events like traveling to space. We've accomplish a lot "\
-						  "in the world where 13 of the most common languages are natively spoken by less than 50 percent of the population. What the "\
-						  "would the world be like if we could all work together without a language barrier?",
+						  "Language is the backbone of our civilitation. Without written records of previous scientific discoveries, we could never "  \
+						  "accomplish great events like traveling to space. We've accomplish a lot in the world where 13 of the most common languages "\
+						  "are natively spoken by less than 50 percent of the population. What would the world be like if we could all work together " \
+						  "without a language barrier?. This project is an English to French translator.",
 
 						  "https://media.giphy.com/media/tu54GM19sqJOw/giphy.gif",
-						  "Here we will write the full information and my opinion about the project, this is the full information about the project",
+						  "Technical description not available yet -",
 						  "https://github.com/betogaona7")
 
-"""
-Language is the backbone of our civilazation in early history, we used it to exchange goods. Whitout written records of previous scientific
-discoveries, we could never accomplish geat events like traveling to space. We've accomplished a lot in the world where 13 of the most common
-languages are natively spoken by less than 50% of the population. What would the world be like if we could all work together without a language b
-barrier? 
+DL_project5 = media.Project("New Faces Generator",
 
-in this project you'll take a peek into the realm of neural network machine translation, we'll teach a model how to translate from one 
-language to another
-"""
-DL_project5 = media.Project("Create Faces",
-						  "Imagine you work for a movie production company, and your job is to design the characters in a movie. You would usually draw "\
-						  "a bunch of different concepts before arriving at the final design. What if you had a Neural Network that could do this for you. "\
-						  "In this project I build a Generative Adversarial Network that generate new faces using celebrity images",
+						  "Imagine you work for a movie production company, and your job is to design the characters in a movie. You would usually draw "  \
+						  "a bunch of different concepts before arriving at the final design. What if you had a program that could do this for you?. This "\
+						  "project generate new faces using celebrity images.",
 
 						  "https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
-						  "Here we will write the full information and my opinion about the project, this is the full information about the project",
+						  "Technical description not available yet -",
 						  "https://github.com/betogaona7")
 
-"""
-Imagine your work for a production company, and your job is to design the characters in a movie . You would usually draw a bunch of 
-different concepts before arriving at the final design. What if you had a neural network that could do this for you?.
+AI_project1 = media.Project("The Sudoku Puzzle",
 
-Maybe the lead character needs to be "gritty" No, what about "above the law"? That is better, how about the law scifi, yeah thats the 
-one.
-You will buuild a generative adversarial network that's not far off . In this project you'll build a GAN that will generate new faces
-using celebrity images 
-"""
+						  "Surely you have played Sudoku at least once in your life, Sudoku is that puzzle game that comes in magazines, newspapers, etc. "\
+						  "The goal is to fill a 9x9 grid with digits so that each column, each row, and each of the nine 3x3 subgrids that compose the "  \
+						  "grid contains all of the digits from 1 to 9. Have you ever been stuck trying to solve one?. This project is a play-game agent " \
+						  "for solve diagonal sudoku puzzles.",
 
-AI_project1 = media.Project("The sodoku puzzle",
-						  "An play-game agent for solve Sodoku puzzles.",
 						  "https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
-						  "Here we will write the full information and my opinion about the project, this is the full information about the project",
+						  "Technical description not available yet -",
 						  "https://github.com/betogaona7")
 
-"""
-Crate an play-game agent for solve diagonal sudokus. 
-"""
+AI_project2 = media.Project("The Isolation Game",
 
-AI_project2 = media.Project("Isolation game",
-						  "A game-playing agent to win at the game, Isolation.",
+						  "Isolation is a two-player game in which the players alternate turns moving a single piece from one cell to another on a board. "\
+						  "Whenever either player occupies a cell, the cell becomes blocked for the remainder of the game. The first player with no "      \
+						  "remaining legal moves loses, and the opponent is declared the winner. In this version each player is restricted to L-shaped "   \
+						  "movements on a 7x7 board. This project is a game-playing agent to win the isolation game.",
+
 						  "https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
-						  "Here we will write the full information and my opinion about the project, this is the full information about the project",
-						  "https://github.com/betogaona7")
-"""
-Building a game-playing agent to win at the game, Isolation 
-GAme playing has long been one of the cornertones of AI advancements. One of the biggest advancements in recent AI has been in this 
-field through Google's go winning AlphaGo AI.
-
-Through this project you will take a huge understanding how these agents work. Lets get down to the specifics. In this project 
-you will design and implement a dame playing agent to play a game using adversarial search. The agent will play isolation, 
-"""
-
-AI_project3 = media.Project("AirCargo planner",
-						  "Solve a group of problems in PDDL (Planning Domain Language) for the AirCargo domain.",
-						  "https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
-						  "Here we will write the full information and my opinion about the project, this is the full information about the project",
+						  "Technical description not available yet -",
 						  "https://github.com/betogaona7")
 
-AI_project4 = media.Project("Recognize ASL",
-						  "In process",
+AI_project3 = media.Project("Air Cargo Planner",
+
+						  "Have you asked yourself how companies like DHL schedule all their shipments?, This project solves a group of problems for an "\
+						  "Air Cargo transport system using a planning search agent, in which we see how an agent take advantage of the structure of a " \
+						  "problem to construct a complex plan of action.",
+
 						  "https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
-						  "Here we will write the full information and my opinion about the project, this is the full information about the project",
+						  "Technical description not available yet -",
+						  "https://github.com/betogaona7")
+
+AI_project4 = media.Project("Sign Language Recognizer",
+
+						  "According to the World Health Organization (WHO) 360 millon people worldwide have disabling hearing loss of which 70 million "\
+						  "people use sign language as their first language. Now, how many interpreters are there? much less than half. In this project "\
+						  "I built a system that can recognize words communicated using the American Sign Language (ASL).",
+
+						  "https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
+						  "Technical description not available yet -",
 						  "https://github.com/betogaona7")
 
 OWN_project1 = media.Project("Mariya",
-						  "A machine-translator",
+
+						  "Taking advantage of technology and all available resources, we intend to put an end to the communication barrier between the "
+						  "Wixarica (Huicholes) community and the rest of the world, seeking to rescue their stories and knowledge which they consider "
+						  "sacred. Mariya is a translation device that seeks to save a Mexican culture.",
+
 						  "https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
 						  "Here we will write the full information and my opinion about the project, this is the full information about the project",
 						  "https://github.com/betogaona7")
 
-
-projectslist = [DL_project1, DL_project2, DL_project3, DL_project4, DL_project5, AI_project1, AI_project2, AI_project3, AI_project4, OWN_project1]
+projectslist = [OWN_project1, DL_project1, AI_project4, AI_project3, DL_project3, DL_project5, AI_project2, AI_project1, DL_project2, DL_project4 ]
 projects.open_project_page(projectslist)
 
