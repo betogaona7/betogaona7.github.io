@@ -106,7 +106,7 @@ OWN_project1 = media.Project("Mariya",
 						  "sacred. Mariya is a translation device that seeks to save a Mexican culture.",
 
 						  "https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
-						  "Here we will write the full information and my opinion about the project, this is the full information about the project",
+						  "Technical description not available yet -",
 						  "https://github.com/betogaona7")
 
 projectslist = [OWN_project1, DL_project1, AI_project4, AI_project3, DL_project3, DL_project5, AI_project2, AI_project1, DL_project2, DL_project4 ]
