@@ -11,16 +11,13 @@ $(document).ready(function() {
           el.style.WebkitAnimationPlayState = "paused";
           el.style.animationPlayState = "paused";
           swapContent();
-          console.log("Here we made a swap");
         }
         if (finish) {
           el.style.WebkitAnimationPlayState = "running";
           el.style.animationPlayState = "running";
-          console.log("running");
           return;
         } else {
           window.requestAnimationFrame(function() {monitor(el)});
-          console.log("else running");
         }
       };
 

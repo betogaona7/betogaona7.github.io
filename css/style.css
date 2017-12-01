@@ -53,15 +53,14 @@ h4{
 
 .cleanlink{
 	text-decoration: none;
-	color: #676767;
-	cursor: pointer;
+	color: #676767;;
 }
 
-.cleanink:focus{
-	outline: 0px;
-	color:#676767;
+.cleanlink:hover{
 	text-decoration: none;
+	color: #676767;
 }
+
 
 h5{
 	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
