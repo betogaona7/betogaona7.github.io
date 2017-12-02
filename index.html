@@ -74,10 +74,17 @@
         });
         // Start playing the video whenever the trailer modal is opened
         $(document).on('click', '.movie-tile', function (event) {
-            var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
-            //var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+            //var projectName = $(this).attr('project-name');
+            //var technicalDescription = $(this).attr('technical-description');
+            //var videoUrl = $(this).attr('video-url');
 
-            var sourceUrl = 'https://player.vimeo.com/video/195152250';
+            var projectName = "MARIYA";
+            var technicalDescription = "Not available yet..";
+
+            //var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
+            //var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+            //var sourceUrl = 'https://player.vimeo.com/video/195152250';
+
             $("#trailer-video-container").empty().append($("<iframe></iframe>", {
               //'id': 'trailer-video',
               //'type': 'text-html',
@@ -86,6 +93,11 @@
               'height':'360',
               'frameborder': 0
             }));
+
+            var h1 =document.createdElement('h1')
+            $('#technical-speech:empty').appendChild(h1)
+            h1.appendChild(projectName)
+
         });
         // Animate in the movies when the page loads
         $(document).ready(function () {
@@ -130,15 +142,15 @@
         <!-- Trailer Video Modal -->
 	    <div class="modal" id="trailer">
 	      <div class="modal-dialog">
-	        <div class="modal-content" style="background-color: black; color: white">
+	        <div class="modal-content" style="background-color: black; color: white" id="technical-speech">
                 <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
                     <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
                 </a>
-                <h1 style="margin-bottom: 30px;">Mariya</h1>
-                <!--<img src="https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif" width="370" height="250" >-->
+                
+                <!--<h1 style="margin-bottom: 30px;">Mariya</h1>
                 <p style="padding-left: 25px; padding-right: 25px;">
                     Este proyecto sirve para esto y lo otro etc etc.
-                </p>
+                </p>-->
 
 
 
@@ -147,7 +159,7 @@
     	            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
     	          </a>-->
 	          <!--<div class="scale-media" id="trailer-video-container">-->
-	          </div>
+	          <!--</div>-->
 	        </div>
 	      </div>
 	    </div>

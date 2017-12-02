@@ -73,10 +73,15 @@ main_page_head = '''
         });
         // Start playing the video whenever the trailer modal is opened
         $(document).on('click', '.movie-tile', function (event) {
-            var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
-            //var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+            var projectName = $(this).attr('project-name');
+            var technicalDescription = $(this).attr('technical-description');
+            var videoUrl = $(this).attr('video-url');
 
-            var sourceUrl = 'https://player.vimeo.com/video/195152250';
+
+            //var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
+            //var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+            //var sourceUrl = 'https://player.vimeo.com/video/195152250';
+
             $("#trailer-video-container").empty().append($("<iframe></iframe>", {
               //'id': 'trailer-video',
               //'type': 'text-html',
@@ -86,7 +91,11 @@ main_page_head = '''
               'frameborder': 0
             }));
 
-
+            $('#technical-speech').empty().append($("<h1></h1>",{
+                projectName
+            }),$("<p></p>",{
+                technicalDescription
+            }));
         });
         // Animate in the movies when the page loads
         $(document).ready(function () {
@@ -101,17 +110,14 @@ main_page_head = '''
 # The main page layout and title bar
 main_page_content = '''
 <body>
-    <!-- Trailer Video Modal -->
     <div class="modal" id="trailer">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
-            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
-          </a>
-          <div class="scale-media" id="trailer-video-container">
-          </div>
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color: black; color: white" id="technical-speech">
+                <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+                    <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+                </a>
+            </div>
         </div>
-      </div>
     </div>
 
     <div>
@@ -145,7 +151,7 @@ main_page_content = '''
 
 # A single movie entry html template
 project_tile_content = '''
-<div class="col-md-6 col-lg-4 movie-tile text-center size" data-trailer-youtube-id="{project_information}" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center size" project-name="{project_title}" technical-description="{project_information}" video-url="{project_animation}" data-toggle="modal" data-target="#trailer">
     <img src="{project_animation}" width="370" height="250" >
     <h3>{project_title}</h3>
     <h4>{project_storyline}</h4>
