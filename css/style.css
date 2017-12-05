@@ -43,6 +43,30 @@ h4{
 	margin-right: 10px;
 }
 
+p{
+	padding-left: 25px; 
+	padding-right: 25px;
+	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
+	font-size: 17px;
+}
+
+.popuplink{
+	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
+	font-size: 20px;
+	color:#008CBA;
+	text-align: center;
+	position: relative;
+	float: left;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.popuplink:hover{
+	text-decoration: none;
+}
+
 .size{
 	height: 550px;
 }

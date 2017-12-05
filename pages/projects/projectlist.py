@@ -1,6 +1,7 @@
 import media 
 import projects
 
+
 DL_project1 = media.Project("Bike Share",
 
 						  "Imagine yourself owning of a bike sharing company like CycleHop and you want to predict how many bikes "  \
@@ -10,6 +11,7 @@ DL_project1 = media.Project("Bike Share",
 						  "near future.",
 
 						  "https://media.giphy.com/media/r5ULIvOOtdIWs/giphy.gif",
+						  "",
 						  "Technical description not available yet -",
 						  "https://github.com/betogaona7/bikeshare")
 
@@ -22,6 +24,7 @@ DL_project2 = media.Project("Image Classification",
 						  "classify ten different types of images.",
 
 						  "https://media.giphy.com/media/PnabT7xYZ3ffG/giphy.gif",
+						  "",
 						  "Technical description not available yet -",
 						  "https://github.com/betogaona7")
 
@@ -33,6 +36,7 @@ DL_project3 = media.Project("TV Scripts Generator",
 						  "trained using your existing scripts, therefore, the new piece will conserve your own writing style.",
 
 						  "http://media3.giphy.com/media/kEKcOWl8RMLde/giphy.gif",
+						  "",
 						  "Technical description not available yet -",
 						  "https://github.com/betogaona7")
 
@@ -44,6 +48,7 @@ DL_project4 = media.Project("Machine Translation",
 						  "without a language barrier?. This project is an English to French translator.",
 
 						  "https://media.giphy.com/media/tu54GM19sqJOw/giphy.gif",
+						  "",
 						  "Technical description not available yet -",
 						  "https://github.com/betogaona7")
 
@@ -54,6 +59,7 @@ DL_project5 = media.Project("New Faces Generator",
 						  "project generate new faces using celebrity images.",
 
 						  "https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
+						  "",
 						  "Technical description not available yet -",
 						  "https://github.com/betogaona7")
 
@@ -65,6 +71,7 @@ AI_project1 = media.Project("The Sudoku Puzzle",
 						  "for solve diagonal sudoku puzzles.",
 
 						  "https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
+						  "",
 						  "Technical description not available yet -",
 						  "https://github.com/betogaona7")
 
@@ -76,6 +83,7 @@ AI_project2 = media.Project("The Isolation Game",
 						  "movements on a 7x7 board. This project is a game-playing agent to win the isolation game.",
 
 						  "https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
+						  "",
 						  "Technical description not available yet -",
 						  "https://github.com/betogaona7")
 
@@ -86,6 +94,7 @@ AI_project3 = media.Project("Air Cargo Planner",
 						  "problem to construct a complex plan of action.",
 
 						  "https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
+						  "",
 						  "Technical description not available yet -",
 						  "https://github.com/betogaona7")
 
@@ -96,6 +105,7 @@ AI_project4 = media.Project("Sign Language Recognizer",
 						  "I built a system that can recognize words communicated using the American Sign Language (ASL).",
 
 						  "https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
+						  "",
 						  "Technical description not available yet -",
 						  "https://github.com/betogaona7")
 
@@ -106,6 +116,7 @@ OWN_project1 = media.Project("Mariya",
 						  "sacred. Mariya is a translation device that seeks to save a Mexican culture.",
 
 						  "https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
+						  "https://player.vimeo.com/video/195152250",
 						  "Technical description not available yet -",
 						  "https://github.com/betogaona7")
 

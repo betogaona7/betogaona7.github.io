@@ -151,7 +151,12 @@ main_page_content = '''
 
 # A single movie entry html template
 project_tile_content = '''
-<div class="col-md-6 col-lg-4 movie-tile text-center size" project-name="{project_title}" technical-description="{project_information}" video-url="{project_animation}" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center size" 
+project-name="{project_title}" 
+technical-description="{project_information}" 
+video-url="{project_video}" 
+github-url="{project_link}"
+data-toggle="modal" data-target="#trailer">
     <img src="{project_animation}" width="370" height="250" >
     <h3>{project_title}</h3>
     <h4>{project_storyline}</h4>
@@ -168,6 +173,7 @@ def create_project_tiles_content(projects):
         content += project_tile_content.format(
             project_title=project.title,
             project_animation=project.animation,
+            project_video=project.video,
             project_information=project.information,
             project_storyline=project.storyline,
             project_link=project.link

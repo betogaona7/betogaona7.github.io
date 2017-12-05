@@ -27,9 +27,8 @@
 	<style type="text/css" media="screen">
         #trailer .modal-dialog {
             margin-top: 200px;
-            width: 640px;
-            height: 480px;
-
+            width: 940px;
+            /*height: 480px;*/
         }
         .hanging-close {
             position: absolute;
@@ -54,11 +53,11 @@
         .scale-media {
             padding-bottom: 56.25%;
             position: relative;
-            background-color: blue;
+            background-color: white;
+            color: #676767;
         }
         .scale-media iframe {
             border: none;
-            height: 100%;
             position: absolute;
             width: 100%;
             left: 0;
@@ -66,40 +65,34 @@
         }
     </style>
     <script type="text/javascript" charset="utf-8">
-        // Pause the video when the modal is closed
+
         $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
-            // Remove the src so the player itself gets removed, as this is the only
-            // reliable way to ensure the video stops playing in IE
             $("#trailer-video-container").empty();
         });
-        // Start playing the video whenever the trailer modal is opened
+
         $(document).on('click', '.movie-tile', function (event) {
-            //var projectName = $(this).attr('project-name');
-            //var technicalDescription = $(this).attr('technical-description');
-            //var videoUrl = $(this).attr('video-url');
+            var projectName = $(this).attr('project-name');
+            var technicalDescription = $(this).attr('technical-description');
+            var videoUrl = $(this).attr('video-url');
+            var codeUrl = $(this).attr('github-url');
 
-            var projectName = "MARIYA";
-            var technicalDescription = "Not available yet..";
+            //var projectName = "Mariya II";
+            //var technicalDescription = "30 Not available yet..";
 
-            //var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
-            //var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
-            //var sourceUrl = 'https://player.vimeo.com/video/195152250';
-
-            $("#trailer-video-container").empty().append($("<iframe></iframe>", {
-              //'id': 'trailer-video',
-              //'type': 'text-html',
-              'src': sourceUrl,
-              'width':'640',
-              'height':'360',
-              'frameborder': 0
+            
+            $('#technical-speech').empty().append($(
+                '<h1 style="margin-bottom: 30px;">' + projectName + '</h1>' +
+                '<p>' + technicalDescription + '</p>' +
+                '<img src="' + videoUrl + '" width="370" height="250" style="display: none" id="video">' +
+                '<a class="popuplink" href="' + codeUrl + '">Fork in GitHub</a>'
+                ,{
             }));
 
-            var h1 =document.createdElement('h1')
-            $('#technical-speech:empty').appendChild(h1)
-            h1.appendChild(projectName)
-
+            if(videoUrl.length > 1){
+                document.getElementById("video").innerHTML = "Good day";
+            } 
         });
-        // Animate in the movies when the page loads
+
         $(document).ready(function () {
           $('.movie-tile').hide().first().show("fast", function showNext() {
             $(this).next("div").show("fast", showNext);
@@ -142,15 +135,16 @@
         <!-- Trailer Video Modal -->
 	    <div class="modal" id="trailer">
 	      <div class="modal-dialog">
-	        <div class="modal-content" style="background-color: black; color: white" id="technical-speech">
+	        <div class="modal-content" style="background-color: black; color: white;">
                 <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
                     <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
                 </a>
-                
-                <!--<h1 style="margin-bottom: 30px;">Mariya</h1>
+                <!--
+                <h1 style="margin-bottom: 30px;">Mariya</h1>
                 <p style="padding-left: 25px; padding-right: 25px;">
                     Este proyecto sirve para esto y lo otro etc etc.
-                </p>-->
+                </p> -->
+                <div class="scale-media" id="technical-speech"></div>
 
 
 
@@ -158,8 +152,7 @@
     	          <!--<a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
     	            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
     	          </a>-->
-	          <!--<div class="scale-media" id="trailer-video-container">-->
-	          <!--</div>-->
+	            <!--<div class="scale-media" id="trailer-video-container"></div>-->
 	        </div>
 	      </div>
 	    </div>
@@ -172,70 +165,120 @@
 <div class="container">
 <div class="row">
 
-<div class="col-md-6 col-lg-4 movie-tile text-center size" data-trailer-youtube-id="Technical description not available yet -" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center size" 
+project-name="Mariya" 
+technical-description="Technical description not available yet -" 
+video-url="https://player.vimeo.com/video/195152250" 
+github-url="https://github.com/betogaona7"
+data-toggle="modal" data-target="#trailer">
     <img src="https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif" width="370" height="250" >
     <h3>Mariya</h3>
     <h4>Taking advantage of technology and all available resources, we intend to put an end to the communication barrier between the Wixarica (Huicholes) community and the rest of the world, seeking to rescue their stories and knowledge which they consider sacred. Mariya is a translation device that seeks to save a Mexican culture.</h4>
     <h5>Read more...</h5>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center size" data-trailer-youtube-id="Technical description not available yet -" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center size" 
+project-name="Bike Share" 
+technical-description="Technical description not available yet -" 
+video-url="" 
+github-url="https://github.com/betogaona7/bikeshare"
+data-toggle="modal" data-target="#trailer">
     <img src="https://media.giphy.com/media/r5ULIvOOtdIWs/giphy.gif" width="370" height="250" >
     <h3>Bike Share</h3>
     <h4>Imagine yourself owning of a bike sharing company like CycleHop and you want to predict how many bikes you need because if you have too few you're losing money from potential riders or vice versa if you have too many you're wasting money on bikes that are just sitting around. This project predict the number of bikeshare users on a given day from historical data, so you can know how many bikes you will need in the near future.</h4>
     <h5>Read more...</h5>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center size" data-trailer-youtube-id="Technical description not available yet -" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center size" 
+project-name="Sign Language Recognizer" 
+technical-description="Technical description not available yet -" 
+video-url="" 
+github-url="https://github.com/betogaona7"
+data-toggle="modal" data-target="#trailer">
     <img src="https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif" width="370" height="250" >
     <h3>Sign Language Recognizer</h3>
     <h4>According to the World Health Organization (WHO) 360 millon people worldwide have disabling hearing loss of which 70 million people use sign language as their first language. Now, how many interpreters are there? much less than half. In this project I built a system that can recognize words communicated using the American Sign Language (ASL).</h4>
     <h5>Read more...</h5>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center size" data-trailer-youtube-id="Technical description not available yet -" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center size" 
+project-name="Air Cargo Planner" 
+technical-description="Technical description not available yet -" 
+video-url="" 
+github-url="https://github.com/betogaona7"
+data-toggle="modal" data-target="#trailer">
     <img src="https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif" width="370" height="250" >
     <h3>Air Cargo Planner</h3>
     <h4>Have you asked yourself how companies like DHL schedule all their shipments?, This project solves a group of problems for an Air Cargo transport system using a planning search agent, in which we see how an agent take advantage of the structure of a problem to construct a complex plan of action.</h4>
     <h5>Read more...</h5>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center size" data-trailer-youtube-id="Technical description not available yet -" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center size" 
+project-name="TV Scripts Generator" 
+technical-description="Technical description not available yet -" 
+video-url="" 
+github-url="https://github.com/betogaona7"
+data-toggle="modal" data-target="#trailer">
     <img src="http://media3.giphy.com/media/kEKcOWl8RMLde/giphy.gif" width="370" height="250" >
     <h3>TV Scripts Generator</h3>
     <h4>The way to write a script for a TV show is to actually write a script. A pen is useful, typing is also good. Keep putting words on the page, but if for some reason you don't feel good, you're sick or you just feel stuck, try to use a computer that writes it for you. This project generates an original piece of writing after being trained using your existing scripts, therefore, the new piece will conserve your own writing style.</h4>
     <h5>Read more...</h5>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center size" data-trailer-youtube-id="Technical description not available yet -" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center size" 
+project-name="New Faces Generator" 
+technical-description="Technical description not available yet -" 
+video-url="" 
+github-url="https://github.com/betogaona7"
+data-toggle="modal" data-target="#trailer">
     <img src="https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif" width="370" height="250" >
     <h3>New Faces Generator</h3>
     <h4>Imagine you work for a movie production company, and your job is to design the characters in a movie. You would usually draw a bunch of different concepts before arriving at the final design. What if you had a program that could do this for you?. This project generate new faces using celebrity images.</h4>
     <h5>Read more...</h5>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center size" data-trailer-youtube-id="Technical description not available yet -" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center size" 
+project-name="The Isolation Game" 
+technical-description="Technical description not available yet -" 
+video-url="" 
+github-url="https://github.com/betogaona7"
+data-toggle="modal" data-target="#trailer">
     <img src="https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif" width="370" height="250" >
     <h3>The Isolation Game</h3>
     <h4>Isolation is a two-player game in which the players alternate turns moving a single piece from one cell to another on a board. Whenever either player occupies a cell, the cell becomes blocked for the remainder of the game. The first player with no remaining legal moves loses, and the opponent is declared the winner. In this version each player is restricted to L-shaped movements on a 7x7 board. This project is a game-playing agent to win the isolation game.</h4>
     <h5>Read more...</h5>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center size" data-trailer-youtube-id="Technical description not available yet -" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center size" 
+project-name="The Sudoku Puzzle" 
+technical-description="Technical description not available yet -" 
+video-url="" 
+github-url="https://github.com/betogaona7"
+data-toggle="modal" data-target="#trailer">
     <img src="https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif" width="370" height="250" >
     <h3>The Sudoku Puzzle</h3>
     <h4>Surely you have played Sudoku at least once in your life, Sudoku is that puzzle game that comes in magazines, newspapers, etc. The goal is to fill a 9x9 grid with digits so that each column, each row, and each of the nine 3x3 subgrids that compose the grid contains all of the digits from 1 to 9. Have you ever been stuck trying to solve one?. This project is a play-game agent for solve diagonal sudoku puzzles.</h4>
     <h5>Read more...</h5>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center size" data-trailer-youtube-id="Technical description not available yet -" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center size" 
+project-name="Image Classification" 
+technical-description="Technical description not available yet -" 
+video-url="" 
+github-url="https://github.com/betogaona7"
+data-toggle="modal" data-target="#trailer">
     <img src="https://media.giphy.com/media/PnabT7xYZ3ffG/giphy.gif" width="370" height="250" >
     <h3>Image Classification</h3>
     <h4>Vision is the main way humans gain information about the world, with the passage of time we have been able to give eyes to the machines, from that, amazing applications have been created. For example, a company called Orbital Insigths analyze satellite imagery to count cars and oil tank levels automatically to predict such things as mall sales and oil production. In this project I developed a program capable of recognize and classify ten different types of images.</h4>
     <h5>Read more...</h5>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Technical description not available yet -" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center size" 
+project-name="Machine Translation" 
+technical-description="Technical description not available yet -" 
+video-url="" 
+github-url="https://github.com/betogaona7"
+data-toggle="modal" data-target="#trailer">
     <img src="https://media.giphy.com/media/tu54GM19sqJOw/giphy.gif" width="370" height="250" >
     <h3>Machine Translation</h3>
     <h4>Language is the backbone of our civilitation. Without written records of previous scientific discoveries, we could never accomplish great events like traveling to space. We've accomplish a lot in the world where 13 of the most common languages are natively spoken by less than 50 percent of the population. What would the world be like if we could all work together without a language barrier?. This project is an English to French translator.</h4>
