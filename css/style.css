@@ -2,13 +2,72 @@
 @import '../fonts/fonts.min.css';
 @import '../fonts/spartan/stylesheet.css';
 
-/* Normal size - Laptop 1366 x 768 */
+/* General CSS */
 body{
 	color: #676767;
 	background-color: #FFF;
 	padding: 0;
 	margin: 0;
 }
+
+button:focus{
+	outline: 0px;
+}
+
+button::-moz-focus-inner {
+  	border: 0;
+}
+
+a:focus {
+	outline:0px;
+}
+
+.link{ 
+	/* Class to identify */
+}
+
+.cleanlink{
+	text-decoration: none;
+	color: #676767;;
+}
+
+.cleanlink:hover{
+	text-decoration: none;
+	color: #676767;
+}
+
+.popuplink:hover{
+	text-decoration: none;
+}
+
+.footer{
+	color: #f3f3f3;
+	width: 100%;
+	padding: 0.3% 0;
+	display: block;
+	background-color: transparent;
+	border-top: 2px solid #676767;
+}
+
+.inner-container{
+	width: 100%;
+	position: relative;
+	font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
+	line-height: 1;
+	text-align: center !important;
+}
+
+.footer-links{
+	display: block;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+
+
+/* Normal size - Laptop 1366 x 768 */
 
 h1{
 	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
@@ -43,6 +102,14 @@ h4{
 	margin-right: 10px;
 }
 
+h5{
+	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
+	font-size: 15px;
+	color: #008CBA;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
 p{
 	padding-left: 25px; 
 	padding-right: 25px;
@@ -63,35 +130,8 @@ p{
 	text-decoration: none;
 }
 
-.popuplink:hover{
-	text-decoration: none;
-}
-
 .size{
 	height: 550px;
-}
-
-.link{
-
-}
-
-.cleanlink{
-	text-decoration: none;
-	color: #676767;;
-}
-
-.cleanlink:hover{
-	text-decoration: none;
-	color: #676767;
-}
-
-
-h5{
-	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
-	font-size: 15px;
-	color: #008CBA;
-	padding-right: 50px;
-	padding-left: 50px;
 }
 
 button{
@@ -110,43 +150,6 @@ button{
 	font-weight: bold;
 	cursor: pointer;
 	text-decoration:none;  
-}
-
-button:focus{
-	outline: 0px;
-}
-
-button::-moz-focus-inner {
-  	border: 0;
-}
-
-a:focus {
-	outline:0px;
-}
-
-.footer{
-	color: #f3f3f3;
-	width: 100%;
-	padding: 0.3% 0;
-	display: block;
-	background-color: transparent;
-	border-top: 2px solid #676767;
-}
-
-.inner-container{
-	width: 100%;
-	position: relative;
-	font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
-	line-height: 1;
-	text-align: center !important;
-}
-
-.footer-links{
-	display: block;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	text-align: center;
 }
 
 .footer-links li{
@@ -175,6 +178,127 @@ a:focus {
 	margin-bottom: -20px;
 }
 
+.animation{
+	background-color: white; 
+	height: 300px; 
+	width: 100%;"
+}
 
+
+@media only screen and (max-width: 320px) {
+	h1{
+		font-size: 46px;
+	}
+
+	h2{
+		font-size: 16px;
+		line-height: 1;
+	}
+
+	h3{
+		font-size: 17px;
+	}
+
+	h4{
+		font-size: 12px;
+	}
+
+	h5{
+		font-size: 15px;
+	}
+
+	p{
+		font-size: 17px;
+	}
+
+	button{
+		width: 55%;
+		font: 13px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
+	}
+
+	.footer{
+		border-top: 1px solid #676767;
+	}
+
+	.footer-links li{
+		margin-right: 10px;
+	}
+
+	.footer-links a{
+		font-size: 11px;
+	}
+
+	.footer-copy{
+		font-size: 0.8em;
+	}
+
+	.animation{
+		height: 230px; 
+	}
+}
+
+
+@media only screen and (min-width: 321px) and (max-width: 420px) {
+	h1{
+		font-size: 48px;
+	}
+
+	h2{
+		font-size: 18px;
+		line-height: 1;
+	}
+
+	h3{
+		font-size: 17px;
+	}
+
+	h4{
+		font-size: 12px;
+	}
+
+	h5{
+		font-size: 15px;
+	}
+
+	p{
+		font-size: 17px;
+	}
+
+	button{
+		width: 55%;
+		font: 15px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
+	}
+
+	.footer{
+		border-top: 1px solid #676767;
+	}
+
+	.footer-links li{
+		margin-right: 10px;
+	}
+
+	.footer-links a{
+		font-size: 13px;
+	}
+
+	.footer-copy{
+		font-size: 0.8em;
+	}
+
+	.animation{
+		height: 300px; 
+	}
+}
+
+@media only screen and (min-width: 421px) and (max-width: 960px) {
+	button{
+		width: 30%;
+		font: 15px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
+	}
+
+	.animation{
+		height: 260px; 
+	}
+}
 
 
