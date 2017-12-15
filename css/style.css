@@ -184,7 +184,7 @@ button{
 	width: 100%;"
 }
 
-
+/*
 @media only screen and (max-width: 320px) {
 	h1{
 		font-size: 46px;
@@ -299,6 +299,59 @@ button{
 	.animation{
 		height: 260px; 
 	}
-}
+}*/
 
+
+
+@media only screen and (max-width: 374px){
+	h1{ /*Name*/
+		font-size: 130px;
+	}
+
+	h2{/*Profession*/
+		font-size: 48px;
+		line-height: 1;
+	}
+
+	h3{
+		font-size: 17px;
+	}
+
+	h4{
+		font-size: 12px;
+	}
+
+	h5{
+		font-size: 15px;
+	}
+
+	p{
+		font-size: 17px;
+	}
+
+	button{/*See projects*/
+		width: 55%;
+		font: 35px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
+	}
+
+	.footer{
+		border-top: 1px solid #676767;
+	}
+
+	.footer-links li{
+		margin-right: 10px;
+	}
+
+	.footer-links a{
+		font-size: 30px;
+	}
+
+	.footer-copy{
+		font-size: 0.8em;
+	}
+
+	.animation{/*Animation square*/
+		height: 900px; 
+	}
+}
 

@@ -13,7 +13,7 @@ DL_project1 = media.Project("Bike Share",
 						  "https://media.giphy.com/media/r5ULIvOOtdIWs/giphy.gif",
 						  "",
 						  "Technical description not available yet -",
-						  "https://github.com/betogaona7/bikeshare")
+						  "https://github.com/betogaona7/Deep-Learning/tree/master/DLNF-BikeShare")
 
 DL_project2 = media.Project("Image Classification",
 
@@ -26,7 +26,7 @@ DL_project2 = media.Project("Image Classification",
 						  "https://media.giphy.com/media/PnabT7xYZ3ffG/giphy.gif",
 						  "",
 						  "Technical description not available yet -",
-						  "https://github.com/betogaona7")
+						  "https://github.com/betogaona7/Deep-Learning/tree/master/DLNF-Classification")
 
 DL_project3 = media.Project("TV Scripts Generator",
 
@@ -38,7 +38,7 @@ DL_project3 = media.Project("TV Scripts Generator",
 						  "http://media3.giphy.com/media/kEKcOWl8RMLde/giphy.gif",
 						  "",
 						  "Technical description not available yet -",
-						  "https://github.com/betogaona7")
+						  "https://github.com/betogaona7/Deep-Learning/tree/master/DLNF-Scripts")
 
 DL_project4 = media.Project("Machine Translation",
 
@@ -50,7 +50,7 @@ DL_project4 = media.Project("Machine Translation",
 						  "https://media.giphy.com/media/tu54GM19sqJOw/giphy.gif",
 						  "",
 						  "Technical description not available yet -",
-						  "https://github.com/betogaona7")
+						  "https://github.com/betogaona7/Deep-Learning/tree/master/DLNF-Translation")
 
 DL_project5 = media.Project("New Faces Generator",
 
@@ -61,7 +61,7 @@ DL_project5 = media.Project("New Faces Generator",
 						  "https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
 						  "",
 						  "Technical description not available yet -",
-						  "https://github.com/betogaona7")
+						  "https://github.com/betogaona7/Deep-Learning/tree/master/DLNF-Faces")
 
 AI_project1 = media.Project("The Sudoku Puzzle",
 
@@ -73,7 +73,7 @@ AI_project1 = media.Project("The Sudoku Puzzle",
 						  "https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
 						  "",
 						  "Technical description not available yet -",
-						  "https://github.com/betogaona7")
+						  "https://github.com/betogaona7/AI-projects/tree/master/AIND-Sudoku")
 
 AI_project2 = media.Project("The Isolation Game",
 
@@ -85,7 +85,7 @@ AI_project2 = media.Project("The Isolation Game",
 						  "https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
 						  "",
 						  "Technical description not available yet -",
-						  "https://github.com/betogaona7")
+						  "https://github.com/betogaona7/AI-projects/tree/master/AIND-Isolation")
 
 AI_project3 = media.Project("Air Cargo Planner",
 
@@ -96,7 +96,7 @@ AI_project3 = media.Project("Air Cargo Planner",
 						  "https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
 						  "",
 						  "Technical description not available yet -",
-						  "https://github.com/betogaona7")
+						  "https://github.com/betogaona7/AI-projects/tree/master/AIND-Planning")
 
 AI_project4 = media.Project("Sign Language Recognizer",
 
@@ -107,7 +107,7 @@ AI_project4 = media.Project("Sign Language Recognizer",
 						  "https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
 						  "",
 						  "Technical description not available yet -",
-						  "https://github.com/betogaona7")
+						  "https://github.com/betogaona7/AI-projects/tree/master/AIND-Recognizer")
 
 OWN_project1 = media.Project("Mariya",
 
@@ -118,7 +118,7 @@ OWN_project1 = media.Project("Mariya",
 						  "https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
 						  "https://player.vimeo.com/video/195152250",
 						  "Technical description not available yet -",
-						  "https://github.com/betogaona7")
+						  "https://github.com/proyectomariya/translate")
 
 projectslist = [OWN_project1, DL_project1, AI_project4, AI_project3, DL_project3, DL_project5, AI_project2, AI_project1, DL_project2, DL_project4 ]
 projects.open_project_page(projectslist)
