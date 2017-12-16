@@ -11,7 +11,7 @@
 	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/transition.js"></script> 
-
+    
 	<!-- For the project section -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
@@ -22,11 +22,13 @@
     <link rel="stylesheet" type="text/css" href="css/transition.css" />
     <link rel="stylesheet" type="text/css" href="css/riple.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
-    
+
+
 
 	<style type="text/css" media="screen">
         #trailer .modal-dialog {
             margin-top: 200px;
+            margin-bottom: 200px;
             width: 940px;
             /*height: 480px;*/
         }
@@ -51,7 +53,7 @@
             cursor: pointer;
         }
         .scale-media {
-            padding-bottom: 56.25%;
+            padding-bottom: 5%;
             position: relative;
             background-color: white;
             color: #676767;
@@ -76,21 +78,13 @@
             var videoUrl = $(this).attr('video-url');
             var codeUrl = $(this).attr('github-url');
 
-            //var projectName = "Mariya II";
-            //var technicalDescription = "30 Not available yet..";
-
-            
             $('#technical-speech').empty().append($(
                 '<h1 style="margin-bottom: 30px;">' + projectName + '</h1>' +
                 '<p>' + technicalDescription + '</p>' +
-                '<img src="' + videoUrl + '" width="370" height="250" style="display: none" id="video">' +
                 '<a class="popuplink" target="_blank" rel="noopener" href="' + codeUrl + '">Fork in GitHub</a>'
                 ,{
             }));
 
-            if(videoUrl.length > 1){
-                document.getElementById("video").innerHTML = "Good day";
-            } 
         });
 
         $(document).ready(function () {
@@ -131,28 +125,14 @@
 
     <!-- Section two -->
 	<div id="content-2" style="display:none">
-    	
-        <!-- Trailer Video Modal -->
+
 	    <div class="modal" id="trailer">
 	      <div class="modal-dialog">
 	        <div class="modal-content" style="background-color: black; color: white;">
                 <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
                     <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
                 </a>
-                <!--
-                <h1 style="margin-bottom: 30px;">Mariya</h1>
-                <p style="padding-left: 25px; padding-right: 25px;">
-                    Este proyecto sirve para esto y lo otro etc etc.
-                </p> -->
                 <div class="scale-media" id="technical-speech"></div>
-
-
-
-
-    	          <!--<a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
-    	            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
-    	          </a>-->
-	            <!--<div class="scale-media" id="trailer-video-container"></div>-->
 	        </div>
 	      </div>
 	    </div>
@@ -167,7 +147,33 @@
 
 <div class="col-md-6 col-lg-4 movie-tile text-center size" 
 project-name="Mariya" 
-technical-description="Technical description not available yet -" 
+technical-description="
+                          <div style='text-align: center;'>
+                            <video controls poster='./img/huicholdos.png'>
+                                <source src='./img/Mariya.mp4' type='video/mp4'>
+                            </video>
+                          </div>
+                          <br/><br/><p>
+
+                          A Mexican project that opens a communication portal between an indigenous community and the rest of the world. The Wixarikas
+                          erroneously known as Huicholes are part of a Mexican town. Globally known for their art: The Huichol art.<br/> <br/>
+
+                          Do you know that every piece of art they create really tells a story? each bracelet, each table, each figure tells something 
+                          about their culture. Those stories create an identity for them. Through their tales, which have passed from generation to 
+                          generation, they create a heritage to encourage new generations to follow in the footsteps of their ancestors.<br/> <br/>
+
+                          Apart from facing the possible disapperence of their sacred land due mining, day by day they face a problem that goes unnoticed:
+                          'migration'. Being located in the highest part of the Sierra Madre Occidental, communication and access to new technologies is 
+                          almost impossible. This force the new generations to migrate to the big cities, confronting the language problem that threatens 
+                          the extinction of their native language.<br/> <br/>
+
+                          The Mariya project tries to demonstrate that the technology is not fought with the ancestral customs of a town, giving the floor
+                          to those who deserve to be heard, seeking to rescue their stories and knowledge which they consider sacred.<br/> <br/>
+
+                          Fall in love with the Wixarika culture with the documentary: <a target='_blank' rel='noopener' href='https://huicholesfilm.com/en/'>
+                          Huicholes the last peyote guardians</a>.
+                          <br/>Learn more about the Mariya project by visiting the <a target='_blank' rel='noopener' href='https://proyectomariya.github.io/'>
+                          official website</a>.<br/><br/>" 
 video-url="https://player.vimeo.com/video/195152250" 
 github-url="https://github.com/proyectomariya/translate"
 data-toggle="modal" data-target="#trailer">

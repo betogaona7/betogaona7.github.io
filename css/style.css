@@ -40,6 +40,10 @@ a:focus {
 	text-decoration: none;
 }
 
+p a:hover{
+	text-decoration: none;
+}
+
 .footer{
 	color: #f3f3f3;
 	width: 100%;
@@ -111,10 +115,18 @@ h5{
 }
 
 p{
-	padding-left: 25px; 
-	padding-right: 25px;
+	padding-left: 35px; 
+	padding-right: 35px;
 	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
 	font-size: 17px;
+	text-align: justify;
+}
+
+p a{
+	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
+	font-size: 17px;
+	color:#008CBA;
+	text-decoration: none;
 }
 
 .popuplink{
@@ -128,6 +140,12 @@ p{
 	transform: translate(-50%, -50%);
 	font-weight: bold;
 	text-decoration: none;
+}
+
+div video{
+	width: 80% !important;
+	height: auto !important;
+	border: 0;
 }
 
 .size{
@@ -301,14 +319,13 @@ button{
 	}
 }*/
 
-
-
+/*
 @media only screen and (max-width: 374px){
-	h1{ /*Name*/
+	h1{ 
 		font-size: 130px;
 	}
 
-	h2{/*Profession*/
+	h2{
 		font-size: 48px;
 		line-height: 1;
 	}
@@ -327,9 +344,11 @@ button{
 
 	p{
 		font-size: 17px;
+		text-align: justify;
+
 	}
 
-	button{/*See projects*/
+	button{
 		width: 55%;
 		font: 35px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
 	}
@@ -350,8 +369,8 @@ button{
 		font-size: 0.8em;
 	}
 
-	.animation{/*Animation square*/
+	.animation{
 		height: 900px; 
 	}
 }
-
+*/
