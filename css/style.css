@@ -69,6 +69,14 @@ p a:hover{
 	text-align: center;
 }
 
+.planner{
+	height: 350px;
+}
+
+li p{
+	padding-left: 0;
+	text-align: justify;
+}
 
 
 /* Normal size - Laptop 1366 x 768 */

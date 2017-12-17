@@ -115,8 +115,66 @@ AI_project3 = media.Project("Air Cargo Planner",
 
 						  "https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
 						  "",
-						  "Technical description not available yet -",
+						  """
+						  In this project I defined a group of problems in classical PDDL (Planning Domain Definition Language) that use
+						  a planning search agent to solve deterministic logistics problems for an Air Cargo transport system. For example
+						  the next problem:</br></br></p>
+
+						  <div style='text-align: center;'>
+						  	<img src='./img/planner-problem.png' alt='Planner problem'>
+						  </div><br/><br/><p>
+
+						  Then setup the problems for search of two types: Non-heuristic searches and Heuristic searches. The non-heuristic
+						  searches include Breadth-First search (BFS), Depth-First graph search (DFS) and Uniform-Cost search (UCS). Of them the most
+						  efficient was the UCS algorithm.</br></br>
+
+						  For the heuristic searches I used the A star algorithm (A*) with two different heuristics:</br></p>
+						  <ul type='disk'>
+						  	<li><p>Ignore preconditions heuristic - The minimum number of actions that must be carried out from the current state in order 
+						  	to satisfy all of the goal conditions by ignoring the preconditions required for an action to be executed.</p></li>
+						  	<li><p>Level sum heuristic - The sum of level costs of the individual goals (admissible if goals independent).</p></li>
+						  </ul></br><p>
+						  A* with ignore preconditions heuristic was the one that works best. The following image is the answer to the problem
+						  posed in the previous image solved by both algorithms (A* and UCS):<br/><br/></p>
+
+						  <div style='text-align: center;'>
+						  	<img class='planner' src='./img/planner-solution.png' alt='Planner solution'>
+						  </div><br/><br/><p>
+
+						  UCS takes 157 seconds to solve it while A* only takes 30 seconds. That is one of the great advantages of using 
+						  heuristics.<br/><br/>
+						  """,
 						  "https://github.com/betogaona7/AI-projects/tree/master/AIND-Planning")
+
+"""
+In this project I defined a group of problems in classical PDDL (Planning Domain Definition Language) that use
+a planning search agent to solve deterministic logistics problems for an Air Cargo transport system. For example
+the next problem:</br></br></p>
+
+<div style='text-align: center;'>
+	<img src='./img/planner-problem.png' alt='Planner problem'>
+</div><br/><br/><p>
+
+Then setup the problems for search of two types: Non-heuristic searches and Heuristic searches. The non-heuristic
+searches include Breadth-First search (BFS), Depth-First graph search (DFS) and Uniform-Cost search (UCS) of them the most
+efficient was the UCS algorithm.</br></br>
+
+For the heuristic searches I used the A star algorithm (A*) with two different heuristics:</br>
+<ul type='disk>
+	<li> Ignore preconditions heuristic - The minimum number of actions that must be carried out from the current state in order 
+to satisfy all of the goal conditions by ignoring the preconditions required for an action to be executed.</li>
+	<li> Level sum heuristic - The sum of level costs of the individual goals (admissible if goals independent) </li>
+</ul></br>
+Where A* with ignore preconditions heuristic was the one that works best. The following image is the answer to the problem
+posed in the previous image solved by both algorithms (A* and UCS):<br/><br/></p>
+
+<div style='text-align: center;'>
+	<img src='./img/planner-solution.png' alt='Planner solution'>
+</div><br/><br/><p>
+
+UCS takes 157 seconds to solve it while A* only takes 30 seconds. That is one of the great advantages of using 
+heuristics<br/><br/>
+"""
 
 AI_project4 = media.Project("Sign Language Recognizer",
 
