@@ -12,7 +12,27 @@ DL_project1 = media.Project("Bike Share",
 
 						  "https://media.giphy.com/media/r5ULIvOOtdIWs/giphy.gif",
 						  "",
-						  "Technical description not available yet -",
+						  """
+						  Bike sharing systems are new generation of traditional bike rentals where whole process from membership, rental and 
+						  return back has become automatic. Through these systems, user is able to easily rent a bike from a particular position
+						  and return back in another position. Currently, there are about over 500 bike-sharing programs around the world 
+						  which is composed of over 500 thousands bicycles.<br/><br/>
+
+						  This project is a simple neural network to make predictions of bike-sharing usage. Using a 
+						  <a target='_blank' rel='noopener' href='https://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset'>dataset</a> that 
+						  has the number of riders for each hour of each day from January 1, 2011 to December 31, 2012. The data is pretty complicated. 
+						  The weekends have lower over all rideship and there are spikes when people are biking to and from work during the week.
+						  Also have information about temperature, humidity, and windspeed. all of these likely affecting the number of riders.<br/><br/>
+
+						  The network has two layers, a hidden layer and an output layer. The hidden layer use the sigmoid function for activations.
+						  The output layer has only one node and is used for regression, the output node is the same as the input node.<br/><br/>
+
+						  In the following graph we can compare our predictions with the actual data:
+						  <br/><br/>
+						  <div style='text-align: center;'>
+						  	<img src='./img/bikeshare-graph.png' alt='Bike share results'>
+						  </div><br/><br/>
+						  """,
 						  "https://github.com/betogaona7/Deep-Learning/tree/master/DLNF-BikeShare")
 
 DL_project2 = media.Project("Image Classification",
@@ -109,6 +129,10 @@ AI_project4 = media.Project("Sign Language Recognizer",
 						  "Technical description not available yet -",
 						  "https://github.com/betogaona7/AI-projects/tree/master/AIND-Recognizer")
 
+"""
+
+"""
+
 OWN_project1 = media.Project("Mariya",
 
 						  "Taking advantage of technology and all available resources, we intend to put an end to the communication barrier between the "
@@ -145,47 +169,27 @@ OWN_project1 = media.Project("Mariya",
 						  official website</a>.<br/><br/>""",
 						  
 						  "https://github.com/proyectomariya/translate")
+
 """
 Un proyecto Mexicano que abre un portal de comunicacion entre una comunidad indigena y el resto del mundo. Los Wixaricas 
 erroneamente conocidos como Huicholes son parte de un pueblo Mexicano, mundialmente conocidos por su arte: el arte huichol.
 sabias tu que cada pieza de arte que ellos crean realmente cuenta una historia. cada pulsera, cada tabla, cada figura cuenta
 algo de su cultura.
 
-Esas historias les crean una identidad. A traves de sus cuentos, los cuales han pasado de generacion en generacion 
-crean una herencia para incentivar a las nuevas generaciones a seguir los pasos de sus antepasados. 
+Esas historias les crean una identidad. A traves de sus cuentos, los cuales han pasado de generacion en generacion crean una 
+herencia para incentivar a las nuevas generaciones a seguir los pasos de sus antepasados. 
 
-Aparte de enfrentarse a la posible desaparecion de su tierra sagrada debido a la mineria canadiense, dia a dia se enfrentan a un
-problema que pasa desapercibido: "la migracion". Al estar asentados en lo mas alto de la Sierra madre occidental, la comunicacion
-y el acceso a las nuevas tecnologias les resulta casi imposible. Esto obliga a las nevas generaciones migrar a las grandes
-ciudades, enfrentandose con el problema del lenguaje que amenza con la extincion de su lengua materna. 
+Aparte de enfrentarse a la posible desaparecion de su tierra sagrada debido a la mineria canadiense, dia a dia se enfrentan a 
+un problema que pasa desapercibido: "la migracion". Al estar asentados en lo mas alto de la Sierra madre occidental, la 
+comunicacion y el acceso a las nuevas tecnologias les resulta casi imposible. Esto obliga a las nevas generaciones migrar a 
+las grandes ciudades, enfrentandose con el problema del lenguaje que amenza con la extincion de su lengua materna. 
 
 Proyecto Mariya pretende demostrar que la tecnologia no esta peleada con las costrumbres ancestrales de un pueblo, dandole la 
-palabra a los que mrecen ser escuchados. buscando rescatar sus historias y conocimientos los cuales ellos consideran como sagrados.
+palabra a los que mrecen ser escuchados. buscando rescatar sus historias y conocimientos los cuales ellos consideran como 
+sagrados.
 
-
-Enamorate de la cultura Wixarica con el documental: <a>
-Para conocer aun mas sobre el proyeto mariya visita la pagina
-
-[Fotos]
-
-Conoce mas sobre los huicholes con este interseante documental: <a href='https://huicholesfilm.com/en/'>Huicholes, the last peyote guardians </a>
-Visita la pagina del dispositivo: <a href='https:projectomariya.github.io'>Proyecto mariya</a>
-
-A Mexican project that opens a communication portal between an indigenous community and the rest of the world. The Wixarikas 
-erroneously known as Huicholes are part of a Mexican town. Globally known for their art: The Huichol art.
-
-Do you know that every piece of art they create really tells a story? each bracelet, each table, each figure tells something 
-about their culture. Those stories create an identity for them. Through their tales, which have passed from generation to 
-generation, they create a heritage to encourage new generations to follow in the footsteps of their ancestors.
-
-Apart from facing the possible disapperence of their sacred land due mining, day by day they face a problem that goes unnoticed:
-"migration". Being located in the highest part of the Sierra Madre Occidental, communication and access to new technologies is 
-almost impossible. This force the new generations to migrate to the big cities, confronting the language problem that threatens 
-the extinction of their mother tongue. 
-
-The Mariya project tries to demonstrate that the technology is not fought with the ancestral customs of a town, giving the floor
-to those who deserve to be heard, seeking to rescue their stories and knowledge which they consider sacred. 
-
+Conoce mas sobre los huicholes con este interseante documental: https://huicholesfilm.com/en/'
+Visita la pagina del dispositivo: https:projectomariya.github.io
 """
 projectslist = [OWN_project1, DL_project1, AI_project4, AI_project3, DL_project3, DL_project5, AI_project2, AI_project1, DL_project2, DL_project4 ]
 projects.open_project_page(projectslist)

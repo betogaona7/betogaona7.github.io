@@ -11,7 +11,7 @@
 	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/transition.js"></script> 
-    
+
 	<!-- For the project section -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
@@ -185,7 +185,27 @@ data-toggle="modal" data-target="#trailer">
 
 <div class="col-md-6 col-lg-4 movie-tile text-center size" 
 project-name="Bike Share" 
-technical-description="Technical description not available yet -" 
+technical-description="
+                          Bike sharing systems are new generation of traditional bike rentals where whole process from membership, rental and 
+                          return back has become automatic. Through these systems, user is able to easily rent a bike from a particular position
+                          and return back in another position. Currently, there are about over 500 bike-sharing programs around the world 
+                          which is composed of over 500 thousands bicycles.<br/><br/>
+
+                          This project is a simple neural network to make predictions of bike-sharing usage. Using a 
+                          <a target='_blank' rel='noopener' href='https://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset'>dataset</a> that 
+                          has the number of riders for each hour of each day from January 1, 2011 to December 31, 2012. The data is pretty complicated. 
+                          The weekends have lower over all rideship and there are spikes when people are biking to and from work during the week.
+                          Also have information about temperature, humidity, and windspeed. all of these likely affecting the number of riders.<br/><br/>
+
+                          The network has two layers, a hidden layer and an output layer. The hidden layer use the sigmoid function for activations.
+                          The output layer has only one node and is used for regression, the output node is the same as the input node.<br/><br/>
+
+                          In the following graph we can compare our predictions with the actual data:
+                          <br/><br/>
+                          <div style='text-align: center;'>
+                            <img src='./img/bikeshare-graph.png' alt='Bike share results'>
+                          </div><br/><br/>
+                          " 
 video-url="" 
 github-url="https://github.com/betogaona7/Deep-Learning/tree/master/DLNF-BikeShare"
 data-toggle="modal" data-target="#trailer">
