@@ -132,32 +132,6 @@ DL_project5 = media.Project("New Faces Generator",
 						  Note that some faces look like horror movie characters!<br/><br/>
 						  """,
 						  "https://github.com/betogaona7/Deep-Learning/tree/master/DLNF-Faces")
-"""
-This is a Generative Adversarial Network (GAN) that use the 
-<a target='_blank' rel='noopener' href='http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html'>CelebFaces Attributes dataset (CelebA)</a> 
-consisting of more than 200,000 of celebrity images with annotations as training to generate new images of faces.<br/><br/>
-
-GANs are used for generating realistic data. The word adversarial in Generative Adversarial Networks means that we have two networks,
-the generator and the discriminator which are in a competition with each other. The generator wants to minimize the value function 
-and the discriminator wants to maximize the value function.<br/><br/> 
-
-We can think of this process as being like a competition between counterfeiters and police. The generator net is like a group of
-counterfeiters trying to produce fake money and pass it off as real. The police try to catch counterfeiters using fake money but
-still want to let everyone else spend their real money. Over time the police get better at detecting counterfeit money and the 
-conterfeiters get better at faking it. Eventually the counterfeiters are forced to make perfect replicas of real money.<br/><br/>
-
-When we train a GAN on the CelebA dataset we can watch it being generating random images, gradually learn to generate faces. That is 
-the basic idea of how GANs work.<br/><br/>
-
-In the project CelebA images were cropped to remove parts of the image that do not include a face, then resized down to 28x28 pixels. 
-The following image is an example of how the generated faces look.<br/><br/></p>
-
-<div style='text-align: center;'>
-	<img src='./img/faces-example.png' alt='Faces'>
-</div><br/><br/><p>
-
-Note that some faces look like horror movie characters!<br/><br/>
-"""
 
 AI_project1 = media.Project("The Sudoku Puzzle",
 
@@ -180,8 +154,79 @@ AI_project2 = media.Project("The Isolation Game",
 
 						  "https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
 						  "",
-						  "Technical description not available yet -",
+						  """
+						  Game playing has long been one of the cornerstones of AI advancements. One of the biggest advancements in recent AI has been in this 
+						  field through Googles Go winning AlphaGo AI. Similary, one of the seminal events of the 20th century was seeing IBMs Deep Blue defeat
+						  Gary Kasparov, a world chess champion in a game of chess.<br/><br/>
+
+						  In this project I designed and implemented a game-playing agent to play a game using adversarial search. The agent play Isolation. A 
+						  two-player game in which the players alternate turns moving a single piece from one cell to another on the board. Whenever either player
+						  occupies a cell, that cell becomes blocked for the remainder of the game. The first player with no remaining legal moves loses, and the
+						  opponent is declared winner. Each player is restricted to L-shaped movements (like a knight in chess) on a 7 by 7 board, however, the 
+						  player can jump blocked or occupied spaces (just like knight in chess).<br/><br/>
+
+						  The goal was to program a player that beats its opponent consistently at this game. Additionally the agent have a fixed time limit each 
+						  turn to search for the best move and respond. If the time limit expires during a players turn, that player forfeits the match, and the 
+						  opponent wins.<br/><br/>
+
+						  I used three different heuristics to perfom the adversarial search and compare their perfomance:<br/>
+						  <ul type='disk'>
+						  <li><p>The basic heuristic - Evaluate how good is the board for the player and how good it is for the opponent, then substract the opponents
+						  score from the players. This heuristics would penalize our computer player with more potential moves which is counter productive, It 
+						  continues to take into account boards where the current player can make a larger number of moves and also penalizes boards where the 
+						  opponet can make a larger number of moves.</p></li>
+						  <li><p>The lucky heuristic - This heuristic take into account the number of locations that are still available on the board, however this 
+						  number do not reflect the goodness of the board but confirm the next statement: Both the number of open spaces and the number of moves
+						  made are the same for every position for the same depth, thus any heuristic that relies only on these two exactly as effective (minus
+						  very slight perfomance penalty) as a zero score function.</p></li>
+						  <li><p>The coward heurisitc - It is called coward because the goal is get as far away from the opponent as possible, here is the otherwise of
+						  the basic heuristic evaluation function.</p></li></ul><br/><br/><p>
+
+						  In conclution the best was the basic heuristic because it obtains a better win rate, it is no computationally complex and it evaluate very well 
+						  how the current board configuration is for our player.<br/><br/></p>
+
+						  <div style='text-align: center;'>
+						    <img src='./img/isolation.gif' alt='Isolation gif'>
+						  </div><br/><br/><p>
+						  """,
 						  "https://github.com/betogaona7/AI-projects/tree/master/AIND-Isolation")
+
+"""
+
+Game playing has long been one of the cornerstones of AI advancements. One of the biggest advancements in recent AI has been in this 
+field through Googles Go winning AlphaGo AI. Similary, one of the seminal events of the 20th century was seeing IBMs Deep Blue defeat
+Gary Kasparov, a world chess champion in a game of chess.<br/><br/>
+
+In this project I designed and implemented a game-playing agent to play a game using adversarial search. The agent play Isolation. A 
+two-player game in which the players alternate turns moving a single piece from one cell to another on the board. Whenever either player
+occupies a cell, that cell becomes blocked for the remainder of the game. The first player with no remaining legal moves loses, and the
+opponent is declared winner. Each player is restricted to L-shaped movements (like a knight in chess) on a 7 by 7 board, however, the 
+player can jump blocked or occupied spaces (just like knight in chess).<br/><br/>
+
+The goal was to program a player that beats its opponent consistently at this game. Additionally the agent have a fixed time limit each 
+turn to search for the best move and respond. If the time limit expires during a players turn, that player forfeits the match, and the 
+opponent wins.<br/><br/>
+
+I used three different heuristics to perfom the adversarial search and compare their perfomance:<br/>
+<ul type='disk'>
+<li><p>The basic heuristic - Evaluate how good is the board for the player and how good it is for the opponent, then substract the opponents
+score from the players. This heuristics would penalize our computer player with more potential moves which is counter productive, It 
+continues to take into account boards where the current player can make a larger number of moves and also penalizes boards where the 
+opponet can make a larger number of moves.</p></li>
+<li><p>The lucky heuristic - This heuristic take into account the number of locations that are still available on the board, however this 
+number do not reflect the goodness of the board but confirm the next statement: Both the number of open spaces and the number of moves
+made are the same for every position for the same depth, thus any heuristic that relies only on these two exactly as effective (minus
+very slight perfomance penalty) as a zero score function.</p></li>
+<li><p>The coward heurisitc - It is called coward because the goal is get as far away from the opponent as possible, here is the otherwise of
+the basic heuristic evaluation function.</p></li></ul><br/><br/><p>
+
+In conclution the best was the baisc heuristic because it obtains a better win rate, it is no computationally complex and it evaluate very well 
+how the current board configuration is for our player.<br/><br/></p>
+
+<div style='text-align: center;'>
+  	<img src='./img/isolation.gif' alt='Isolation gif'>
+</div><br/><br/><p>
+"""
 
 AI_project3 = media.Project("Air Cargo Planner",
 
