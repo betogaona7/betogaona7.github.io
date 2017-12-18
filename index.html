@@ -309,7 +309,32 @@ data-toggle="modal" data-target="#trailer">
 
 <div class="col-md-6 col-lg-4 movie-tile text-center size" 
 project-name="New Faces Generator" 
-technical-description="Technical description not available yet -" 
+technical-description="
+              This is a Generative Adversarial Network (GAN) that use the 
+              <a target='_blank' rel='noopener' href='http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html'>CelebFaces Attributes dataset (CelebA)</a> 
+              consisting of more than 200,000 of celebrity images with annotations as training to generate new images of faces.<br/><br/>
+
+              GANs are used for generating realistic data. The word adversarial in Generative Adversarial Networks means that we have two networks,
+              the generator and the discriminator which are in a competition with each other. The generator wants to minimize the value function 
+              and the discriminator wants to maximize the value function.<br/><br/> 
+
+              We can think of this process as being like a competition between counterfeiters and police. The generator net is like a group of
+              counterfeiters trying to produce fake money and pass it off as real. The police try to catch counterfeiters using fake money but
+              still want to let everyone else spend their real money. Over time the police get better at detecting counterfeit money and the 
+              conterfeiters get better at faking it. Eventually the counterfeiters are forced to make perfect replicas of real money.<br/><br/>
+
+              When we train a GAN on the CelebA dataset we can watch it being generating random images, gradually learn to generate faces. That is 
+              the basic idea of how GANs work.<br/><br/>
+
+              In the project CelebA images were cropped to remove parts of the image that do not include a face, then resized down to 28x28 pixels. 
+              The following image is an example of how the generated faces look.<br/><br/></p>
+
+              <div style='text-align: center;'>
+                <img src='./img/faces-example.png' alt='Faces'>
+              </div><br/><br/><p>
+
+              Note that some faces look like horror movie characters!<br/><br/>
+              " 
 video-url="" 
 github-url="https://github.com/betogaona7/Deep-Learning/tree/master/DLNF-Faces"
 data-toggle="modal" data-target="#trailer">
