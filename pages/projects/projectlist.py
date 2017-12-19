@@ -47,6 +47,10 @@ DL_project2 = media.Project("Image Classification",
 						  "",
 						  "Technical description not available yet -",
 						  "https://github.com/betogaona7/Deep-Learning/tree/master/DLNF-Classification")
+"""
+
+
+"""
 
 DL_project3 = media.Project("TV Scripts Generator",
 
@@ -142,7 +146,35 @@ AI_project1 = media.Project("The Sudoku Puzzle",
 
 						  "https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
 						  "",
-						  "Technical description not available yet -",
+						  """
+						  This project can solve any Sudoku puzzle, also have some extensions. The first extension is an implementation of the naked 
+						  twins technique. The second is a modification to solve diagonal sudokus. <br/><br/>
+
+						  The naked twins technique is the following. Consider the following puzzle, and look the two highlighted boxes, F3 and I3.<br/><br/></p>
+
+						  <div style='text-align: center;'>
+						  	<img class='sudoku-img' src='./img/naked-twins.png' alt='Naiked twins 1'>
+						  </div><br/><br/><p>
+
+						  As we can see, both belong to the same column, an both permit the values 2 and 3. Now, we do not know which one has a 2 and 
+						  which one has a 3, but we know one thing for sure - the values 2 and 3 are locked in those two boxes, so no other box in their
+						  same unit (the third column) can contain the values 2 or 3.<br/><br/>
+						  Thus, we go over all the boxes in the same unit, and remove the values 2 and 3 from their possible values.<br/><br/></p>
+
+						  <div style='text-align: center;'>
+						  	<img class='sudoku-img' src='./img/naked-twins-2.png' alt='Naiked twins 2'>
+						  </div><br/><br/><p>
+
+						  As you can see, we've removed the values 2 and 3 from the boxes D3 and E3. This is naked twins techinique. A diagonal sudoku 
+						  is like a regular sudoku, except that among the two main diagonals, the number 1 to 9 should all appear exactly once. The next
+						  video is an example where the agent solves a diagonal sudoku.<br/><br/></p>
+
+						  <div style='text-align: center;'>
+						  	<video controls class='sudoku-vid'>
+						  	  	<source src='./img/Sudoku.mp4' type='video/mp4'>
+						  	</video>
+						  </div><br/><br/><p>
+						  """,
 						  "https://github.com/betogaona7/AI-projects/tree/master/AIND-Sudoku")
 
 AI_project2 = media.Project("The Isolation Game",
@@ -190,43 +222,6 @@ AI_project2 = media.Project("The Isolation Game",
 						  </div><br/><br/><p>
 						  """,
 						  "https://github.com/betogaona7/AI-projects/tree/master/AIND-Isolation")
-
-"""
-
-Game playing has long been one of the cornerstones of AI advancements. One of the biggest advancements in recent AI has been in this 
-field through Googles Go winning AlphaGo AI. Similary, one of the seminal events of the 20th century was seeing IBMs Deep Blue defeat
-Gary Kasparov, a world chess champion in a game of chess.<br/><br/>
-
-In this project I designed and implemented a game-playing agent to play a game using adversarial search. The agent play Isolation. A 
-two-player game in which the players alternate turns moving a single piece from one cell to another on the board. Whenever either player
-occupies a cell, that cell becomes blocked for the remainder of the game. The first player with no remaining legal moves loses, and the
-opponent is declared winner. Each player is restricted to L-shaped movements (like a knight in chess) on a 7 by 7 board, however, the 
-player can jump blocked or occupied spaces (just like knight in chess).<br/><br/>
-
-The goal was to program a player that beats its opponent consistently at this game. Additionally the agent have a fixed time limit each 
-turn to search for the best move and respond. If the time limit expires during a players turn, that player forfeits the match, and the 
-opponent wins.<br/><br/>
-
-I used three different heuristics to perfom the adversarial search and compare their perfomance:<br/>
-<ul type='disk'>
-<li><p>The basic heuristic - Evaluate how good is the board for the player and how good it is for the opponent, then substract the opponents
-score from the players. This heuristics would penalize our computer player with more potential moves which is counter productive, It 
-continues to take into account boards where the current player can make a larger number of moves and also penalizes boards where the 
-opponet can make a larger number of moves.</p></li>
-<li><p>The lucky heuristic - This heuristic take into account the number of locations that are still available on the board, however this 
-number do not reflect the goodness of the board but confirm the next statement: Both the number of open spaces and the number of moves
-made are the same for every position for the same depth, thus any heuristic that relies only on these two exactly as effective (minus
-very slight perfomance penalty) as a zero score function.</p></li>
-<li><p>The coward heurisitc - It is called coward because the goal is get as far away from the opponent as possible, here is the otherwise of
-the basic heuristic evaluation function.</p></li></ul><br/><br/><p>
-
-In conclution the best was the baisc heuristic because it obtains a better win rate, it is no computationally complex and it evaluate very well 
-how the current board configuration is for our player.<br/><br/></p>
-
-<div style='text-align: center;'>
-  	<img src='./img/isolation.gif' alt='Isolation gif'>
-</div><br/><br/><p>
-"""
 
 AI_project3 = media.Project("Air Cargo Planner",
 

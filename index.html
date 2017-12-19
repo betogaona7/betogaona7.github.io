@@ -392,7 +392,35 @@ data-toggle="modal" data-target="#trailer">
 
 <div class="col-md-6 col-lg-4 movie-tile text-center size" 
 project-name="The Sudoku Puzzle" 
-technical-description="Technical description not available yet -" 
+technical-description="
+              This project can solve any Sudoku puzzle, also have some extensions. The first extension is an implementation of the naked 
+              twins technique. The second is a modification to solve diagonal sudokus. <br/><br/>
+
+              The naked twins technique is the following. Consider the following puzzle, and look the two highlighted boxes, F3 and I3.<br/><br/></p>
+
+              <div style='text-align: center;'>
+                <img class='sudoku-img' src='./img/naked-twins.png' alt='Naiked twins 1'>
+              </div><br/><br/><p>
+
+              As we can see, both belong to the same column, an both permit the values 2 and 3. Now, we do not know which one has a 2 and 
+              which one has a 3, but we know one thing for sure - the values 2 and 3 are locked in those two boxes, so no other box in their
+              same unit (the third column) can contain the values 2 or 3.<br/><br/>
+              Thus, we go over all the boxes in the same unit, and remove the values 2 and 3 from their possible values.<br/><br/></p>
+
+              <div style='text-align: center;'>
+                <img class='sudoku-img' src='./img/naked-twins-2.png' alt='Naiked twins 2'>
+              </div><br/><br/><p>
+
+              As you can see, we've removed the values 2 and 3 from the boxes D3 and E3. This is naked twins techinique. A diagonal sudoku 
+              is like a regular sudoku, except that among the two main diagonals, the number 1 to 9 should all appear exactly once. The next
+              video is an example where the agent solves a diagonal sudoku.<br/><br/></p>
+
+              <div style='text-align: center;'>
+                <video controls class='sudoku-vid'>
+                    <source src='./img/Sudoku.mp4' type='video/mp4'>
+                </video>
+              </div><br/><br/><p>
+              " 
 video-url="" 
 github-url="https://github.com/betogaona7/AI-projects/tree/master/AIND-Sudoku"
 data-toggle="modal" data-target="#trailer">

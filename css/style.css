@@ -73,6 +73,14 @@ p a:hover{
 	height: 350px;
 }
 
+.sudoku-img{
+	height: 350px;
+}
+
+.sudoku-vid{
+	width: 50% !important;
+}
+
 li p{
 	padding-left: 0;
 	text-align: justify;
