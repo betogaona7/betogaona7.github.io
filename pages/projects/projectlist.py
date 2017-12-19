@@ -45,12 +45,30 @@ DL_project2 = media.Project("Image Classification",
 
 						  "https://media.giphy.com/media/PnabT7xYZ3ffG/giphy.gif",
 						  "",
-						  "Technical description not available yet -",
+						  """
+						  Since humans started imagining machines moving around and interacting with the world, we have given them eyes. Look at 
+						  <a target='_blank' rel='noopener' href='https://www.youtube.com/watch?v=ARJ8cAGm6JE'>HAL9000</a> from 2001: A space 
+						  Odyssey. He is just one big eye.<br/><br/>
+
+						  Today, we want automated cars to be able to distinguish between people, and trees, and the road. We are enabling our 
+						  cars to do this using Covolutional Neural Networks (CNNs).<br/><br/>
+
+						  Starting with the work of Yann LeCun in the late 90s, convolutional networks, typically shortened to cognets, gained 
+						  popularity for detecting and recognizing hand written characters and images. In 2012 a huge dataset called ImageNet 
+						  was released with 1,000 labeled categories and over a million training images. Alex Krizhevskys AlexNet, used a deep 
+						  convolutional network trained on GPUs to achieve a 15% error rate on ImageNet, and this is easily beat the second best
+						  attempt that had 26% errors.<br/><br/>
+
+						  In this project I built a Convolutional Neural Network with TensorFlow and it recognize objects and images. Here I used 
+						  the <a target='_blank' rel='noopener' href='https://www.cs.toronto.edu/~kriz/cifar.html'>CIFAR-10 dataset</a> which consists of 
+						  60,000 images of ten different objects. This dataset is commonly used in computer vision research.<br/><br/>
+
+						  The following image is an example of the predictions made by the network.<br/><br/></p>
+						  <div style='text-align: center;'>
+						  	<img src='./img/classifier.png' alt='CNN results'>
+						  </div><br/><br/><p>
+						  """,
 						  "https://github.com/betogaona7/Deep-Learning/tree/master/DLNF-Classification")
-"""
-
-
-"""
 
 DL_project3 = media.Project("TV Scripts Generator",
 
@@ -100,6 +118,9 @@ DL_project4 = media.Project("Machine Translation",
 						  "",
 						  "Technical description not available yet -",
 						  "https://github.com/betogaona7/Deep-Learning/tree/master/DLNF-Translation")
+"""
+
+"""
 
 DL_project5 = media.Project("New Faces Generator",
 
