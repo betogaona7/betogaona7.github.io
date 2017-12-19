@@ -466,7 +466,32 @@ data-toggle="modal" data-target="#trailer">
 
 <div class="col-md-6 col-lg-4 movie-tile text-center size" 
 project-name="Machine Translation" 
-technical-description="Technical description not available yet -" 
+technical-description="
+              Take a peek into the realm of neural network machine translation. In this project I taught a sequence-to-sequence 
+              (seq2seq) model how to translate from one language to another training it on a dataset of English to French sentences.<br/><br/>
+
+              Recurrent Neural Networks (RNNs) are a powerful class of neural networks that deal with sequential data. They are
+              especially suited for language and translation tasks because they can extend to sequences of any length. But more 
+              importantly they share their parameters across different timesteps. So when they do learn a language model, they
+              do it a lot more efficiently than a traditional feedforward network would.<br/><br/>
+
+              The challenge with neural networks is to find the right dataset to feed your model and guide it through the
+              learning process.<br/><br/>
+
+              The seq2seq model can do amazing things. If you have a dataset with questions and answers you can make a Question-Answering model,
+              or if you have a dataset with new articles and their summaries you can make a summarization bot, or like in this project,
+              if you have a dataset with english phrases and french phrases you can make an English to French translator.<br/><br/></p>
+
+              <div style='text-align: center;'>
+                <img src='./img/traductor-example.png' alt='English to French sentence'>
+              </div><br/><br/><p>
+
+              Since the dataset I used only has a vocabulary of 227 English words of thousands that you use, you are going to see good results
+              using these words. If you want to create a better translation model, you will need better data. You can train on the
+              <a target='_blank' rel='noopener' href='http://www.statmt.org/wmt10/'>WMT10 French-English courpus dataset</a>. 
+              This dataset has more vocabulary and richer in topics discussed, however, this will take 
+              you days to train, so make sure you have a GPU and the neural network is perfoming well on this dataset. <br/><br/>
+              " 
 video-url="" 
 github-url="https://github.com/betogaona7/Deep-Learning/tree/master/DLNF-Translation"
 data-toggle="modal" data-target="#trailer">
