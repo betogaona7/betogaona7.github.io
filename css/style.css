@@ -118,7 +118,8 @@ button::-moz-focus-inner {
 #trailer .modal-dialog { /* Pop up size  */ 
     margin-top: 200px;
     margin-bottom: 200px;
-    width: 940px;
+    width: 70%;
+
 }
 
 .hanging-close { /* The close button */ 
@@ -348,7 +349,7 @@ div video{ /* Video in technical descriptions */
 	#trailer .modal-dialog { 
     	margin-top: 50px;
     	margin-bottom: 50px;
-    	width: 300px;
+    	width: 94%;
 	}
 
 	p{
@@ -474,7 +475,7 @@ div video{ /* Video in technical descriptions */
 	#trailer .modal-dialog { 
     	margin-top: 50px;
     	margin-bottom: 50px;
-    	width: 355px;
+    	width: 94%;
 	}
 
 	p{
@@ -605,7 +606,7 @@ div video{ /* Video in technical descriptions */
 	#trailer .modal-dialog { 
     	margin-top: 50px;
     	margin-bottom: 50px;
-    	width: 404px;
+    	width: 95%;
 	}
 
 	p{
@@ -771,4 +772,8 @@ div video{ /* Video in technical descriptions */
 	.sudoku-vid{
 		width: 60% !important;
 	}
+}
+
+@media (min-width: 1024px) {
+
 }
