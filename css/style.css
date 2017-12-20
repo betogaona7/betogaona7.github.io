@@ -539,3 +539,134 @@ div video{ /* Video in technical descriptions */
 		height: auto;
 	}
 }
+
+/** *************************************************************************************************** **/
+@media (min-width: 425px) and (max-width:767px) {
+	/* Landing page */
+	h1{
+		font-size: 54px;
+	}
+
+	h2{
+		font-size: 19px;
+		line-height: 1.2;
+		padding-bottom: 0px;
+	}
+
+	button{
+		width: 55%;
+		font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
+		margin-top: 26px;
+	}
+
+	.footer{
+		border-top: 1px solid #676767;
+	}
+
+	.footer-links li{
+		margin-right: 17px;
+	}
+
+	.footer-links a{
+		font-size: 14px;
+	}
+
+	.footer-copy{
+		font-size: 0.92em;
+	}
+
+	.animation{
+		height: 260px; 
+		width: 100%;"
+	}
+
+	/* Projects page */
+	h3{
+		font-size: 20px;
+	}
+
+	h4{
+		font-size: 13px;
+	}
+
+	h5{
+		font-size: 15px;
+	}
+
+	.size{
+		height: auto;
+	}
+
+	.project-img{
+		width:370px;
+		height:250px;
+	}
+
+	#trailer .modal-dialog { 
+    	margin-top: 50px;
+    	margin-bottom: 50px;
+    	width: 404px;
+	}
+
+	p{
+		font-size: 13px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	p a{ 
+		font-size: 13px;
+	}
+
+	.popuplink{ 
+		font-size: 15px;
+	}
+
+	/* Especial cases  */ 
+	.project-popup-title{
+		line-height: 1;
+		margin-top: 20px;
+	}
+
+	.bikeshare-img{
+		width: 390px;
+		height: auto;
+	}
+
+	.planner-img{
+		width: 380px;
+		height: auto;
+	}
+
+	.planner{
+		height: 160px;
+	}
+
+	.scripts-img{
+		width: 390px;
+		height: auto;
+	}
+
+	.isolation-img{ 
+		width: 340px;
+		height: auto;
+	}
+
+	.sudoku-img{
+		height: 270px;
+	}
+
+	.sudoku-vid{
+		width: 90% !important;
+	}
+
+	.classification-img{
+		width: 350px;
+		height: auto;
+	}	
+
+	.translation-img{
+		width: 380px;
+		height: auto;
+	}
+}
