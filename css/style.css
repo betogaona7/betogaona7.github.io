@@ -774,6 +774,7 @@ div video{ /* Video in technical descriptions */
 	}
 }
 
+/** *************************************************************************************************** **/
 @media (min-width: 1024px) {
-
+	/* Is the same as the default style */
 }
