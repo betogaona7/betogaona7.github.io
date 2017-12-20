@@ -30,7 +30,7 @@ DL_project1 = media.Project("Bike Share",
 						  In the following graph we can compare our predictions with the actual data:
 						  <br/><br/>
 						  <div style='text-align: center;'>
-						  	<img src='./img/bikeshare-graph.png' alt='Bike share results'>
+						  	<img src='./img/bikeshare-graph.png' alt='Bike share results' class='bikeshare-img'>
 						  </div><br/><br/>
 						  """,
 						  "https://github.com/betogaona7/Deep-Learning/tree/master/DLNF-BikeShare")
@@ -65,7 +65,7 @@ DL_project2 = media.Project("Image Classification",
 
 						  The following image is an example of the predictions made by the network.<br/><br/></p>
 						  <div style='text-align: center;'>
-						  	<img src='./img/classifier.png' alt='CNN results'>
+						  	<img src='./img/classifier.png' alt='CNN results' class='classification-img'>
 						  </div><br/><br/><p>
 						  """,
 						  "https://github.com/betogaona7/Deep-Learning/tree/master/DLNF-Classification")
@@ -77,14 +77,14 @@ DL_project3 = media.Project("TV Scripts Generator",
 						  "try to use a computer that writes it for you. This project generates an original piece of writing after being "  \
 						  "trained using your existing scripts, therefore, the new piece will conserve your own writing style.",
 
-						  "http://media3.giphy.com/media/kEKcOWl8RMLde/giphy.gif",
+						  "https://media3.giphy.com/media/kEKcOWl8RMLde/giphy.gif",
 						  "",
 						  """
 						  This project generates Simpsons TV scripts. Specifically for a scene in the Moes tavern, using a Recurrent Neural Network (RNN) 
 						  that was trained with a subset of the <a target='_blank' rel='noopener' href='https://www.kaggle.com/wcukierski/the-simpsons-by-the-data'>
 						  Simpsons dataset </a> of scripts from 27 seasons. For example: <br/><br/></p>
 						  <div style='text-align: center;'>
-						  	<img src='./img/scripts-script.png' alt='Simpson script'>
+						  	<img src='./img/scripts-script.png' alt='Simpson script' class='scripts-img'>
 						  </div><br/><br/><p>
 						  It is okey if the TV script does not make much sense. The network was trained on less than a megabyte of text. In order to improve
 						  results we need to use a smaller voacabulary or get more data. Luckly there is more data! As mentioned in the beginning, this is 
@@ -133,7 +133,7 @@ DL_project4 = media.Project("Machine Translation",
 						  if you have a dataset with english phrases and french phrases you can make an English to French translator.<br/><br/></p>
 
 						  <div style='text-align: center;'>
-						  	<img src='./img/traductor-example.png' alt='English to French sentence'>
+						  	<img src='./img/traductor-example.png' alt='English to French sentence' class='translation-img'>
 						  </div><br/><br/><p>
 
 						  Since the dataset I used only has a vocabulary of 227 English words of thousands that you use, you are going to see good results
@@ -261,7 +261,7 @@ AI_project2 = media.Project("The Isolation Game",
 						  how the current board configuration is for our player.<br/><br/></p>
 
 						  <div style='text-align: center;'>
-						    <img src='./img/isolation.gif' alt='Isolation gif'>
+						    <img src='./img/isolation.gif' alt='Isolation gif' class='isolation-img'>
 						  </div><br/><br/><p>
 						  """,
 						  "https://github.com/betogaona7/AI-projects/tree/master/AIND-Isolation")
@@ -280,7 +280,7 @@ AI_project3 = media.Project("Air Cargo Planner",
 						  the next problem:</br></br></p>
 
 						  <div style='text-align: center;'>
-						  	<img src='./img/planner-problem.png' alt='Planner problem'>
+						  	<img src='./img/planner-problem.png' alt='Planner problem' class='planner-img'>
 						  </div><br/><br/><p>
 
 						  Then setup the problems for search of two types: Non-heuristic searches and Heuristic searches. The non-heuristic
@@ -316,7 +316,7 @@ AI_project4 = media.Project("Sign Language Recognizer",
 						  """
 						  The overall goal of this project was to built a word recognizer for American Sign Language video sequences, demonstrating
 						  the power of probabilistic models. In particular, this project employs Hidden Marcov Models (HMMs)  that use a preprocessed
-						  <a target='_blank' rel='noopener' href='http://www-i6.informatik.rwth-aachen.de/%7Edreuw/database-rwth-boston-104.php'>dataset</a> 
+						  <a target='_blank' rel='noopener' href='https://www-i6.informatik.rwth-aachen.de/%7Edreuw/database-rwth-boston-104.php'>dataset</a> 
 						  of tracked hand and nose positions extracted from video to identify individual words from test sequences.<br/><br/>
 
 						  The next video is an example of how the hand locations are tracked:<br/><br/></p>
