@@ -1,5 +1,6 @@
 body {
-  background: #008CBA;
+  /*background: #cero08CBA;*/
+  background: #FFF;
 }
 
 .ripple-wrap {
@@ -21,7 +22,7 @@ body {
     border-width: 1500px;
     margin-top: -1500px;
     margin-left:-1500px; 
-    border-color: #008CBA;
+    border-color: #FFF;
   }
   
   41% { 
@@ -30,7 +31,7 @@ body {
     border-width: 1500px;
     margin-top: -1500px;
     margin-left:-1500px; 
-    border-color: #008CBA;
+    border-color: #FFF;
   }
   100% {
     border-width: 1500px;
@@ -38,7 +39,7 @@ body {
     width: 2000px;
     margin-top: -2500px;
     margin-left:-2500px;
-    border-color: #008CBA;
+    border-color: #FFF;
   }
 }
 @keyframes RIPPLER {
@@ -51,7 +52,7 @@ body {
     border-width: 1500px;
     margin-top: -1500px;
     margin-left:-1500px; 
-    border-color: #008CBA;
+    border-color: #FFF;
   }
   41% { 
     height: 0;
@@ -59,7 +60,7 @@ body {
     border-width: 1500px;
     margin-top: -1500px;
     margin-left:-1500px; 
-    border-color: #008CBA;
+    border-color: #FFF;
   }
   100% {
     border-width: 1500px;
@@ -67,7 +68,7 @@ body {
     width: 2000px;
     margin-top: -2500px;
     margin-left:-2500px;
-    border-color: #008CBA;
+    border-color: #FFF;
   }
 }
 
