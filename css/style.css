@@ -338,6 +338,7 @@ div video{ /* Video in technical descriptions */
 		transform: rotate(90deg);
 		object-fit: cover;
 		transform: translateX(-50%) translateY(-50%);
+		background-image: url("./../img/video.gif");
 	}
 
 	/* Landing page */
@@ -479,6 +480,7 @@ div video{ /* Video in technical descriptions */
 		transform: rotate(90deg);
 		object-fit: cover;
 		transform: translateX(-50%) translateY(-50%);
+		background-image: url("./../img/video.gif");
 	}
 
 	h1{
@@ -618,6 +620,7 @@ div video{ /* Video in technical descriptions */
 		transform: rotate(90deg);
 		object-fit: cover;
 		transform: translateX(-50%) translateY(-50%);
+		background-image: url("./../img/video.gif");
 	}
 
 	h1{
@@ -762,6 +765,7 @@ div video{ /* Video in technical descriptions */
 		transform: rotate(270deg);
 		object-fit: cover;
 		transform: translateX(-50%) translateY(-50%);
+		background-image: url("./../img/video.gif");
 	}
 
 	h1{
