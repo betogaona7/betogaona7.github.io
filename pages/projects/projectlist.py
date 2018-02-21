@@ -6,7 +6,7 @@ DL_project1 = media.Project("Bike Share",
 	"you have too few you're losing money from potential riders or vice versa if you have too many you're wasting money on "\
 	"bikes that are just sitting around. This project predicts the number of bike-share users on a given day from historical "\
 	"data, so you can know how many bikes you will need in the near future.",
-	"https://media.giphy.com/media/r5ULIvOOtdIWs/giphy.gif",
+	"https://media.giphy.com/media/l0HUiSjiHbUO24oGQ/giphy.gif",
 	"",
 	"""
 	Bike sharing systems are a new generation of traditional bike rentals where the whole process of membership, rental and 
@@ -36,7 +36,7 @@ DL_project2 = media.Project("Image Classification",
 	"to the machines, from that, amazing applications have been created. For example, a company called Orbital Insigths	analyze "\
 	"satellite imagery to count cars and oil tank levels automatically to predict such things as mall sales and oil production. "\
 	"In this project, I developed a program capable of recognizing and classify ten different types of images.",
-	"https://media.giphy.com/media/PnabT7xYZ3ffG/giphy.gif",
+	"https://media.giphy.com/media/l0HU1QXrScjR6PUdi/giphy.gif",
 	"",
 	"""
 	Since humans started imagining machines moving around and interacting with the world, we have given them eyes. Look at
@@ -68,7 +68,7 @@ DL_project3 = media.Project("TV Scripts Generator",
 	"putting words on the page, but if for some reason you don't feel good, you're sick or you just feel stuck, try to use "\
 	"a computer that writes it for you. This project generates an original piece of writing after being trained using your "\
 	"existing scripts, therefore, the new piece will conserve your own writing style.",
-	"https://media3.giphy.com/media/kEKcOWl8RMLde/giphy.gif",
+	"https://media.giphy.com/media/l0HU7Ik9NfAnoWq9q/giphy.gif",
 	"",
 	"""
 	This project generates Simpsons TV scripts. Specifically for a scene in the Moes tavern, using a Recurrent Neural 
@@ -91,7 +91,7 @@ DL_project4 = media.Project("Machine Translation",
 	"never accomplish great events like traveling to space. We've accomplished a lot in the world where 13 of the most common "\
 	"languages are natively spoken by less than 50 percent of the population. What would the world be like if we could all "\
 	"work together without a language barrier?. This project is an English to French translator.",
-	"https://media.giphy.com/media/tu54GM19sqJOw/giphy.gif",
+	"https://media.giphy.com/media/l0HU3pdWVTEz8qPCM/giphy.gif",
 	"",
 	"""
 	Take a peek into the realm of neural network machine translation. In this project, I taught a sequence-to-sequence 
@@ -127,7 +127,7 @@ DL_project5 = media.Project("New Faces Generator",
 	"Imagine you work for a movie production company, and your job is to design the characters in a movie. You would usually "\
 	"draw a bunch of different concepts before arriving at the final design. What if you had a program that could do this for "\
 	"you?. This project generates new faces using celebrity images.",
-	"https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
+	"https://media.giphy.com/media/l49JYD8R8W6RtOUBa/giphy.gif",
 	"",
 	"""
 	This is a Generative Adversarial Network (GAN) that use the 
@@ -163,7 +163,7 @@ AI_project1 = media.Project("The Sudoku Puzzle",
 	"newspapers, etc. The goal is to fill a 9x9 grid with digits so that each column, each row, and each of the nine 3x3 "\
 	"subgrids that compose the grid contains all of the digits from 1 to 9. Have you ever been stuck trying to solve one?. "\
 	"This project is a play-game agent for solve diagonal sudoku puzzles.",
-	"https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
+	"https://media.giphy.com/media/3o751YzOR1rXv8FVTO/giphy.gif",
 	"",
 	"""
 	This project can solve any Sudoku puzzle, also have some extensions. The first extension is an implementation of the 
@@ -202,7 +202,7 @@ AI_project2 = media.Project("The Isolation Game",
 	"board. Whenever either player occupies a cell, the cell becomes blocked for the remainder of the game. The first player "\
 	"with no remaining legal moves loses, and the opponent is declared the winner. In this version, each player is restricted "\
 	"to L-shaped movements on a 7x7 board. This project is a game-playing agent to win the isolation game.",
-	"https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
+	"https://media.giphy.com/media/3o752fb9nnFM3P7JOo/giphy.gif",
 	"",
 	"""
 	Game playing has long been one of the cornerstones of AI advancements. One of the biggest advancements in recent AI has 
@@ -253,7 +253,7 @@ AI_project3 = media.Project("Air Cargo Planner",
 	"Have you asked yourself how companies like DHL schedule all their shipments?, This project solves a group of problems "\
 	"for an Air Cargo transport system using a planning search agent, in which we see how an agent take advantage of the "\
 	"structure of a problem to construct a complex plan of action.",
-	"https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
+	"https://media.giphy.com/media/l0HUo260gjOsknsY0/giphy.gif",
 	"",
 	"""
 	In this project, I defined a group of problems in classical PDDL (Planning Domain Definition Language) that use a 
@@ -293,7 +293,7 @@ AI_project4 = media.Project("Sign Language Recognizer",
 	"According to the World Health Organization (WHO) 360 millon people worldwide have disabling hearing loss of which 70 "\
 	"million people use sign language as their first language. Now, how many interpreters are there? much less than half. "\
 	"In this project, I built a system that can recognize words communicated using the American Sign Language (ASL).",
-	"https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
+	"https://media.giphy.com/media/xULW8BRAEkxshqm02Q/giphy.gif",
 	"",
 	"""
 	The overall goal of this project was to build a word recognizer for American Sign Language video sequences, demonstrating
@@ -322,7 +322,7 @@ OWN_project1 = media.Project("Mariya",
 	"Taking advantage of technology and all available resources, we intend to put an end to the communication barrier between "\
 	"the Wixarica (Huicholes) community and the rest of the world, seeking to rescue their stories and knowledge which "\
 	"they consider sacred. Mariya is a translation device that seeks to save a Mexican culture.",
-	"https://media.giphy.com/media/TGHMbONT5eGgU/giphy.gif",
+	"https://media.giphy.com/media/l0HU366rPnEgaLL2w/giphy.gif",
 	"https://player.vimeo.com/video/195152250",
 	"""
 	</p><div style='text-align: center;'>
