@@ -35,7 +35,7 @@ body{
 
 /* GIF space: height: 300px; width: 1366 #008CBA */
 .animation{
-	height: 300px; 
+	height: 350px; 
 	width: 100%;
 }
 
@@ -48,7 +48,7 @@ h1{ /* Name */
 	font-size: 72px;
 	font-weight: 400;
 	text-align: center;
-	margin-bottom: -18px;
+	/* margin-bottom: -18px; */
 	margin-top: 0;
 	padding-top: 0;
 }
@@ -60,7 +60,16 @@ h2{ /* Degree */
 	line-height: 0.5;
 	text-align: right;
 	text-align: center;
-	padding-bottom: 24px;
+	/* padding-bottom: 24px; */
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -9999;
 }
 
 button{ /* See projects button */
@@ -78,7 +87,7 @@ button{ /* See projects button */
 	font: 20px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
 	display: block;
 	margin: 0 auto;
-	margin-bottom: 40px; 
+	/* margin-bottom: 40px;  */
 	/*font-weight: bold;*/
 	font-weight: 595;
 	cursor: pointer;
