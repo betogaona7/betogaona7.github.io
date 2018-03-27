@@ -10,7 +10,11 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/transition.js"></script> 
-  <script src="//cdn.rawgit.com/mrdoob/three.js/master/build/three.min.js"></script>
+
+  <!-- ultraviolet --> 
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.min.js'></script>
+  <script type="text/javascript" src="js/ultraviolet.js"></script>
 
 	<!-- For the project section -->
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
@@ -25,17 +29,18 @@
 
 </head>
 <body>
+  <canvas id="canvas"></canvas>
 	<!-- ********************************************* Landing page ********************************************* -->
-	<div class="wrap" id="content-area">
+	 <div class="wrap" id="content-area"> 
 
-      <!--<video poster="./img/video.gif" id="bgvid" class="video-back" playsinline autoplay muted loop>
+      <video poster="./img/video.gif" id="bgvid" class="video-back" style='z-index: -1998;'playsinline autoplay muted loop>
         <source src="./img/video.webm" type="video/webm">
         <source src="./img/video.mp4" type="video/mp4">
-      </video> -->
+      </video> 
 
     	<div class="animation">
         <!-- <img src="./img/testwild.png" class="animation-img"> -->
-      </div>
+     </div>
 
     	<h1>Alberto Gaona</h1>
     	<h2>Computer Systems Engineer & Artificial Intelligence Engineer</h2>
@@ -59,239 +64,11 @@
     	</footer>
 	</div>
 
-<div class="ripple-wrap"><div class="ripple"></div>
-<script>
-// cleaning console
+<canvas id="canvas"></canvas>
+<div class="ripple-wrap"><div class="ripple"></div> 
 
-console.clear();
-
-    var renderer, scene, camera, distance, raycaster, projector;
-    var container = document.getElementById('container');
-    var distance = 400;
-
-    var raycaster = new THREE.Raycaster(),INTERSECTED;
-    var mouse = new THREE.Vector2();
-
-function init() {
-    renderer = new THREE.WebGLRenderer({antialias: true});
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setClearColor(0x140b33, 1);
-    
-    //container.appendChild(renderer.domElement);
-    document.body.appendChild( renderer.domElement );
+  
 
 
-    scene = new THREE.Scene();
-    camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 0.2, 25000);
-    camera.position.set(100, 100, 2000);
-    scene.add(camera);
-
-
-    light = new THREE.PointLight(0xffffff, 1, 4000);
-    light.position.set(50, 0, 0);
-    light_two = new THREE.PointLight(0xffffff, 1, 4000);
-    light_two.position.set(-100, 800, 800);
-    lightAmbient = new THREE.AmbientLight(0x404040);
-    scene.add(light, light_two, lightAmbient);
-
-
-    createSpheres();
-    createDiamond();
-    createSpace();
-
-    renderer.render(scene, camera);
-
-    window.addEventListener('resize', onWindowResize, false);
-    document.addEventListener('mousemove', onMouseMove, false);
-    document.addEventListener('mousedown', onDocumentMouseDown, false);
-};
-
-
-
-function onWindowResize() {
-    camera.aspect = window.innerWidth / window.innerHeight;
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    camera.updateProjectionMatrix();
-};
-
-function onMouseMove(event) {
-    mouseX = event.clientX - window.innerWidth / 2;
-    mouseY = event.clientY - window.innerHeight / 2;
-    camera.position.x += (mouseX - camera.position.x) * 0.005;
-    camera.position.y += (mouseY - camera.position.y) * 0.005;
-
-    mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-    mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
-    //set up camera position
-    camera.lookAt(scene.position);
-};
-
-function onDocumentMouseDown(event) {
-
-    event.preventDefault();
-    mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-    mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
-
-    raycaster.setFromCamera(mouse, camera);
-
-    var intersects = raycaster.intersectObjects(diamondsGroup.children);
-    if (intersects.length > 0) {
-    //get a link from the userData object
-        window.open(intersects[0].object.userData.URL);
-    }
-
-};
-
-function animate() {
-    requestAnimationFrame(animate);
-    render();
-};
-
-function render() {
-  //original example from here https://github.com/mrdoob/three.js/blob/master/examples/webgl_lights_pointlights.html
-    var timer = 0.00001 * Date.now();
-
-  //come up with random animation
-    for (var i = 0, l = diamondsGroup.children.length; i < l; i++) {
-        var object = diamondsGroup.children[i];
-        object.position.y = 500 * Math.cos(timer + i);
-        object.rotation.y += Math.PI / 500;
-    }
-
-    for (var i = 0, l = spheres.children.length; i < l; i++) {
-        var object = spheres.children[i];
-        object.rotation.y += Math.PI / 60;
-        if (i < 20) {
-            object.rotation.y -= Math.PI / 40;
-        }
-    }
-
-    //update raycaster with mouse movement  
-    raycaster.setFromCamera(mouse, camera);
-
-    // calculate objects intersecting the picking ray
-    var intersects = raycaster.intersectObjects(diamondsGroup.children);
-
-  //count and look after all objects in the diamonds group
-    if (intersects.length > 0) {
-        if (INTERSECTED != intersects[0].object) {
-            if (INTERSECTED) INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
-            INTERSECTED = intersects[0].object;
-            INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
-            //setting up new material on hover
-            INTERSECTED.material.emissive.setHex(Math.random() * 0xff00000 - 0xff00000);
-        }
-    } else {
-        if (INTERSECTED) INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
-        INTERSECTED = null;
-    }
-//add in the render
-    renderer.render(scene, camera);
-};
-
-
-function createSpheres() {
-spheres = new THREE.Object3D();
-    for (var i = 0; i < 80; i++) {
-        var sphere = new THREE.SphereGeometry(4, Math.random() * 12, Math.random() * 12);
-        var material = new THREE.MeshPhongMaterial({
-            color: Math.random() * 0xff00000 - 0xff00000,
-            shading: THREE.FlatShading,
-        })
-
-        var particule = new THREE.Mesh(sphere, material);
-        particule.position.x = Math.random() * distance * 10;
-        particule.position.y = Math.random() * -distance * 6;
-        particule.position.z = Math.random() * distance * 4;
-        particule.rotation.y = Math.random() * 2 * Math.PI;
-        particule.scale.x = particule.scale.y = particule.scale.z = Math.random() * 12 + 5;
-        spheres.add(particule);
-    }
-
-    spheres.position.y = 500;
-    spheres.position.x = -2000;
-    spheres.position.z = -100;
-    spheres.rotation.y = Math.PI * 600;
-    scene.add(spheres);
-};
-
-function createDiamond() {
-    diamondsGroup = new THREE.Object3D();
-
-     var arr = ['http://topotopo.io/',
-                  'https://panic.com/transmit/',
-                  'http://www.larsberg.net/',
-                  'http://www.robertadicamerino.com/',
-                  'https://tonite.dance/',
-                  'https://moments.epic.net/',
-                  'http://www.welcometofillory.com/map',
-                  'http://www.veilhymn.com/',
-                  'http://swissarmyman.com/',
-                  'https://aframe.io/',
-                  'http://www.dennis.video/',
-                  'http://a-way-to-go.com/',
-                  'http://www.simonreeves.com/projects/db5/'
-                 ];
-
-    var loader = new THREE.JSONLoader();
-loader.load('https://raw.githubusercontent.com/PavelLaptev/test-rep/master/threejs-post/diamond.json', function(geometry) {
-        for (var i = 0; i < 60; i++) {
-            var material = new THREE.MeshPhongMaterial({
-                color: Math.random() * 0xff00000 - 0xff00000,
-                shading: THREE.FlatShading
-            });
-            var diamond = new THREE.Mesh(geometry, material);
-            diamond.position.x = Math.random() * -distance * 6;
-            diamond.position.y = Math.random() * -distance * 2;
-            diamond.position.z = Math.random() * distance * 3;
-            diamond.rotation.y = Math.random() * 2 * Math.PI;
-            diamond.scale.x = diamond.scale.y = diamond.scale.z = Math.random() * 50 + 10;
-            diamond.userData = {
-                URL: arr[Math.floor(Math.random() * arr.length)]
-            };
-            diamondsGroup.add(diamond);
-        }
-
-        diamondsGroup.position.x = 1400;
-        scene.add(diamondsGroup);
-    
-          renderer.render(scene, camera);
-    });
-};
-
-function createSpace() {
-
-    dots = new THREE.Object3D();
-
-    for (var i = 0; i < 420; i++) {
-        var circleGeometry = new THREE.SphereGeometry(2, Math.random() * 5, Math.random() * 5);
-        var material = new THREE.MeshBasicMaterial({
-            color: Math.random() * 0xff00000 - 0xff00000,
-            shading: THREE.FlatShading,
-        })
-        var circle = new THREE.Mesh(circleGeometry, material);
-        material.side = THREE.DoubleSide;
-
-        circle.position.x = Math.random() * -distance * 60;
-        circle.position.y = Math.random() * -distance * 6;
-        circle.position.z = Math.random() * distance * 3;
-        circle.rotation.y = Math.random() * 2 * Math.PI;
-        circle.scale.x = circle.scale.y = circle.scale.z = Math.random() * 6 + 5;
-        dots.add(circle);
-    }
-
-    dots.position.x = 7000;
-    dots.position.y = 900;
-    dots.position.z = -2000;
-    dots.rotation.y = Math.PI * 600;
-    dots.rotation.z = Math.PI * 500;
-
-    scene.add(dots);
-};
-
-init();
-animate();
-
-</script>
 </body>
 </html> 

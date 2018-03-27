@@ -28,7 +28,7 @@ body{
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
- 	background-color: black;
+ 	background-color: transparent;
   	background-size: cover;
   	transition: 1s opacity;
 }
@@ -103,6 +103,61 @@ button::-moz-focus-inner {
   	border: 0;
 }
 
+
+/*
+Ultraviolet
+*/ 
+
+* {
+	margin: 0; 
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	font: 16px/1.4 'Lato', sans-serif;
+	color: #fefeff;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+body {
+	/*background: rgb(8,5,16);*/
+	background-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#canvas {
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	cursor: none;
+	z-index: -999;
+}
+#stats { 
+	position: absolute; 
+	z-index: 10; 
+	left: 10px; 
+	top: 10px; 
+}
+.dg.ac {
+	z-index: 100 !important;
+}
+
+/* 
+ultraviolet
+*/
 .footer{
 	/*color: #f3f3f3;*/
 	color: #FFF;
