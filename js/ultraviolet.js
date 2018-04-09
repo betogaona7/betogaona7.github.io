@@ -20,7 +20,7 @@ http://deepelmdigital.com/album/save-your-heart
 	settings.debug = false;
 	settings.friction = 0.5;
 	settings.trails = 20;
-	settings.size = 50;
+	settings.size = 75;
 	settings.dampening = 0.25;
 	settings.tension = 0.98;
 	
@@ -174,6 +174,10 @@ http://deepelmdigital.com/album/save-your-heart
 	
 		ctx.globalCompositeOperation = 'source-over';
 		ctx.fillStyle = 'rgba(8,5,16,0.4)';
+		// ctx.fillStyle = 'rgba(a1,c4,fd,0.4)';
+		// #13547a #434343 #09203f #29323c 
+		//ctx.fillStyle = 'linear-gradient(to right, #434343 , #000000)';
+		//ctx.fillStyle = '#434343';
 		ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 		ctx.globalCompositeOperation = 'lighter';
 		ctx.strokeStyle = 'hsla(' + Math.round(hue.update()) + ',90%,50%,0.25)';
@@ -277,15 +281,15 @@ http://deepelmdigital.com/album/save-your-heart
 			});
 		}, 2000);
 		
-		/*
-		var gui = new dat.GUI();			
+		
+		/*var gui = new dat.GUI();			
 		gui.add(settings, 'trails', 1, 30).onChange(reset);
 		gui.add(settings, 'size', 25, 75).onFinishChange(reset);
 		gui.add(settings, 'friction', 0.45, 0.55).onFinishChange(reset)
 		gui.add(settings, 'dampening', 0.01, 0.4).onFinishChange(reset);
 		gui.add(settings, 'tension', 0.95, 0.999).onFinishChange(reset);			
-		document.body.appendChild(ctx.stats.domElement);
-		*/
+		document.body.appendChild(ctx.stats.domElement);*/
+		
 	};
 
 })(window);

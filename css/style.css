@@ -2,10 +2,12 @@
 @import '../fonts/fonts.min.css';
 @import '../fonts/spartan/stylesheet.css';
 
+/*@import url('https://fonts.googleapis.com/css?family=Cinzel');*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body{
 	/*color: #676767;*/
-	color: #FFF;
+	color: #fdfbfb;
 	/*background-color: #FFF;*/
 	padding: 0;
 	margin: 0;
@@ -16,21 +18,7 @@ body{
     -o-background-size: cover;
     background-size: cover;
     /*z-index: 1000;*/
-}
-
-.video-back { 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
- 	background-color: transparent;
-  	background-size: cover;
-  	transition: 1s opacity;
+    cursor: none;
 }
 
 /* GIF space: height: 300px; width: 1366 #008CBA */
@@ -45,7 +33,9 @@ body{
 
 h1{ /* Name */
 	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
-	font-size: 72px;
+	/*font-family: 'Cinzel', serif;*/
+	font-family: 'Montserrat', sans-serif;
+	font-size: 60px;
 	font-weight: 400;
 	text-align: center;
 	/* margin-bottom: -18px; */
@@ -54,23 +44,14 @@ h1{ /* Name */
 }
 
 h2{ /* Degree */
-	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
-	font-size: 23px;
-	font-weight: 500;
+	font: 16px/1.9 "Proxima Nova",Helvetica,Arial,sans-serif;
+	font-size: 18px;
 	line-height: 0.5;
 	text-align: right;
 	text-align: center;
 	/* padding-bottom: 24px; */
 }
 
-canvas {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -9999;
-}
 
 button{ /* See projects button */
 	width: 20%;
@@ -84,7 +65,7 @@ button{ /* See projects button */
 	color:#008CBA;
 
 	text-align: center;	
-	font: 20px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
+	font: 17px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
 	display: block;
 	margin: 0 auto;
 	/* margin-bottom: 40px;  */
@@ -126,7 +107,7 @@ html, body {
 	font-smoothing: antialiased;
 }
 body {
-	/*background: rgb(8,5,16);*/
+	background: rgb(8,5,16);
 	background-color: transparent;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -160,7 +141,7 @@ ultraviolet
 */
 .footer{
 	/*color: #f3f3f3;*/
-	color: #FFF;
+	color: #fdfbfb;
 	width: 100%;
 	padding: 0.3% 0;
 	display: block;
@@ -197,751 +178,19 @@ ultraviolet
 	transition: color .3s ease;
 	text-decoration: none;
 	background-color: transparent;
-	font-size: 18px;
+	font-size: 20px;
 	/*color: #676767;*/
-	color: #FFF;
+	color: #fdfbfb;
 }
 
 .footer-copy{ /* Contact and page year */
 	width: 100%;
 	text-align: center;
-	font-size: 1em;
+	/*font-size: 1em;*/
+	font-size: 13px;
 	/*color: #676767;*/
-	color: #FFF;
+	color: #fdfbfb;
 	font-family: "Proxima Nova",Helvetica,Arial,sans-serif;
 	margin-bottom: -20px;
 }
 /* Until here are those rules for the landing page  */
-
-#trailer .modal-dialog { /* Pop up size  */ 
-    margin-top: 200px;
-    margin-bottom: 200px;
-    width: 70%;
-
-}
-
-.hanging-close { /* The close button */ 
-	position: absolute;
-	top: -12px;
-	right: -12px;
-	z-index: 9001;
-}
-
-.movie-tile { /* Shadow when the mouse is on the project */
-	margin-bottom: 10px;
-	padding-top: 10px;
-	padding-left: 0px;
-	padding-right: 0px;
-}
-
-.movie-tile:hover { /* Pointer when mouse is on the project */
-	background-color: #EEE;
-    cursor: pointer;
-}
-
-.scale-media { /* Pop up when project is selected */
-    padding-bottom: 5%;
-    position: relative;
-    background-color: white;
-    color: #676767;
-}
-
-a{
-	text-decoration: none;
-	color: #008CBA;
-}
-
-a:focus {
-	outline:0px;
-}
-
-.link{ 
-	/* Class to identify */
-}
-
-.cleanlink{ /* Clean the name on the projects page */ 
-	text-decoration: none;
-	color: #676767;;
-}
-
-.cleanlink:hover{
-	text-decoration: none;
-	color: #676767;
-}
-
-.popuplink{ /* Fork in GitHub */
-	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
-	font-size: 20px;
-	color:#008CBA;
-	text-align: center;
-	position: relative;
-	float: left;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-weight: bold;
-	text-decoration: none;
-}
-
-.popuplink:hover{
-	text-decoration: none;
-}
-
-p a:hover{
-	text-decoration: none;
-}
-
-.size{ /* Project size */ 
-	height: 550px;
-}
-
-.project-img{ /* Project GIF */
-	width:370px;
-	height:250px;
-}
-
-h3{ /* Project name */ 
-	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
-	font-size: 17px;
-	font-weight: bold;
-	color:#676767;
-}
-
-h4{ /* Project in-line description */ 
-	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
-	font-size: 12px;
-	margin-left: 10px;
-	margin-right: 10px;
-	color: #676767;
-}
-
-h5{ /* Read more about the project */ 
-	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
-	font-size: 15px;
-	color: #008CBA;
-	padding-right: 50px;
-	padding-left: 50px;
-}
-
-p{ /* Technical description of the project */
-	padding-left: 35px; 
-	padding-right: 35px;
-	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
-	font-size: 17px;
-	text-align: justify;
-}
-
-li p{ /* List in the technical descriptions */ 
-	padding-left: 0;
-	text-align: justify;
-}
-
-p a{ /* Links in the technical descriptions */
-	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
-	font-size: 17px;
-	color:#008CBA;
-	text-decoration: none;
-}
-
-div video{ /* Video in technical descriptions */
-	width: 80% !important;
-	height: auto !important;
-	border: 0;
-}
-
-/* Especial cases  */ 
-.color-nol{
-	color: #676767 !important;
-
-}
-.project-popup-title{
-	/*line-height: 0px;*/
-}
-
-.bikeshare-img{
-	width: auto;
-	height: auto;
-}
-
-.planner-img{
-	width: auto;
-	height: auto;
-}
-
-.planner{
-	height: 350px;
-}
-
-.scripts-img{
-	width: auto;
-	height: auto;
-}
-
-.isolation-img{
-	width: auto;
-	height: auto;
-}
-
-.sudoku-img{
-	height: 350px;
-}
-
-.sudoku-vid{
-	width: 50% !important;
-}
-
-.classification-img{
-	width: auto;
-	height: auto;
-}
-
-.translation-img{
-	width: auto;
-	height: auto;
-}
-/** *************************************************************************************************** **/
-@media (max-width:374px) {
-
-	.video-back { 
-	 	/*transform: rotateZ(-90deg);*/
-	 	position: fixed;
-	 	top: 50%;
-	 	left: 50%;
-	 	min-width: 100%;
-	 	max-width: 100%
-	 	background-color black;
-		transform: rotate(90deg);
-		object-fit: cover;
-		transform: translateX(-50%) translateY(-50%);
-		background-image: url("./../img/video.gif");
-	}
-
-	/* Landing page */
-	h1{
-		font-size: 40px;
-	}
-
-	h2{
-		font-size: 16px;
-		line-height: 1.2;
-		padding-bottom: 0px;
-	}
-
-	button{
-		width: 55%;
-		font: 13px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
-		margin-top: 26px;
-	}
-
-	.footer{
-		border-top: 1px solid #676767;
-	}
-
-	.footer-links li{
-		margin-right: 10px;
-	}
-
-	.footer-links a{
-		font-size: 11px;
-	}
-
-	.footer-copy{
-		font-size: 0.8em;
-	}
-
-	/* Projects page */
-	h3{
-		font-size: 18px;
-	}
-
-	h4{
-		font-size: 12px;
-	}
-
-	h5{
-		font-size: 13px;
-	}
-
-	.size{
-		height: auto;
-	}
-
-	.project-img{
-		width:320px;
-		height:250px;
-	}
-
-	#trailer .modal-dialog { 
-    	margin-top: 50px;
-    	margin-bottom: 50px;
-    	width: 94%;
-	}
-
-	p{
-		font-size: 13px;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-
-	p a{ 
-		font-size: 13px;
-	}
-
-	.popuplink{ 
-		font-size: 15px;
-	}
-
-	/* Especial cases  */ 
-	.project-popup-title{
-		line-height: 1;
-		margin-top: 20px;
-	}
-
-	.bikeshare-img{
-		width: 290px;
-		height: auto;
-	}
-
-	.planner-img{
-		width: 285px;
-		height: auto;
-	}
-
-	.planner{
-		height: 140px;
-	}
-
-	.scripts-img{
-		width: 280px;
-		height: auto;
-	}
-
-	.isolation-img{
-		width: 290px;
-		height: auto;
-	}
-
-	.sudoku-img{
-		height: 200px;
-	}
-
-	.sudoku-vid{
-		width: 80% !important;
-	}
-
-	.classification-img{
-		width: 290px;
-		height: auto;
-	}	
-
-	.translation-img{
-		width: 280px;
-		height: auto;
-	}
-}
-
-/** *************************************************************************************************** **/
-@media (min-width: 375px) and (max-width:424px) {
-	/* Landing page */
-
-	.video-back { 
-	 	/*transform: rotateZ(-90deg);*/
-	 	position: fixed;
-	 	top: 50%;
-	 	left: 50%;
-	 	min-width: 100%;
-	 	max-width: 100%
-	 	background-color black;
-		transform: rotate(90deg);
-		object-fit: cover;
-		transform: translateX(-50%) translateY(-50%);
-		background-image: url("./../img/video.gif");
-	}
-
-	h1{
-		font-size: 40px;
-	}
-
-	h2{
-		font-size: 16px;
-		line-height: 1.2;
-		padding-bottom: 0px;
-	}
-
-	button{
-		width: 55%;
-		font: 13px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
-		margin-top: 26px;
-	}
-
-	.footer{
-		border-top: 1px solid #676767;
-	}
-
-	.footer-links li{
-		margin-right: 10px;
-	}
-
-	.footer-links a{
-		font-size: 11px;
-	}
-
-	.footer-copy{
-		font-size: 0.8em;
-	}
-
-	/* Projects page */
-	h3{
-		font-size: 18px;
-	}
-
-	h4{
-		font-size: 12px;
-	}
-
-	h5{
-		font-size: 13px;
-	}
-
-	.size{
-		height: auto;
-	}
-
-	.project-img{
-		width:370px;
-		height:250px;
-	}
-
-	#trailer .modal-dialog { 
-    	margin-top: 50px;
-    	margin-bottom: 50px;
-    	width: 94%;
-	}
-
-	p{
-		font-size: 13px;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-
-	p a{ 
-		font-size: 13px;
-	}
-
-	.popuplink{ 
-		font-size: 15px;
-	}
-
-	/* Especial cases  */ 
-	.project-popup-title{
-		line-height: 1;
-		margin-top: 20px;
-	}
-
-	.bikeshare-img{
-		width: 340px;
-		height: auto;
-	}
-
-	.planner-img{
-		width: 340px;
-		height: auto;
-	}
-
-	.planner{
-		height: 150px;
-	}
-
-	.scripts-img{
-		width: 330px;
-		height: auto;
-	}
-
-	.isolation-img{
-		width: 320px;
-		height: auto;
-	}
-
-	.sudoku-img{
-		height: 240px;
-	}
-
-	.sudoku-vid{
-		width: 90% !important;
-	}
-
-	.classification-img{
-		width: 330px;
-		height: auto;
-	}	
-
-	.translation-img{
-		width: 330px;
-		height: auto;
-	}
-}
-
-/** *************************************************************************************************** **/
-@media (min-width: 425px) and (max-width:767px) {
-	/* Landing page */
-	.video-back { 
-	 	/*transform: rotateZ(-90deg);*/
-	 	position: fixed;
-	 	top: 50%;
-	 	left: 50%;
-	 	min-width: 100%;
-	 	max-width: 100%
-	 	background-color black;
-		transform: rotate(90deg);
-		object-fit: cover;
-		transform: translateX(-50%) translateY(-50%);
-		background-image: url("./../img/video.gif");
-	}
-
-	h1{
-		font-size: 54px;
-	}
-
-	h2{
-		font-size: 19px;
-		line-height: 1.2;
-		padding-bottom: 0px;
-	}
-
-	button{
-		width: 55%;
-		font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
-		margin-top: 26px;
-	}
-
-	.footer{
-		border-top: 1px solid #676767;
-	}
-
-	.footer-links li{
-		margin-right: 17px;
-	}
-
-	.footer-links a{
-		font-size: 14px;
-	}
-
-	.footer-copy{
-		font-size: 0.92em;
-	}
-
-	.animation{
-		height: 260px; 
-		width: 100%;"
-	}
-
-	/* Projects page */
-	h3{
-		font-size: 20px;
-	}
-
-	h4{
-		font-size: 13px;
-	}
-
-	h5{
-		font-size: 15px;
-	}
-
-	.size{
-		height: auto;
-	}
-
-	.project-img{
-		width:370px;
-		height:250px;
-	}
-
-	#trailer .modal-dialog { 
-    	margin-top: 50px;
-    	margin-bottom: 50px;
-    	width: 95%;
-	}
-
-	p{
-		font-size: 13px;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-
-	p a{ 
-		font-size: 13px;
-	}
-
-	.popuplink{ 
-		font-size: 15px;
-	}
-
-	/* Especial cases  */ 
-	.project-popup-title{
-		line-height: 1;
-		margin-top: 20px;
-	}
-
-	.bikeshare-img{
-		width: 390px;
-		height: auto;
-	}
-
-	.planner-img{
-		width: 380px;
-		height: auto;
-	}
-
-	.planner{
-		height: 160px;
-	}
-
-	.scripts-img{
-		width: 390px;
-		height: auto;
-	}
-
-	.isolation-img{ 
-		width: 340px;
-		height: auto;
-	}
-
-	.sudoku-img{
-		height: 270px;
-	}
-
-	.sudoku-vid{
-		width: 90% !important;
-	}
-
-	.classification-img{
-		width: 350px;
-		height: auto;
-	}	
-
-	.translation-img{
-		width: 380px;
-		height: auto;
-	}
-}
-
-/** *************************************************************************************************** **/
-@media (min-width: 768px) and (max-width:1023px) {
-	/* Landing page */
-	.video-back { 
-	 	/*transform: rotateZ(-90deg);*/
-	 	position: fixed;
-	 	top: 50%;
-	 	left: 50%;
-	 	min-width: 100%;
-	 	max-width: 100%
-	 	background-color black;
-		transform: rotate(270deg);
-		object-fit: cover;
-		transform: translateX(-50%) translateY(-50%);
-		background-image: url("./../img/video.gif");
-	}
-
-	h1{
-		font-size: 72px;
-	}
-
-	h2{
-		font-size: 23px;
-		line-height: 1.2;
-		padding-bottom: 0px;
-	}
-
-	button{
-		width: 40%;
-		font: 18px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
-		margin-top: 36px;
-	}
-
-	.footer{
-		border-top: 1px solid #676767;
-	}
-
-	.animation{
-		height: 360px; 
-		width: 100%;"
-	}
-
-	/* Projects page */
-	h3{
-		font-size: 20px;
-	}
-
-	h4{
-		font-size: 13px;
-		margin-left: 15%;
-		margin-right: 15%;
-	}
-
-	h5{
-		font-size: 15px;
-	}
-
-	.size{
-		height: auto;
-	}
-
-	.project-img{
-		width:370px;
-		height:250px;
-	}
-
-	#trailer .modal-dialog { 
-    	margin-top: 50px;
-    	margin-bottom: 50px;
-    	width: 90%;
-	}
-
-	p{
-		font-size: 15px;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-
-	p a{ 
-		font-size: 15px;
-	}
-
-	.popuplink{ 
-		font-size: 18px;
-	}
-
-	/* Especial cases  */ 
-	.project-popup-title{
-		line-height: 1;
-		margin-top: 20px;
-	}
-
-	.bikeshare-img{
-		width: 95%;
-		height: auto;
-	}
-
-	.planner-img{
-		width: 480px;
-		height: auto;
-	}
-
-	.planner{
-		height: 190px;
-	}
-
-	.scripts-img{
-		width: 670px;
-		height: auto;
-	}
-
-	.sudoku-vid{
-		width: 60% !important;
-	}
-}
-
-/** *************************************************************************************************** **/
-@media (min-width: 1024px) {
-	/* Is the same as the default style */
-}
