@@ -1,11 +1,11 @@
 import media 
 import projects
 
-DL_project1 = media.Project("Bike Share",
-	"Imagine yourself owning a bike sharing company like CycleHop and you want to predict how many bikes you need because if "\
-	"you have too few you're losing money from potential riders or vice versa if you have too many you're wasting money on "\
-	"bikes that are just sitting around. This project predicts the number of bike-share users on a given day from historical "\
-	"data, so you can know how many bikes you will need in the near future.",
+DL_project1 = media.Project("Bike Sharing Predictor",
+	"Imagine yourself owning of a bike sharing company like CycleHop, and you want to predict how many bikes you need because "\
+	"if you have too few, you're losing money from potential riders or vice versa if you have too many you're wasting money on "\
+	"bikes that are just sitting around. This project predicts the number of bike-share users on a given day from historical data, "\
+	"so you can know how many bikes you will need.",
 	"https://media.giphy.com/media/l0HUiSjiHbUO24oGQ/giphy.gif",
 	"",
 	"""
@@ -32,10 +32,10 @@ DL_project1 = media.Project("Bike Share",
 	"https://github.com/betogaona7/Deep-Learning/tree/master/DLNF-BikeShare")
 
 DL_project2 = media.Project("Image Classification",
-	"Vision is the main way humans gain information about the world, with the passage of time we have been able to give eyes "\
-	"to the machines, from that, amazing applications have been created. For example, a company called Orbital Insigths	analyze "\
-	"satellite imagery to count cars and oil tank levels automatically to predict such things as mall sales and oil production. "\
-	"In this project, I developed a program capable of recognizing and classify ten different types of images.",
+	"Vision is the main way in which humans gain information about the world, and with the passage of time, we have been able to "\
+	"give eyes to machines. From that, amazing applications have been created. For example, a company called Orbital Insights analyzes "\
+	"satellite imagery to count cars and oil tank levels automatically to predict such things as mall sales and oil production. In "\
+	"this project, I developed a program that recognizes and identifies ten different types of objects in images.",
 	"https://media.giphy.com/media/l0HU1QXrScjR6PUdi/giphy.gif",
 	"",
 	"""
@@ -63,11 +63,11 @@ DL_project2 = media.Project("Image Classification",
 	""",
 	"https://github.com/betogaona7/Deep-Learning/tree/master/DLNF-Classification")
 
-DL_project3 = media.Project("TV Scripts Generator",
-	"The way to write a script for a TV show is to actually write a script. A pen is useful, typing is also good. Keep "\
-	"putting words on the page, but if for some reason you don't feel good, you're sick or you just feel stuck, try to use "\
-	"a computer that writes it for you. This project generates an original piece of writing after being trained using your "\
-	"existing scripts, therefore, the new piece will conserve your own writing style.",
+DL_project3 = media.Project("TV-Scripts Generator",
+	"The way to write a script for a TV show is actually to write a script. A pen is useful and typing is also good. Keep "\
+	"putting words on the page, but if for some reason you aren't feeling good, you're sick, or you just are stuck, then "\
+	"why not try to use a computer capable of writing the script for you?.  This project generates an original piece of "\
+	"writing using your existing scripts, therefore the new piece will conserve your own writing style.",
 	"https://media.giphy.com/media/l0HU7Ik9NfAnoWq9q/giphy.gif",
 	"",
 	"""
@@ -87,10 +87,10 @@ DL_project3 = media.Project("TV Scripts Generator",
 	"https://github.com/betogaona7/Deep-Learning/tree/master/DLNF-Scripts")
 
 DL_project4 = media.Project("Machine Translation",
-	"Language is the backbone of our civilization. Without written records of previous scientific discoveries, we could "\
-	"never accomplish great events like traveling to space. We've accomplished a lot in the world where 13 of the most common "\
-	"languages are natively spoken by less than 50 percent of the population. What would the world be like if we could all "\
-	"work together without a language barrier?. This project is an English to French translator.",
+	"Language is the backbone of our civilization. Without written records of previous scientific discoveries, we could never "\
+	"accomplish great events like traveling to space. We've accomplished a lot in the world where 13 of the most common languages "\
+	"are natively spoken by less than 50 percent of the population, so what would the world be like if we could all work together "\
+	"without the language barrier?. This project translates sentences from English to French.",
 	"https://media.giphy.com/media/l0HU3pdWVTEz8qPCM/giphy.gif",
 	"",
 	"""
@@ -126,7 +126,7 @@ DL_project4 = media.Project("Machine Translation",
 DL_project5 = media.Project("New Faces Generator",
 	"Imagine you work for a movie production company, and your job is to design the characters in a movie. You would usually "\
 	"draw a bunch of different concepts before arriving at the final design. What if you had a program that could do this for "\
-	"you?. This project generates new faces using celebrity images.",
+	"you?. This project uses celebrity images to generate new images of faces.",
 	"https://media.giphy.com/media/l49JYD8R8W6RtOUBa/giphy.gif",
 	"",
 	"""
@@ -158,11 +158,11 @@ DL_project5 = media.Project("New Faces Generator",
 	""",
 	"https://github.com/betogaona7/Deep-Learning/tree/master/DLNF-Faces")
 
-AI_project1 = media.Project("The Sudoku Puzzle",
-	"Surely you have played Sudoku at least once in your life, Sudoku is that puzzle game that comes in magazines, "\
-	"newspapers, etc. The goal is to fill a 9x9 grid with digits so that each column, each row, and each of the nine 3x3 "\
-	"subgrids that compose the grid contains all of the digits from 1 to 9. Have you ever been stuck trying to solve one?. "\
-	"This project is a play-game agent for solve diagonal sudoku puzzles.",
+AI_project1 = media.Project("AI Agent to solve Sudoku puzzles",
+	"Surely you have played Sudoku at least once in your life. Sudoku is that puzzle game that comes in magazines, newspapers, "\
+	"etc. The goal is to fill a 9x9 grid with digits so that each column, each row, and each of the nine 3x3 sub-grids that "\
+	"compose the grid contains all of the digits from 1 to 9. Have you ever been stuck trying to solve one?. This a play-game "\
+	"agent to solve diagonal sudoku puzzles.",
 	"https://media.giphy.com/media/3o751YzOR1rXv8FVTO/giphy.gif",
 	"",
 	"""
@@ -197,11 +197,11 @@ AI_project1 = media.Project("The Sudoku Puzzle",
 	""",
 	"https://github.com/betogaona7/AI-projects/tree/master/AIND-Sudoku")
 
-AI_project2 = media.Project("The Isolation Game",
-	"Isolation is a two-player game in which the players alternate turns moving a single piece from one cell to another on a "\
-	"board. Whenever either player occupies a cell, the cell becomes blocked for the remainder of the game. The first player "\
-	"with no remaining legal moves loses, and the opponent is declared the winner. In this version, each player is restricted "\
-	"to L-shaped movements on a 7x7 board. This project is a game-playing agent to win the isolation game.",
+AI_project2 = media.Project("Isolation Game-Playing Agent",
+	"Isolation is a two-player game in which the players alternate turns moving a single piece from one cell to another on the "\
+	"board. Whenever either player occupies a cell, the cell becomes blocked for the remainder of the game. The first player with "\
+	"no remaining legal moves loses, and the opponent is declared the winner. In this version, each player is restricted to L-shaped "\
+	"movements on a 7x7 board. This project is an AI agent that beats humans in Isolation game.",
 	"https://media.giphy.com/media/3o752fb9nnFM3P7JOo/giphy.gif",
 	"",
 	"""
@@ -289,10 +289,10 @@ AI_project3 = media.Project("Air Cargo Planner",
 	""",
 	"https://github.com/betogaona7/AI-projects/tree/master/AIND-Planning")
 
-AI_project4 = media.Project("Sign Language Recognizer",
-	"According to the World Health Organization (WHO) 360 millon people worldwide have disabling hearing loss of which 70 "\
-	"million people use sign language as their first language. Now, how many interpreters are there? much less than half. "\
-	"In this project, I built a system that can recognize words communicated using the American Sign Language (ASL).",
+AI_project4 = media.Project("American Sign Language Recognizer",
+	"According to the World Health Organization (WHO), 360 million people worldwide have disabling hearing loss of which 70 million people "\
+	"use sign language as their first language. Now, how many interpreters are there? much less than half, so in this project, I built a "\
+	"word recognizer for American Sign Language (ASL) video sequences.",
 	"https://media.giphy.com/media/xULW8BRAEkxshqm02Q/giphy.gif",
 	"",
 	"""
@@ -318,11 +318,43 @@ AI_project4 = media.Project("Sign Language Recognizer",
 	""",
 	"https://github.com/betogaona7/AI-projects/tree/master/AIND-Recognizer")
 
+AI_project5 = media.Project("Facial Key-Points Detector",
+	"Predict key-point positions on face images can be the building block in several applications, such as tracking faces in images "\
+	"and video, analyzing facial expressions, detecting dysmorphic facial signs for medical diagnosis, performing face recognition, "\
+	"etc. This is a recognition system that takes in any image containing faces and identifies the location of each face and their "\
+	"facial key-points.",
+	"./gifs/Face.png",
+	"",
+	"""
+	Writting it, please come later... 
+	""",
+	"https://github.com/betogaona7/AIND-projects/blob/master/AIND-CV-FacialKeypointDetection/CV_project.ipynb")
+
+AI_project6 = media.Project("EN-FR translator",
+	"Language is the backbone of our civilization. Without written records of previous scientific discoveries, we could never "\
+	"accomplish great events like traveling to space. We've accomplished a lot in the world where 13 of the most common languages "\
+	"are natively spoken by less than 50 percent of the population, so what would the world be like if we could all work together "\
+	"without the language barrier?. This project translates from English to French.",
+	"https://media.giphy.com/media/l0HU3pdWVTEz8qPCM/giphy.gif",
+	"",
+	"""""",
+	"https://github.com/betogaona7/AIND-projects/blob/master/AIND-NLP-MachineTranslation/machine_translation.ipynb")
+
+AI_project7 = media.Project("DNN Speech Recognizer",
+	"A voice user interface is a speech platform that enables humans to communicate with machines by voice, and there are a lot of "\
+	"applications, for example, a text transcriber, which is three times faster than typing, This project converts audio sound waves "\
+	"into language text completing a part of end-to-end automatic speech recognition (ASR) pipeline.",
+	"./gifs/Speech.png",
+	"",
+	"""""",
+	"https://github.com/betogaona7/AIND-projects/blob/master/AIND-VUI-SpeechRecognition/vui_notebook.ipynb")
+
 OWN_project1 = media.Project("Mariya",
-	"Taking advantage of technology and all available resources, we intend to put an end to the communication barrier between "\
-	"the Wixarica (Huicholes) community and the rest of the world, seeking to rescue their stories and knowledge which "\
-	"they consider sacred. Mariya is a translation device that seeks to save a Mexican culture.",
-	"https://media.giphy.com/media/l0HU366rPnEgaLL2w/giphy.gif",
+	"The Wixaricas, an indigenous Mexican community, face a communication problem that obliges their new generations to migrate to "\
+	"the big cities and to confront with the language problem which threatens the extinction of their native language. Mariya project "\
+	"intends to put an end to their communication barrier through a translator device and help them to preserve their culture and to "\
+	"rescue their stories and knowledge which they consider sacred.",
+	"./gifs/Mariya.png",
 	"https://player.vimeo.com/video/195152250",
 	"""
 	</p><div style='text-align: center;'>
@@ -357,6 +389,6 @@ OWN_project1 = media.Project("Mariya",
 	""",
 	"https://github.com/proyectomariya/translate")
 
-projectslist = [OWN_project1, DL_project1, AI_project4, AI_project3, DL_project3, DL_project5, AI_project2, AI_project1, DL_project2, DL_project4 ]
+projectslist = [OWN_project1, AI_project5, AI_project6,	AI_project7, DL_project1, AI_project4, AI_project3, DL_project3, DL_project5, AI_project2, AI_project1, DL_project2]
 projects.open_project_page(projectslist)
 

@@ -122,4 +122,4 @@ def open_project_page(projects):
     output_file.close()
     # open the output file in the browser (in a new tab, if possible)
     url = os.path.abspath(output_file.name)
-    #webbrowser.open('localhost/betogaona7.github.io/' + output_file.name, new=2)
+    webbrowser.open(output_file.name, new=2)
