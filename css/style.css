@@ -331,23 +331,18 @@ div video{ /* Video in technical descriptions */
 }
 
 .keypoints-img{
-
 }
 
 .facialrecognition-img{
-
 }
 
 .translator-result-img{
-
 }
 
 .aco-performance-img{
-	
 }
 
 .aco-comparission-img{
-
 }
 
 .bikeshare-img{
@@ -524,6 +519,34 @@ div video{ /* Video in technical descriptions */
 		width: 280px;
 		height: auto;
 	}
+
+	.keypoints-img{
+		width: 95%;	
+	}
+
+	.facialrecognition-img{
+		width: 95%;
+	}
+
+	.translator-result-img{
+		width: 95%;
+	}
+
+	.aco-performance-img{
+		width: 100%;
+	}
+
+	.aco-comparission-img{
+		width: 95%;
+	}
+
+	.aco-outexample-img{
+		width: 95%;
+	}
+
+	.popup-list{
+		padding-left: 25px;
+	}
 }
 
 /** *************************************************************************************************** **/
@@ -657,6 +680,34 @@ div video{ /* Video in technical descriptions */
 	.translation-img{
 		width: 330px;
 		height: auto;
+	}
+
+	.keypoints-img{
+		width: 90%;
+	}
+
+	.facialrecognition-img{
+		width: 75%;
+	}
+
+	.translator-result-img{
+		width: 95%;
+	}
+
+	.aco-performance-img{
+		width: 100%;
+	}
+
+	.aco-comparission-img{
+		width: 75%;
+	}
+
+	.aco-outexample-img{
+		width: 95%;
+	}
+
+	.popup-list{
+		padding-left: 25px;
 	}
 }
 
@@ -795,6 +846,34 @@ div video{ /* Video in technical descriptions */
 		width: 380px;
 		height: auto;
 	}
+
+	.keypoints-img{
+		width: 90%;
+	}
+
+	.facialrecognition-img{
+		width: 75%;
+	}
+
+	.translator-result-img{
+		width: 95%;
+	}
+
+	.aco-performance-img{
+		width: 100%;
+	}
+
+	.aco-comparission-img{
+		width: 70%;
+	}
+
+	.aco-outexample-img{
+		width: 95%;
+	}
+
+	.popup-list{
+		padding-left: 25px;
+	}
 }
 
 /** *************************************************************************************************** **/
@@ -910,6 +989,34 @@ div video{ /* Video in technical descriptions */
 
 	.sudoku-vid{
 		width: 60% !important;
+	}
+
+	.facialrecognition-img{
+		width: 50%;
+	}
+
+	.keypoints-img{
+		width: 90%;
+	}
+
+	.translator-result-img{
+		width: 95%;
+	}
+
+	.aco-performance-img{
+		width: 100%;
+	}
+
+	.aco-comparission-img{
+		width: 50%;
+	}
+
+	.aco-outexample-img{
+		width: 95%;
+	}
+
+	.popup-list{
+		padding-left: 25px;
 	}
 }
 
