@@ -326,6 +326,30 @@ div video{ /* Video in technical descriptions */
 	/*line-height: 0px;*/
 }
 
+.popup-list{
+	padding-left: 50px;
+}
+
+.keypoints-img{
+
+}
+
+.facialrecognition-img{
+
+}
+
+.translator-result-img{
+
+}
+
+.aco-performance-img{
+	
+}
+
+.aco-comparission-img{
+
+}
+
 .bikeshare-img{
 	width: auto;
 	height: auto;
