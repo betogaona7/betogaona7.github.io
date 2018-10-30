@@ -7,7 +7,7 @@ nav {
     }
 
 nav ul {
-  padding: 20px;
+  padding: 15px;
   margin: 0 auto;
   list-style: none;
   text-align: center;
@@ -46,7 +46,7 @@ a.active {
   padding: 0px 20px 0px 20px;
 }
 .main-nav {
-  height: 60px;
+  height: 50px;
   z-index: 150;
 }
 .main-nav-scrolled {
