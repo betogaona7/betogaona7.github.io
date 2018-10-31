@@ -475,21 +475,21 @@ nav ul li{
 	margin: 0px;
 }
 
-.main-nav ul li .responsive {
+.main-nav.responsive {
 	position: relative;
 }
 
-.main-nav ul li .responsive a.icon {
+.main-nav.responsive .icon {
 	position: absolute;
-	right: 0;
+    right: 0;
     top: 0;
  }
 
-.main-nav ul li .responsive a {
+ .main-nav.responsive a {
  	float: none;
- 	display: block;
- 	text-align: center;
- }
+    display: block;
+    text-align: left;
+  }
 
 .name{
 	font-size: 15px;

@@ -225,19 +225,6 @@
   </section>
 
 
-
-<script type="text/javascript">
-  function myFunction() {
-    var x = document.getElementById("MyNav");
-    if (x.className === "main-nav") {
-      x.className += " responsive";
-    } else {
-      x.className = "main-nav";
-    }
-  }
-</script>
-
-
 <script type="text/javascript">
 
   var sections = $('section')
@@ -307,33 +294,6 @@
     }//end init
     init();
   });
-
-
-  /*
-// $(window).on('load', function() {
-  function init() {
-    var length = $('.carousel div').length / 2;
-    var min = $('.carousel div').length;
-
-    //Rule Carousel must have 5 images at a minimum
-    if (min <= 4) {
-      alert('Sorry. You must have 5 images at a minimum');
-    } else {
-      
-      
-      //find the first img and assign it to active
-      $('.carousel').find('div').first().addClass('ic_active');
-
-      $('.carousel').find('div').first().find('img, video').addClass('mainimg');
-      
-      //Divide Imgs in half and take the second half and move them to top of stack for wrap effect
-      var getHalf = Math.ceil(length);
-      var wrapImgs = $('.carousel').find('div').slice(getHalf, min);
-      $('.carousel').prepend(wrapImgs);
-      infinite();
-    }
-  }//end init
-  init(); */
 
   function infinite() {
     //Center first image
@@ -484,8 +444,6 @@
     var active = $('.ic_active');
     initActive(active); 
   });//end window.resize
-
-//});//end window.load
 
 </script> 
 
