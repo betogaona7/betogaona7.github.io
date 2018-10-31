@@ -424,6 +424,14 @@ div video{ /* Video in technical descriptions */
 	width: auto;
 	height: 100px;
 }
+
+nav ul{
+	padding-right: 0px;
+}
+
+.main-nav{
+	padding-right: 0px;
+}
 /** *************************************************************************************************** **/
 @media (max-width:374px) {
 
@@ -594,16 +602,371 @@ nav ul li{
 
 /** *************************************************************************************************** **/
 @media (min-width: 375px) and (max-width:424px) {
-	
+
+	/* Landing page */
+	.animation{
+		height: 150px; 
+	}
+
+	.animation img{
+		height: 70px;
+	}
+
+	h1{
+		font-size: 30px;
+	}
+
+	h2{
+		font-size: 14px;
+		line-height: 1;
+	}
+
+/* Navigation */
+.main-nav{
+	padding: 0px 20px 0px 0px;
+}
+
+.main-nav ul li a{
+	display: none;
+}
+
+.main-nav ul li a.icon{
+	float: right;
+	display: block;
+}
+
+nav ul{
+	padding: 7px 0px 0px 0px;
+}
+
+nav ul li{
+	margin: 0px;
+}
+
+.main-nav ul li .responsive {
+	position: relative;
+}
+
+.main-nav ul li .responsive a.icon {
+	position: absolute;
+	right: 0;
+    top: 0;
+ }
+
+.main-nav ul li .responsive a {
+ 	float: none;
+ 	display: block;
+ 	text-align: center;
+ }
+
+.name{
+	font-size: 15px;
+}
+
+	/* Projects */
+
+	.back_btn{
+		padding: 0px;
+		left: 0px;
+		top: 11%;
+	}
+
+	.next_btn{
+		padding: 0px;
+		right: 0px;
+		top: 11%;
+	}
+
+	.row-carrusel{
+		margin: 20px 5px 0px 5px;
+		padding-top: 0px;
+	}
+
+	.carousel{
+		margin-bottom: -60px;
+	}
+
+	.carousel .item .mainimg{
+	  height: 160px;
+	  width: 450px;
+	  margin-bottom: 30px;
+	}
+
+	.ic_title{
+		width: 90%;
+	}
+
+	h4{
+		font-size: 19px;
+	}
+
+	h6{
+		font-size: 12px;
+	}
+
+	.ic_title a{
+		font-size: 12px;
+	}
+
+	.project-button{
+		width: 30px;
+		height: 50px;
+	}
+
+	.poly{
+		stroke: rgb(8,5,16);
+		stroke-width: 3;
+	}
+
+	/* Skills */ 
+
+	.skill-row{
+		top: 60%;
+	}
+
+	.text-center img{
+		width: auto;
+		height: 60px;
+	}
+
+	h5{
+		font-size: 12px;
+	}
+
+	.skills-ul{
+		font-size: 12px;
+	}
+
+	ul{
+		margin-bottom: 10px;
+	}
+
+	/* Contact */
+	.contactme{
+		padding-top: 150px;
+	}
+
+	h3{
+		font-size: 20px;
+	}
+
+	.footer{
+		margin-top: 70px;
+	}
+
+	.footer-links li{
+		margin-right: 11px;
+	}
+
+	.footer-links a{
+		font-size: 12px;
+	}
+
+	.footer-copy{
+		font-size: 10px;
+	}
+
 }
 
 /** *************************************************************************************************** **/
 @media (min-width: 425px) and (max-width:767px) { /* TABLET */
+	/* Landing page */
+	.animation{
+		height: 150px; 
+	}
 
+	.animation img{
+		height: 70px;
+	}
+
+	h1{
+		font-size: 40px;
+	}
+
+	h2{
+		font-size: 15px;
+		line-height: 1;
+	}
+
+/* Navigation */
+.main-nav{
+	padding: 0px 20px 0px 0px;
+}
+
+.main-nav ul li a{
+	display: none;
+}
+
+.main-nav ul li a.icon{
+	float: right;
+	display: block;
+}
+
+nav ul{
+	padding: 7px 0px 0px 0px;
+}
+
+nav ul li{
+	margin: 0px;
+}
+
+.main-nav ul li .responsive {
+	position: relative;
+}
+
+.main-nav ul li .responsive a.icon {
+	position: absolute;
+	right: 0;
+    top: 0;
+ }
+
+.main-nav ul li .responsive a {
+ 	float: none;
+ 	display: block;
+ 	text-align: center;
+ }
+
+.name{
+	font-size: 15px;
+}
+
+	/* Projects */
+
+	.back_btn{
+		padding: 0px;
+		left: 0px;
+		top: 13%;
+	}
+
+	.next_btn{
+		padding: 0px;
+		right: 0px;
+		top: 13%;
+	}
+
+	.row-carrusel{
+		margin: 20px 5px 0px 5px;
+		padding-top: 0px;
+	}
+
+	.carousel{
+		margin-bottom: -60px;
+	}
+
+	.carousel .item .mainimg{
+	  height: 160px;
+	  width: 450px;
+	  margin-bottom: 30px;
+	}
+
+	.ic_title{
+		width: 90%;
+	}
+
+	h4{
+		font-size: 19px;
+	}
+
+	h6{
+		font-size: 12px;
+	}
+
+	.ic_title a{
+		font-size: 12px;
+	}
+
+	.project-button{
+		width: 30px;
+		height: 50px;
+	}
+
+	.poly{
+		stroke: rgb(8,5,16);
+		stroke-width: 3;
+	}
+
+	/* Skills */ 
+
+	.skill-row{
+		top: 50%;
+	}
+
+	.text-center img{
+		width: auto;
+		height: 60px;
+	}
+
+	h5{
+		font-size: 12px;
+	}
+
+	.skills-ul{
+		font-size: 12px;
+	}
+
+	ul{
+		margin-bottom: 10px;
+	}
+
+	/* Contact */
+	.contactme{
+		padding-top: 150px;
+	}
+
+	h3{
+		font-size: 20px;
+	}
+
+	.footer{
+		margin-top: 70px;
+	}
+
+	.footer-links li{
+		margin-right: 11px;
+	}
+
+	.footer-links a{
+		font-size: 12px;
+	}
+
+	.footer-copy{
+		font-size: 10px;
+	}
 }
 
 /** *************************************************************************************************** **/
 @media (min-width: 768px) and (max-width:1023px) {
+	.animation{
+		height: 150px;
+	}
+
+	nav ul{
+		padding-right: 0px;
+	}
+
+	.main-nav{
+		padding-right: 0px;
+	}
+
+	.ic_title{
+		width: 95%;
+	}
+
+	.skill-row{
+		top: 90%;
+	}
+
+	h3{
+		font-size: 25px;
+	}
+
+	.footer{
+		margin-top: 50px;
+	}
+
+	.contactme{
+		padding-top: 350px;
+	}
 
 }
 
