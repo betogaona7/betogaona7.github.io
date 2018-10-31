@@ -1,55 +1,36 @@
 
 @import '../fonts/fonts.min.css';
 @import '../fonts/spartan/stylesheet.css';
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
- @import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
 
 
 body{
 	color: #fdfbfb;
-	/*padding: 0;
-	margin: 0;	*/
 }
+
 header {
 	height: 100vh;
 }
+
 section { 
 	height: 100vh; 
+	background: rgb(8,5,16);
 }
 
 #home nav{
 	display: none !important;
 }
 
-#projects{
-	background-color: #fdfbfb;
-	background: rgb(8,5,16);
-}
-
-#skills{
-	background-color: #008CBA;
-	background: rgb(8,5,16);
-}
-
-#contact{
-	background-color: #fdfbfb;
-	background: rgb(8,5,16);
-}
-
-#resume{
-	background-color: #008CBA;
-	background: rgb(8,5,16);
-}
-
-/* GIF space: height: 300px; width: 1366 #008CBA */
 .animation{
 	height: 250px; 
 	width: 100%;
 }
 
-.animation-img{
-	align-content: center;
+.animation img{
+	height: 90px;
+	width: auto;
 }
 
 h1{ /* Name */
@@ -86,6 +67,13 @@ h4{ /* Project name  */
 	margin-top: 0px;
 }
 
+h5{ /* Skill title */ 
+	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	color: #008CBA;
+}
+
 h6{ /* Project description */ 
 	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
 	font-size: 13px;
@@ -97,15 +85,6 @@ h6{ /* Project description */
 	font-size: 18px;
 }
 
-h5{ /* Skill title */ 
-	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	color: #008CBA;
-}
-
-
-
 .row{
 	margin-left: 0px;
 	margin-right: 0px;
@@ -116,7 +95,6 @@ h5{ /* Skill title */
 	color: #fdfbfb;
 	list-style: none;
 }
-
 
 .contactme{
     font-family: 'Great Vibes', cursive;
@@ -168,23 +146,13 @@ body {
 	z-index: -999;
 } 
 
-#canvas2 {
-	position: relative;
-	z-index: 10;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	cursor: none;
-	z-index: -999;
-} 
-
 #stats { 
 	position: absolute; 
 	z-index: 10; 
 	left: 10px; 
 	top: 10px; 
 }
+
 .dg.ac {
 	z-index: 100 !important;
 }
@@ -200,6 +168,8 @@ ultraviolet
 	display: block;
 	background-color: transparent;
 	border-top: 2px solid #676767;
+	bottom: 0;
+	margin-top: 100px;
 }
 
 .inner-container{
@@ -252,7 +222,8 @@ ultraviolet
 	padding: 0px 0px 0px 14px;
 }
 
-/* Until here are those rules for the landing page  */
+
+
 .container{
 	width: 85%;
 	padding-top: 25vh;
@@ -262,37 +233,8 @@ ultraviolet
 	padding-bottom: 20px;
 }
 
-#trailer .modal-dialog { /* Pop up size  */ 
-    margin-top: 200px;
-    margin-bottom: 200px;
-    width: 70%;
-
-}
-
-.hanging-close { /* The close button */ 
-	position: absolute;
-	top: -12px;
-	right: -12px;
-	z-index: 9001;
-}
-
-.movie-tile { /* Shadow when the mouse is on the project */
-	margin-bottom: 10px;
-	padding-top: 10px;
-	padding-left: 0px;
-	padding-right: 0px;
-}
-
-.movie-tile:hover { /* Pointer when mouse is on the project */
-	background-color: #000000;
-    cursor: pointer;
-}
-
-.scale-media { /* Pop up when project is selected */
-    padding-bottom: 5%;
-    position: relative;
-    background-color: white;
-    color: #676767;
+.main-nav ul li a.icon{
+	display: none;
 }
 
 a{
@@ -304,36 +246,6 @@ a:focus {
 	outline:0px;
 }
 
-.link{ 
-	/* Class to identify */
-}
-
-.cleanlink{ /* Clean the name on the projects page */ 
-	text-decoration: none;
-	color: #676767;;
-}
-
-.cleanlink:hover{
-	text-decoration: none;
-	color: #676767;
-}
-
-.popuplink{ /* Fork in GitHub */
-	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
-	font-size: 20px;
-	color:#008CBA;
-	text-align: center;
-	position: relative;
-	float: left;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-weight: bold;
-	text-decoration: none;
-}
-
-.popuplink:hover{
-	text-decoration: none;
-}
 
 p a:hover{
 	text-decoration: none;
@@ -347,8 +259,6 @@ p a:hover{
 	width: 430px;
 	height:250px;
 }
-
-*/
 
 
 p{ /* Technical description of the project */
@@ -372,89 +282,158 @@ p a{ /* Links in the technical descriptions */
 }
 
 div video{ /* Video in technical descriptions */
-	/*width: 80% !important;*/
-	/*height: auto !important;*/
 	width: 450px;
 	height: 250px;
 	border: 0;
 }
 
-/* Especial cases  */ 
-.color-nol{
-	color: #676767 !important;
 
-}
-.project-popup-title{
-	/*line-height: 0px;*/
+.logo {
+      float: left;
+      height: 50px;
+      width: auto;
+      position: relative;
+    }
+
+    .name{
+      font: 16px "Proxima Nova",Helvetica,Arial,sans-serif;
+      font-family: 'Montserrat', sans-serif;
+      float: left;
+      font-size: 20px;
+      padding-top: 15px;
+      padding-left: 0px;
+    }
+
+    .row-carrusel{
+      margin-left: 100px;
+      margin-right: 100px;
+      padding-top: 90px;
+    }
+
+    nav ul {
+      float: right;
+      padding-top: 15px;
+    }
+
+    nav ul li a{
+      font-size: 16px;
+    }
+
+    .img-cont {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 500px;
+      height: 500px;
+      margin-top: -250px; /* Half the height */
+      margin-left: -250px; /* Half the width */
+    }
+
+
+.carouselwrap {
+  position:relative;
+  width:100%;
+  /* max-width:960px; */
+  overflow:hidden;
+  margin:0 auto;
 }
 
-.popup-list{
-	padding-left: 50px;
+.carousel {
+  position:relative;
+  overflow:hidden;
+  white-space:nowrap;
+   font-size: 0;
 }
 
-.keypoints-img{
+.carousel .item {
+  display:inline-block;
+  text-align:center;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  vertical-align:top;
 }
 
-.facialrecognition-img{
+.carousel .item img, video {
+  opacity:.1;
+  /* max-height:350px; */
 }
 
-.translator-result-img{
+.carousel .item .mainimg{
+  opacity:1;
+  width: 550px;
+  height: 300px;
+  margin-bottom: 30px;
 }
 
-.aco-performance-img{
+.ic_title {
+  width:80%;
+  background: rgb(8,5,16);
+  text-align:center;
+  margin: 0 auto;
 }
 
-.aco-comparission-img{
+.back_btn {
+  padding:20px;
+  position:absolute;
+  left:10px;
+  z-index:50000000;
+  top:40%;
+  cursor:pointer
 }
 
-.bikeshare-img{
+.next_btn {
+  padding:20px;
+  position:absolute;
+  right:10px;
+  z-index:50000000;
+  top:40%;
+  cursor:pointer
+}
+
+.no_select {
+  -moz-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  background-color: transparent;
+}
+
+.item img{
+  width: 450px;
+  height: 250px;
+}
+
+.project-button{
+	width: 50px;
+	height: 70px;
+}
+
+.poly{
+	stroke: #FFFFFF;
+	stroke-width: 1;
+}
+
+.skill-row{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.text-center img{
 	width: auto;
-	height: auto;
-}
-
-.planner-img{
-	width: auto;
-	height: auto;
-}
-
-.planner{
-	height: 350px;
-}
-
-.scripts-img{
-	width: auto;
-	height: auto;
-}
-
-.isolation-img{
-	width: auto;
-	height: auto;
-}
-
-.sudoku-img{
-	height: 350px;
-}
-
-.sudoku-vid{
-	width: 50% !important;
-}
-
-.classification-img{
-	width: auto;
-	height: auto;
-}
-
-.translation-img{
-	width: auto;
-	height: auto;
+	height: 100px;
 }
 /** *************************************************************************************************** **/
 @media (max-width:374px) {
 
 	/* Landing page */
-
 	.animation{
-		height: 340px; 
+		height: 200px; 
+	}
+
+	.animation img{
+		height: 70px;
 	}
 
 	h1{
@@ -462,624 +441,168 @@ div video{ /* Video in technical descriptions */
 	}
 
 	h2{
-		font-size: 13px;
-		line-height: 1.2;
-		padding-bottom: 0px;
+		font-size: 14px;
+		line-height: 1;
 	}
 
-	button{
-		width: 55%;
-		font: 13px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
-		margin-top: 26px;
+/* Navigation */
+.main-nav{
+	padding: 0px 20px 0px 0px;
+}
+
+.main-nav ul li a{
+	display: none;
+}
+
+.main-nav ul li a.icon{
+	float: right;
+	display: block;
+}
+
+nav ul{
+	padding: 5px 0px 0px 0px;
+}
+
+nav ul li{
+	margin: 0px;
+}
+
+.main-nav ul li .responsive {
+	position: relative;
+}
+
+.main-nav ul li .responsive a.icon {
+	position: absolute;
+	right: 0;
+    top: 0;
+ }
+
+.main-nav ul li .responsive a {
+ 	float: none;
+ 	display: block;
+ 	text-align: center;
+ }
+
+.name{
+	font-size: 15px;
+}
+
+	/* Projects */
+
+	.back_btn{
+		padding: 0px;
+		left: 0px;
+		top: 7%;
+	}
+
+	.next_btn{
+		padding: 0px;
+		right: 0px;
+		top: 7%;
+	}
+
+	.row-carrusel{
+		margin: 20px 5px 0px 5px;
+	}
+
+	.carousel{
+		margin-bottom: -60px;
+	}
+
+	.carousel .item .mainimg{
+	  height: 160px;
+	  margin-bottom: 30px;
+	}
+
+	.ic_title{
+		width: 90%;
+	}
+
+	h4{
+		font-size: 19px;
+	}
+
+	h6{
+		font-size: 12px;
+	}
+
+	.ic_title a{
+		font-size: 12px;
+	}
+
+	.project-button{
+		width: 30px;
+		height: 50px;
+	}
+
+	.poly{
+		stroke: rgb(8,5,16);
+		stroke-width: 3;
+	}
+
+	/* Skills */ 
+
+	.skill-row{
+		top: 80%;
+	}
+
+	.text-center img{
+		width: auto;
+		height: 80px;
+	}
+
+	h5{
+		font-size: 14px;
+	}
+
+	.skills-ul{
+		font-size: 14px;
+	}
+
+	ul{
+		margin-bottom: 40px;
+	}
+
+	/* Contact */
+	.contactme{
+		padding-top: 250px;
+	}
+
+	h3{
+		font-size: 20px;
 	}
 
 	.footer{
-		border-top: 1px solid #676767;
+		margin-top: 70px;
+	}
+
+	.footer-links li{
+		margin-right: 11px;
 	}
 
 	.footer-links a{
 		font-size: 12px;
 	}
 
-	.col{
-		width: 17%;
-		display: inline-block;
-		margin: 0px 5px 0px 0px;
-		padding: 0px 0px 0px 8px;
-	}
-
 	.footer-copy{
-		font-size: 11px;
+		font-size: 10px;
 	}
 
-	/* Projects page */
-	h3{
-		font-size: 18px;
-	}
-
-	h4{
-		font-size: 12px;
-	}
-
-	h5{
-		font-size: 13px;
-	}
-
-	.size{
-		height: auto;
-	}
-
-	.project-img{
-		width:320px;
-		height:250px;
-	}
-
-	#trailer .modal-dialog { 
-    	margin-top: 50px;
-    	margin-bottom: 50px;
-    	width: 94%;
-	}
-
-	p{
-		font-size: 13px;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-
-	p a{ 
-		font-size: 13px;
-	}
-
-	.popuplink{ 
-		font-size: 15px;
-	}
-
-	/* Especial cases  */ 
-	.project-popup-title{
-		line-height: 1;
-		margin-top: 20px;
-	}
-
-	.bikeshare-img{
-		width: 290px;
-		height: auto;
-	}
-
-	.planner-img{
-		width: 285px;
-		height: auto;
-	}
-
-	.planner{
-		height: 140px;
-	}
-
-	.scripts-img{
-		width: 280px;
-		height: auto;
-	}
-
-	.isolation-img{
-		width: 290px;
-		height: auto;
-	}
-
-	.sudoku-img{
-		height: 200px;
-	}
-
-	.sudoku-vid{
-		width: 80% !important;
-	}
-
-	.classification-img{
-		width: 290px;
-		height: auto;
-	}	
-
-	.translation-img{
-		width: 280px;
-		height: auto;
-	}
-
-	.keypoints-img{
-		width: 95%;	
-	}
-
-	.facialrecognition-img{
-		width: 95%;
-	}
-
-	.translator-result-img{
-		width: 95%;
-	}
-
-	.aco-performance-img{
-		width: 100%;
-	}
-
-	.aco-comparission-img{
-		width: 95%;
-	}
-
-	.aco-outexample-img{
-		width: 95%;
-	}
-
-	.popup-list{
-		padding-left: 25px;
-	}
 }
 
 /** *************************************************************************************************** **/
 @media (min-width: 375px) and (max-width:424px) {
-	/* Landing page */
-
-	h1{
-		font-size: 35px;
-	}
-
-	h2{
-		font-size: 14px;
-		line-height: 1.2;
-		padding-bottom: 0px;
-	}
-
-	button{
-		width: 55%;
-		font: 13px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
-		margin-top: 26px;
-	}
-
-	.footer{
-		border-top: 1px solid #676767;
-	}
-
-	.footer-links li{
-		margin-right: 10px;
-	}
-
-	.footer-links a{
-		font-size: 11px;
-	}
-
-	.footer-copy{
-		font-size: 0.8em;
-	}
-
-	.col{
-		width: 19%;
-		display: inline-block;
-		margin: 0px;
-		padding: 0px 0px 0px 14px;
-	}
-
-	/* Projects page */
-	h3{
-		font-size: 18px;
-	}
-
-	h4{
-		font-size: 12px;
-	}
-
-	h5{
-		font-size: 13px;
-	}
-
-	.size{
-		height: auto;
-	}
-
-	.project-img{
-		width:370px;
-		height:250px;
-	}
-
-	#trailer .modal-dialog { 
-    	margin-top: 50px;
-    	margin-bottom: 50px;
-    	width: 94%;
-	}
-
-	p{
-		font-size: 13px;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-
-	p a{ 
-		font-size: 13px;
-	}
-
-	.popuplink{ 
-		font-size: 15px;
-	}
-
-	/* Especial cases  */ 
-	.project-popup-title{
-		line-height: 1;
-		margin-top: 20px;
-	}
-
-	.bikeshare-img{
-		width: 340px;
-		height: auto;
-	}
-
-	.planner-img{
-		width: 340px;
-		height: auto;
-	}
-
-	.planner{
-		height: 150px;
-	}
-
-	.scripts-img{
-		width: 330px;
-		height: auto;
-	}
-
-	.isolation-img{
-		width: 320px;
-		height: auto;
-	}
-
-	.sudoku-img{
-		height: 240px;
-	}
-
-	.sudoku-vid{
-		width: 90% !important;
-	}
-
-	.classification-img{
-		width: 330px;
-		height: auto;
-	}	
-
-	.translation-img{
-		width: 330px;
-		height: auto;
-	}
-
-	.keypoints-img{
-		width: 90%;
-	}
-
-	.facialrecognition-img{
-		width: 75%;
-	}
-
-	.translator-result-img{
-		width: 95%;
-	}
-
-	.aco-performance-img{
-		width: 100%;
-	}
-
-	.aco-comparission-img{
-		width: 75%;
-	}
-
-	.aco-outexample-img{
-		width: 95%;
-	}
-
-	.popup-list{
-		padding-left: 25px;
-	}
+	
 }
 
 /** *************************************************************************************************** **/
 @media (min-width: 425px) and (max-width:767px) { /* TABLET */
-	/* Landing page */
-	h1{
-		font-size: 40px;
-	}
 
-	h2{
-		font-size: 15px;
-		line-height: 1.2;
-		padding-bottom: 0px;
-	}
-
-	button{
-		width: 55%;
-		font: 15px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
-		margin-top: 26px;
-	}
-
-	.footer{
-		border-top: 1px solid #676767;
-	}
-
-	.footer-links li{
-		margin-right: 17px;
-	}
-
-	.footer-links a{
-		font-size: 14px;
-	}
-
-	.footer-copy{
-		font-size: 12px;
-	}
-
-	.animation{
-		height: 550px; 
-	}
-
-	.col{
-		width: 19%;
-		display: inline-block;
-		margin: 0px;
-		padding: 0px 0px 0px 14px;
-	}
-
-	/* Projects page */
-	h3{
-		font-size: 20px;
-	}
-
-	h4{
-		font-size: 13px;
-	}
-
-	h5{
-		font-size: 15px;
-	}
-
-	.size{
-		height: auto;
-	}
-
-	.project-img{
-		width:370px;
-		height:250px;
-	}
-
-	#trailer .modal-dialog { 
-    	margin-top: 50px;
-    	margin-bottom: 50px;
-    	width: 95%;
-	}
-
-	p{
-		font-size: 13px;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-
-	p a{ 
-		font-size: 13px;
-	}
-
-	.popuplink{ 
-		font-size: 15px;
-	}
-
-	/* Especial cases  */ 
-	.project-popup-title{
-		line-height: 1;
-		margin-top: 20px;
-	}
-
-	.bikeshare-img{
-		width: 390px;
-		height: auto;
-	}
-
-	.planner-img{
-		width: 380px;
-		height: auto;
-	}
-
-	.planner{
-		height: 160px;
-	}
-
-	.scripts-img{
-		width: 390px;
-		height: auto;
-	}
-
-	.isolation-img{ 
-		width: 340px;
-		height: auto;
-	}
-
-	.sudoku-img{
-		height: 270px;
-	}
-
-	.sudoku-vid{
-		width: 90% !important;
-	}
-
-	.classification-img{
-		width: 350px;
-		height: auto;
-	}	
-
-	.translation-img{
-		width: 380px;
-		height: auto;
-	}
-
-	.keypoints-img{
-		width: 90%;
-	}
-
-	.facialrecognition-img{
-		width: 75%;
-	}
-
-	.translator-result-img{
-		width: 95%;
-	}
-
-	.aco-performance-img{
-		width: 100%;
-	}
-
-	.aco-comparission-img{
-		width: 70%;
-	}
-
-	.aco-outexample-img{
-		width: 95%;
-	}
-
-	.popup-list{
-		padding-left: 25px;
-	}
 }
 
 /** *************************************************************************************************** **/
 @media (min-width: 768px) and (max-width:1023px) {
-	/* Landing page */
 
-	h1{
-		font-size: 45px;
-	}
-
-	h2{
-		font-size: 18px;
-	}
-
-	button{
-		width: 40%;
-		font: 17px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
-		margin-top: 36px;
-	}
-
-	.footer{
-		border-top: 1px solid #676767;
-	}
-
-	.footer-links a{
-		font-size: 14px;
-	}
-
-	.footer-copy{
-		font-size: 12px;
-	}
-
-	.animation{
-		height: 550px; 
-	}
-
-	.col{
-		width: 19%;
-		display: inline-block;
-		margin: 0px;
-		padding: 0px 0px 0px 14px;
-	}
-
-
-	/* Projects page */
-	h3{
-		font-size: 20px;
-	}
-
-	h4{
-		font-size: 13px;
-		margin-left: 15%;
-		margin-right: 15%;
-	}
-
-	h5{
-		font-size: 15px;
-	}
-
-	.size{
-		height: auto;
-	}
-
-	.project-img{
-		width:370px;
-		height:250px;
-	}
-
-	#trailer .modal-dialog { 
-    	margin-top: 50px;
-    	margin-bottom: 50px;
-    	width: 90%;
-	}
-
-	p{
-		font-size: 15px;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-
-	p a{ 
-		font-size: 15px;
-	}
-
-	.popuplink{ 
-		font-size: 18px;
-	}
-
-	/* Especial cases  */ 
-	.project-popup-title{
-		line-height: 1;
-		margin-top: 20px;
-	}
-
-	.bikeshare-img{
-		width: 95%;
-		height: auto;
-	}
-
-	.planner-img{
-		width: 480px;
-		height: auto;
-	}
-
-	.planner{
-		height: 190px;
-	}
-
-	.scripts-img{
-		width: 670px;
-		height: auto;
-	}
-
-	.sudoku-vid{
-		width: 60% !important;
-	}
-
-	.facialrecognition-img{
-		width: 50%;
-	}
-
-	.keypoints-img{
-		width: 90%;
-	}
-
-	.translator-result-img{
-		width: 95%;
-	}
-
-	.aco-performance-img{
-		width: 100%;
-	}
-
-	.aco-comparission-img{
-		width: 50%;
-	}
-
-	.aco-outexample-img{
-		width: 95%;
-	}
-
-	.popup-list{
-		padding-left: 25px;
-	}
 }
 
 /** *************************************************************************************************** **/

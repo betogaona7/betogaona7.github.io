@@ -10,6 +10,7 @@
 	<!-- Animations -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- ultraviolet -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.min.js'></script>
@@ -18,130 +19,10 @@
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
   <!-- My styles -->
-  <link rel="stylesheet" type="text/css" href="css/style.css?v={random number/string}" /> 
   <link rel="stylesheet" type="text/css" href="css/nanimation.css" /> 
   <link rel="stylesheet" type="text/css" href="css/navi.css" /> 
+  <link rel="stylesheet" type="text/css" href="css/style.css?v={random number/string}" /> 
 
-  <style type="text/css">
-
-    .logo {
-      float: left;
-      height: 50px;
-      width: auto;
-      position: relative;
-    }
-
-    .name{
-      font: 16px "Proxima Nova",Helvetica,Arial,sans-serif;
-      font-family: 'Montserrat', sans-serif;
-      float: left;
-      font-size: 20px;
-      padding-top: 15px;
-      padding-left: 0px;
-    }
-
-    .row-carrusel{
-      margin-left: 100px;
-      margin-right: 100px;
-      padding-top: 90px;
-    }
-
-    nav ul {
-      float: right;
-      padding-top: 15px;
-    }
-
-    nav ul li a{
-      font-size: 16px;
-    }
-
-    .img-cont {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 500px;
-      height: 500px;
-      margin-top: -250px; /* Half the height */
-      margin-left: -250px; /* Half the width */
-    }
-
-
-.carouselwrap {
-  position:relative;
-  width:100%;
-  /* max-width:960px; */
-  overflow:hidden;
-  margin:0 auto;
-}
-
-.carousel {
-  position:relative;
-  overflow:hidden;
-  white-space:nowrap;
-   font-size: 0;
-}
-
-.carousel .item {
-  display:inline-block;
-  text-align:center;
-  margin:0;
-  padding:0;
-  overflow:hidden;
-  vertical-align:top;
-}
-
-.carousel .item img, video {
-  opacity:.1;
-  /* max-height:350px; */
-}
-
-.carousel .item .mainimg{
-  opacity:1;
-  width: 550px;
-  height: 300px;
-  margin-bottom: 30px;
-}
-
-.ic_title {
-  width:80%;
-  background: rgb(8,5,16);
-  text-align:center;
-  margin: 0 auto;
-}
-
-.back_btn {
-  padding:20px;
-  position:absolute;
-  left:10px;
-  z-index:50000000;
-  top:40%;
-  cursor:pointer
-}
-
-.next_btn {
-  padding:20px;
-  position:absolute;
-  right:10px;
-  z-index:50000000;
-  top:40%;
-  cursor:pointer
-}
-
-.no_select {
-  -moz-user-select:none;
-  -webkit-user-select:none;
-  -ms-user-select:none;
-  user-select:none;
-  background-color: transparent;
-}
-
-.item img{
-  width: 450px;
-  height: 250px;
-}
-
-
-  </style>
 
 </head>
 <body>
@@ -149,7 +30,7 @@
 
   <header id="home">
     <div class="animation">
-      <img class="animated infinite tada" src="img/logo-transp.png" width="auto" height="90px">
+      <img class="animated infinite tada" src="img/logo-transp.png">
     </div>
 
     <h1>ALBERTO GAONA</h1>
@@ -177,7 +58,7 @@
   </header>
 
   <section id="projects">
-    <nav class="main-nav">
+    <nav class="main-nav" id="MyNav">
       <div style="float: left;">
         <img class="logo" src="img/logo-transp.png">
         <p class="name"> Alberto Gaona </p> 
@@ -188,19 +69,20 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#resume">Resume</a></li>
+        <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
       </ul>
     </nav>
 
     <div class="row row-carrusel">
         <div class="carouselwrap">
           <div class="back_btn no_select">
-            <svg width="50px" height="70px" viewBox="0 0 50 80" xml:space="preserve">
-            <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375 "/>
+            <svg class="project-button" viewBox="0 0 50 80" xml:space="preserve">
+            <polyline fill="none" class="poly" stroke-linecap="round" stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375 "/>
             </svg>  
           </div>
           <div class="next_btn no_select">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50px" height="70px" viewBox="0 0 50 80" xml:space="preserve">
-            <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="0.375,0.375 45.63,38.087 0.375,75.8 "/>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="project-button" viewBox="0 0 50 80" xml:space="preserve">
+            <polyline fill="none" class="poly" stroke-linecap="round" stroke-linejoin="round" points="0.375,0.375 45.63,38.087 0.375,75.8 "/>
             </svg>
           </div>
           <div class="carousel">
@@ -282,10 +164,10 @@
   </section>
 
   <section id=skills>
-    <div style="position: relative; top: 50%; transform: translateY(-50%);">
+    <div class="skill-row" ">
       <div class="row">
         <div class="col-md-6 col-lg-4 text-center">
-          <img src="img/lang-skills2.png" width="auto" height="100px">
+          <img src="img/lang-skills2.png">
           <h5>Programming Languages</h5>
           <ul class="skills-ul">
             <li>Python</li>
@@ -295,7 +177,7 @@
           </ul>
         </div>
         <div class="col-md-6 col-lg-4 text-center">
-          <img src="img/dl-skills2.png" width="auto" height="100px">
+          <img src="img/dl-skills2.png">
           <h5>DL Frameworks</h5>
           <ul class="skills-ul">
             <li>Pytorch</li>
@@ -304,7 +186,7 @@
           </ul>
         </div>
         <div class="col-md-6 col-lg-4 text-center">
-          <img src="img/tools-skills2.png" width="auto" height="100px" >
+          <img src="img/tools-skills2.png">
           <h5>Libraries and other tools</h5>
           <ul class="skills-ul">
             <li>OpenCV</li>
@@ -325,7 +207,7 @@
       <img src="img/alberto.jpg" width="auto" height="300px" style="border-radius: 30%; display: block; margin-left: auto; margin-right: auto;"> 
     </div>
 
-    <footer class="footer" style="bottom: 0; margin-top: 100px">
+    <footer class="footer">
         <div class="inner-container">
           <ul class="footer-links">
             <li><a href="http://www.facebook.com/betogaona07" target="_blank" rel="noopener"> Facebook </a></li>
@@ -345,9 +227,14 @@
 
 
 <script type="text/javascript">
-  function sendToProjects(){
-    document.location.href = "./projects.html";
-  } 
+  function myFunction() {
+    var x = document.getElementById("MyNav");
+    if (x.className === "main-nav") {
+      x.className += " responsive";
+    } else {
+      x.className = "main-nav";
+    }
+  }
 </script>
 <script type="text/javascript">
 
