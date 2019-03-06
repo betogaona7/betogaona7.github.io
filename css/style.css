@@ -557,7 +557,8 @@ nav ul li{
 	}
 
 	h4{
-		font-size: 19px;
+		font: 16px/1.4 "Proxima Nova",Helvetica,Arial,sans-serif;
+		font-size: 20px;
 	}
 
 	h6{
@@ -576,6 +577,45 @@ nav ul li{
 	.poly{
 		stroke: rgb(8,5,16);
 		stroke-width: 3;
+	}
+
+
+	.container{
+		padding-top: 2vh;
+		padding-left: 0px;
+		padding-right: 35px;
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+
+	.col-md-8{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.col-md-4{
+		padding-left: 35px;
+		padding-right: 0px;
+		text-align: center;
+	}
+
+	p{
+		font: 16px/1.4 "Proxima Nova",Helvetica,Arial,sans-serif;
+		font-size: 13px;
+	}
+
+	.p-more{
+		font-size: 14px;
+	}
+
+	p a{
+		font-size: 14px;
+	}
+
+	div video{
+		width: 270px;
+		height: auto;
+	  	
 	}
 
 	/* Skills */ 
@@ -725,7 +765,8 @@ nav ul li{
 	}
 
 	h4{
-		font-size: 19px;
+		font: 16px/1.4 "Proxima Nova",Helvetica,Arial,sans-serif;
+		font-size: 25px;
 	}
 
 	h6{
@@ -744,6 +785,45 @@ nav ul li{
 	.poly{
 		stroke: rgb(8,5,16);
 		stroke-width: 3;
+	}
+
+
+	.container{
+		padding-top: 2vh;
+		padding-left: 0px;
+		padding-right: 35px;
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+
+	.col-md-8{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.col-md-4{
+		padding-left: 35px;
+		padding-right: 0px;
+		text-align: center;
+	}
+
+	p{
+		font: 16px/1.4 "Proxima Nova",Helvetica,Arial,sans-serif;
+		font-size: 13px;
+	}
+
+	.p-more{
+		font-size: 14px;
+	}
+
+	p a{
+		font-size: 14px;
+	}
+
+	div video{
+		width: 325px;
+		height: auto;
+	  	
 	}
 
 	/* Skills */ 
@@ -892,7 +972,8 @@ nav ul li{
 	}
 
 	h4{
-		font-size: 19px;
+		font: 16px/1.4 "Proxima Nova",Helvetica,Arial,sans-serif;
+		font-size: 25px;
 	}
 
 	h6{
@@ -912,6 +993,40 @@ nav ul li{
 		stroke: rgb(8,5,16);
 		stroke-width: 3;
 	}
+
+
+	.container{
+		padding-top: 2vh;
+		padding-left: 0px;
+		padding-right: 35px;
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+
+	.col-md-8{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.col-md-4{
+		padding-left: 35px;
+		padding-right: 0px;
+		text-align: center;
+	}
+
+	p{
+		font: 16px/1.4 "Proxima Nova",Helvetica,Arial,sans-serif;
+		font-size: 13px;
+	}
+
+	.p-more{
+		font-size: 14px;
+	}
+
+	p a{
+		font-size: 14px;
+	}
+
 
 	/* Skills */ 
 
@@ -978,6 +1093,39 @@ nav ul li{
 
 	.ic_title{
 		width: 95%;
+	}
+
+
+
+	.container{
+		padding-left: 0px;
+		padding-right: 35px;
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+
+	.col-md-8{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.col-md-4{
+		padding-left: 26px;
+		padding-right: 0px;
+		text-align: center;
+	}
+
+	p{
+		font: 16px/1.4 "Proxima Nova",Helvetica,Arial,sans-serif;
+		font-size: 13px;
+	}
+
+	.p-more{
+		font-size: 14px;
+	}
+
+	p a{
+		font-size: 14px;
 	}
 
 	.skill-row{
