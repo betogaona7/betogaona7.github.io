@@ -63,8 +63,9 @@ h4{ /* Project name  */
 	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 25px;
-	color: #b1992c;
+	color: #008CBA;
 	margin-top: 0px;
+	padding-left: 35px;
 }
 
 h5{ /* Skill title */ 
@@ -81,8 +82,12 @@ h6{ /* Project description */
 }
 
 .project_link{
+	background-color: #008CBA;
 	color: #008CBA;
-	font-size: 18px;
+	font-size: 12px;
+	border-radius: 10%;
+	border: 1px solid #b1992c; 
+	padding: 2px 2px; 
 }
 
 .row{
@@ -263,9 +268,9 @@ p a:hover{
 
 p{ /* Technical description of the project */
 	padding-left: 35px; 
-	padding-right: 35px;
+	padding-right: 0px;
 	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
-	font-size: 17px;
+	font-size: 14px;
 	text-align: justify;
 }
 
@@ -276,17 +281,40 @@ li p{ /* List in the technical descriptions */
 
 p a{ /* Links in the technical descriptions */
 	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
-	font-size: 17px;
-	color:#008CBA;
+	font-size: 16px;
+	color:#008CBA !important;
 	text-decoration: none;
 }
 
 div video{ /* Video in technical descriptions */
-	width: 450px;
-	height: 250px;
-	border: 0;
+	width: 380px;
+	height: 215px;
+	border-radius: 5%;;
+	border: 1px solid #b1992c;
+	opacity: 1;
+	outline: none;
 }
 
+.popover-title{
+	background: #fdfbfb;
+}
+
+.popover-content{
+	background: rgb(8,5,16);
+	color:#fdfbfb;
+	font: 16px/1.3 "Proxima Nova",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	text-align: justify;
+}
+
+.video-pad{
+	padding-right: 35px;
+}
+
+.p-more{
+	text-align: center;
+	font-size: 16px;
+}
 
 .logo {
       float: left;

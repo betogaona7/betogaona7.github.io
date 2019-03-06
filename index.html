@@ -51,7 +51,7 @@
     </div>
 
     <h1>ALBERTO GAONA</h1>
-    <h2 style="color: #008CBA">Computer Systems Engineer & Deep Learning Engineer Research</h2>
+    <h2 style="color: #008CBA">Computer Systems Engineer & Deep Learning Engineer</h2>
    
     <div class="c-scroll-icon">
       <div class="c-scroll-icon-line-mask">
@@ -74,7 +74,7 @@
     </div>
   </header>
 
-  <section id="projects">
+  <section id="projects" style="height: auto;">
     <nav class="main-nav" id="MyNav">
       <div style="float: left;">
         <img class="logo" src="img/logo-transp.webp">
@@ -91,96 +91,116 @@
       </ul>
     </nav>
 
-    <div class="row row-carrusel">
-        <div class="carouselwrap">
-          <div class="back_btn no_select">
-            <svg class="project-button" viewBox="0 0 50 80" xml:space="preserve">
-            <polyline fill="none" class="poly" stroke-linecap="round" stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375 "/>
-            </svg>  
-          </div>
-          <div class="next_btn no_select">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="project-button" viewBox="0 0 50 80" xml:space="preserve">
-            <polyline fill="none" class="poly" stroke-linecap="round" stroke-linejoin="round" points="0.375,0.375 45.63,38.087 0.375,75.8 "/>
-            </svg>
-          </div>
-          <div class="carousel">
-            <div class="item">
-              <video controls 
-                  title="Hair Segmentation"
-                  description="
-                  Have you ever wondered how another hairstyle would make you look?. It is a small big decision, I mean, It could make you look really great, but also it may could you look bad.  Searching references surely will help you to make a mental image of yourself with that style, but can you really do that without fall into expectation-reality?. </br>
+    <div class="container" style="width: 100%;">
 
-                  This project identifies the hair location in pictures as the first step of a 'mirror' system that will show how you would really look with any hairstyle you want."
-                  link="https://github.com/betogaona7/hairstyle/tree/master/HS-Segment-Technique"
-                  atext="Source code"> 
-                  <source src="gifs/hairsegmentation.webm" type="video/webm">
-              </video>             
-            </div>
-            <div class="item">
-              <video controls 
-                   title="Dermatologist AI"
-                   description="
-                   Skin cancer is the most common cancer in the world, just in the U.S.A, there are 5.4 million cases every year. Melanoma is the kind that kills people. It comes in multiple stages, from 0 to 4. The survival probability for stage four is 15-20%, and for stage zero is 99-100%, so early detection is paramount to not dying from cancer.</br>
+      <div class="row">
+        <div class="col-md-8">
+          <h4> Automatic Hair Segmentation 
+            <a href="https://github.com/betogaona7/hairstyle" target="_blank" rel="noopener" class="project_link">Source code</a>
+          </h4>
+          <p> 
+            Have you ever wondered how another hairstyle would make you look?. It is a small big decision, I mean, It could make you look really great, but also it may could you look bad.  Searching references surely will help you to make a mental image of yourself with that style, but can you really do that without falling into expectation-reality?. </br></br>
 
-                   This project helps to diagnose melanoma. It distinguishes the malignant skin tumor from two types of benign lesions: nevus and seborrheic keratosis."
-                   link="https://github.com/betogaona7/dermatologist-AI"
-                   atext="Source code">
-                   <source  src="gifs/dermatologist.webm"  type="video/webm">
-              </video>
-            </div>
-            <div class="item">
-              <video controls 
-                   title="Semantic Segmentation"
-                   description="
-                   Imagine that you ordered tacos, two of pastor and six of bistec, all on the same plate; The waiter comes out, so you wonder if what he is carrying are tacos;  He gives to you, and you quickly figure out where the bistec's are located in the plate.  In computer vision, classification solves the what, and semantic segmentation the where 'exactly'.
-
-                   This project classifies pixel by pixel 32 different types of objects with a state-of-art performance on the CamVid dataset.
-                   "
-                   link="https://github.com/betogaona7/FCN"
-                   atext="Source code">
-                   <source src="gifs/FCN.webm" type="video/webm">
-              </video>
-            </div>
-            <div class="item">
-              <video controls 
-                   title="YOLO v3"
-                   description="
-                   In computer vision, localization means to know where an object is located in an image, that is, predict a class from an object and a bounding box for that object. You Only Look Once (YOLO) is a real-time object detection algorithm that instead of locating objects perfectly (like the semantic segmentation project) it prioritizes speed and recognition. This is important for any application that relies on looking at the proximity of two or more objects."
-                   link="https://github.com/betogaona7/computer_vision/blob/master/YOLO.ipynb"
-                   atext="Source code">
-                   <source src="gifs/YOLO.webm" type="video/webm">
-              </video>
-            </div>
-            <div class="item">
-              <video controls 
-                   title="Real-time Facial Keypoints Recognizer"
-                   description="
-                   Predict key-point positions on face images can be the building block in several applications, such as tracking faces in images and video, analyzing facial expressions, detecting dysmorphic facial signs for medical diagnosis, performing face recognition, etc. In this case, the project is a recognition system that takes in an image or live stream containing faces and determines the location of each face and their 15 essential facial key-points which are used later to add a sunglass filter."
-                   link="https://github.com/betogaona7/AIND-projects/blob/master/AIND-CV-FacialKeypointDetection/CV_project.ipynb"
-                   atext="Source code">
-                   <source src="gifs/Keypoints.webm" type="video/webm">
-              </video>
-            </div>
-            <div class="item">
-              <video controls poster= "img/huicholdos.webp" 
-                     title="Mariya"
-                     description="
-                     There is one of the oldest indigenous community of the history in México, erroneously known as Huicholes. They live in the highest part of the Sierra Madre Occidental where the access to new technologies is almost impossible; this forces new generations to move to the big cities and face a language problem that threatens the extinction of their mother tongue. So, I collaborated to create Mariya, a project that seeks to put an end to their communication barrier through a translator device." 
-                     link="https://proyectomariya.github.io/"
-                     atext="Website">
-                     <source src="img/Mariya.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="item">
-              <img src="img/Github.webp"
-                   title="Want more?"
-                   description="Check them on my Github account."
-                   link="https://github.com/betogaona7"
-                   atext="github/betogaona7">
-            </div>
-          </div>
-          <div class="ic_title"></div>
+            This project identifies the hair location in pictures as the first step of a 'mirror' system that will show how you would really look with any hairstyle you want.
+          </p>
         </div>
+        <div class="col-md-4 video-pad">
+          <video  controls title="Hair Segmentation">
+            <source src="gifs/hairsegmentation.webm" type="video/webm">
+          </video>
+        </div>
+      </div>
+
+      <br/>
+      <br/>
+
+      <div class="row">
+        <div class="col-md-8">
+          <h4> Dermatologist AI
+            <a href="https://github.com/betogaona7/dermatologist-AI" target="_blank" rel="noopener" class="project_link">Source code</a> 
+          </h4>
+          <p> 
+            Skin cancer is the most common cancer in the world, just in the U.S.A, there are 5.4 million cases every year. Melanoma is the kind that kills people. It comes in multiple stages, from 0 to 4. The survival probability for stage four is 15-20%, and for stage zero is 99-100%, so early detection is paramount to not dying from cancer.</br></br>
+
+            This project helps to diagnose melanoma. It distinguishes the malignant skin tumor from two types of benign lesions: nevus and seborrheic keratosis.
+          </p>
+        </div>
+        <div class="col-md-4 video-pad">
+          <video  controls title="Dermatologist AI"> 
+            <source  src="gifs/dermatologist.webm"  type="video/webm">
+          </video>            
+        </div>
+      </div>
+
+      <br/>
+      <br/>
+
+      <div class="row">
+        <div class="col-md-8">
+          <h4> Semantic Segmentation
+            <a href="https://github.com/betogaona7/FCN" target="_blank" rel="noopener" class="project_link">Source code</a> 
+          </h4>
+          <p>
+            Imagine that you ordered tacos, two of pastor and six of bistec, all on the same plate; The waiter comes out, so you wonder if what he is carrying are tacos;  He gives to you, and you quickly figure out where the bistec's are located in the plate.  In computer vision, classification solves the what, and semantic segmentation the where 'exactly'. </br></br>
+
+            This project classifies pixel by pixel 32 different types of objects with a state-of-art performance on the CamVid dataset.
+          </p>
+        </div>
+        <div class="col-md-4 video-pad">
+          <video  controls title="Semantic Segmentation"> 
+            <source src="gifs/FCN.webm" type="video/webm">
+          </video>            
+        </div>
+      </div>
+
+      <br/>
+      <br/>
+
+      <div class="row">
+        <div class="col-md-8">
+          <h4> YOLO v3 Implementation
+            <a href="https://github.com/betogaona7/computer_vision/blob/master/YOLO.ipynb" target="_blank" rel="noopener" class="project_link">Source code</a> 
+          </h4>
+          <p>
+            In computer vision, localization means to know where an object is located in an image, that is, predict a class from an object and a bounding box for that object. You Only Look Once (YOLO) is a real-time object detection algorithm that instead of locating objects perfectly (like the semantic segmentation project) it prioritizes speed and recognition. This is important for any application that relies on looking at the proximity of two or more objects.
+          </p>
+        </div>
+        <div class="col-md-4 video-pad">
+          <video  controls title="YOLO v3"> 
+            <source src="gifs/YOLO.webm" type="video/webm">
+          </video>            
+        </div>
+      </div>
+
+      </br>
+      </br>
+
+      <div class="row">
+        <div class="col-md-8">
+          <h4> Mariya
+            <a href="https://proyectomariya.github.io/" target="_blank" rel="noopener" class="project_link">Web site</a> 
+          </h4>
+          <p>
+            There is one of the oldest indigenous community of the history in México, erroneously known as Huicholes. They live in the highest part of the Sierra Madre Occidental where the access to new technologies is almost impossible; this forces new generations to move to the big cities and face a language problem that threatens the extinction of their mother tongue. So, I collaborated to create Mariya, a project that seeks to put an end to their communication barrier through a translator device.
+          </p>
+        </div>
+        <div class="col-md-4 video-pad">
+          <video  controls poster= "img/huicholdos.webp" title="Mariya"> 
+            <source src="img/Mariya.mp4" type="video/mp4">
+          </video>            
+        </div>
+      </div>
+
+      </br>
+      </br>
+
+      <div class="row">
+        <div class="col-md-12">
+          <p class="p-more">Want to see more projects? please sign u.... visit my
+            <a href="https://github.com/betogaona7" target="_blank" rel="noopener">GitHub profile</a>.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -224,8 +244,26 @@
 
     <h3 class="contactme"></h3>
 
+
     <div>
-      <img src="img/alberto.jpg" width="auto" height="300px" style="border-radius: 30%; display: block; margin-left: auto; margin-right: auto; border: 1px solid #b1992c;"> 
+      <button 
+        type="button" 
+        class="btn btn-secondary animated infinite pulse" 
+        data-container="body" 
+        data-toggle="popover" 
+        data-placement="right" 
+        
+        data-html = true
+        data-title = 'Think fast!'
+        data-content='You are the captain of a pirate ship and your crew gets to vote on how the gold is divided up. If fewer than half of the pirates agree with you, you died. How do you recommend apportioning the gold in such a way that you get a good share of the booty, but still survive? </br></br>
+        Send me your answer, and let the conversation begin!
+
+        '
+        style="display: block; margin-left: auto; margin-right: auto; background-color: transparent; outline: none;"
+        >
+
+        <img src="img/alberto.jpg" width="auto" height="300px" style="border-radius: 30%; border: 1px solid #b1992c;"> 
+      </button>
     </div>
 
     <footer class="footer">
@@ -292,179 +330,21 @@
     }
   });
 
-
-  $(document).ready(function(){
-    function init() {
-      var length = $('.carousel div').length / 2;
-      var min = $('.carousel div').length;
-
-      //Rule Carousel must have 5 images at a minimum
-      if (min <= 4) {
-        alert('Sorry. You must have 5 images at a minimum');
-      } else {
-        //find the first img and assign it to active
-        $('.carousel').find('div').first().addClass('ic_active');
-        $('.carousel').find('div').first().find('img, video').addClass('mainimg');
-
-        //Divide Imgs in half and take the second half and move them to top of stack for wrap effect
-        var getHalf = Math.ceil(length);
-        var wrapImgs = $('.carousel').find('div').slice(getHalf, min);
-        $('.carousel').prepend(wrapImgs);
-        infinite();
-      }
-    }//end init
-    init();
+  $(function () {
+    $('[data-toggle="popover"]').popover()
   });
 
-  function infinite() {
-    //Center first image
-    var active = $('.ic_active');
-    initActive(active);
+  1
 
-    $('.ic_active').next().addClass('next');
-    $('.ic_active').prev().addClass('prev');
-    
-    //Get title
-    var title = $('.ic_active').find('img, video').attr('title');
-    var description = $('.ic_active').find('img, video').attr('description');
-    var link = $('.ic_active').find('img, video').attr('link');
-    var atext = $('.ic_active').find('img, video').attr('atext');
-
-    //Add title
-    if(atext.indexOf("github") != -1){
-      var center = "text-align: center;";
-    }else{
-      var center = "text-align: justify;";
-    }
-    
-    $('.ic_title').append('<h4>' + title + '</h4>');
-    $('.ic_title').append('<h6 style="'+center+'">' + description + '</h6>');    
-    $('.ic_title').append('<a href="'+link+'" target="_blank" rel="noopener" style="color: #008CBA; ' + center +'">'+atext+'</a>');
-
-    function clickMe() {
-      //prevent multiple clicks on the same img
-      var clicked = $(this);
-      clicked.unbind('click');
-
-      if(clicked.hasClass('back_btn')){
-        var bkbtn = clicked.parent().find('.carousel').find('.prev');
-        clicked = bkbtn;
-      }else if (clicked.hasClass('next_btn')){
-        var nxbtn = $(this).parent().find('.carousel').find('.next');
-        clicked = nxbtn;
-      }
-
-      var state;
-      var parentMarginLeftCalculation;
-      var animationCalculation;
-
-      // Checking for what was clicked and assigning state a value
-      if (clicked.hasClass('next')) {
-        state = 'next';
-      } else if (clicked.hasClass('prev')) {
-        state = 'prev';
-      }else{
-        return;
-      } 
-       //Sets new active img
-      toggle(clicked);
-      //Grab position, widths of necessary elements, and title 
-      elementInfo(clicked);
-       // Checking for what was clicked for moving first/last img
-      if (state === 'next') {
-        clicked.parent().append('<div class="item">' + firstImg + '</div>');
-        clicked.parent().find('div.item').first().remove();
-      } else {
-        clicked.parent().prepend('<div class="item">' + lastImg + '</div>');
-        clicked.parent().find('div.item').last().remove();
-      }
-      var parentWidth = clicked.parent().parent().width() / 2;
-      var value = (parentWidth - activeImgPositionLeft) - halfOfActiveImgWidth;
-     // Calculations to move images forward or backward
-      if (state === 'next') {
-        parentMarginLeftCalculation = value + firstImgWidth + prevImgWidth;
-        animationCalculation = parentMarginLeftCalculation - prevImgWidth;
-      } else if (state === 'prev'){
-        parentMarginLeftCalculation = value - lastImgWidth - nextImgWidth;
-        animationCalculation = parentMarginLeftCalculation + nextImgWidth;
-      }
-      // Setting Margin Left based on calculations
-      clicked.parent().css('margin-left', '' + parentMarginLeftCalculation + 'px');
-      // Animating Margin Left
-      clicked.parent().animate({
-        marginLeft: '' + animationCalculation + ''
-      }, 1000, function() {
-        $('.next').unbind('click').click(clickMe);
-        $('.prev').unbind('click').click(clickMe);
-        $('.back_btn').unbind('click').click(clickMe);
-        $('.next_btn').unbind('click').click(clickMe);
-      });
-    }//end clickMe
-
-    //getting position, width, title and contents of the first and last img
-    function elementInfo(myThis) {
-      activeImgPositionLeft = myThis.position().left;
-      halfOfActiveImgWidth = myThis.width() / 2;
-      prevImgWidth = myThis.prev().width();
-      nextImgWidth = myThis.next().width();
-
-      
-      title = myThis.find('img, video').attr('title');
-      description = myThis.find('img, video').attr('description');
-      link = myThis.find('img, video').attr('link');
-      atext = myThis.find('img, video').attr('atext');
-
-      if(atext.indexOf("github") != -1){
-        var center = "text-align: center;";
-      }else{
-        var center = "text-align: justify;";
-      }
-
-      myThis.parent().next().find('h4').html(title);
-      myThis.parent().next().find('h6').html(description);
-      myThis.parent().next().find('h6').attr('style', center);
-      myThis.parent().next().find('a').attr('href', link);
-      myThis.parent().next().find('a').html(atext);
-
-      firstImgWidth = myThis.parent().find('div.item').first().width();
-      lastImgWidth = myThis.parent().find('div.item').last().width();
-      firstImg = myThis.parent().find('div.item').first().html();
-      lastImg = myThis.parent().find('div.item').last().html();
-    }//end elementInfo
-
-    // adding and removing appropriate classes
-    function toggle(myThis) {
-      myThis.parent().find('img, video').removeClass('mainimg');
-      myThis.parent().find('div').removeClass('ic_active');
-      myThis.parent().find('div').removeClass('next');
-      myThis.parent().find('div').removeClass('prev');
-      myThis.find('img, video').addClass('mainimg');
-      myThis.addClass('ic_active');
-      myThis.next().addClass('next');
-      myThis.prev().addClass('prev');
-    }//end toggle
-
-    $('.next').click(clickMe);
-    $('.prev').click(clickMe);
-    $('.back_btn').click(clickMe);
-    $('.next_btn').click(clickMe);
-
-  }//end infinite
+$('button').click(function() {
+  if ($('[data-toggle="popover"]').hasClass('animated infinite')){
+    $('[data-toggle="popover"]').removeClass('animated infinite');
+  }else{
+    $('[data-toggle="popover"]').addClass('animated infinite');
+  }
+});
 
 
-  //keeps active img centered on load and for window.resize function
-  function initActive(myActive){
-    p = myActive.position().left;
-    w = myActive.width() / 2;
-    pw = myActive.parent().parent().width() / 2;
-    val = (pw - p) - w;
-    myActive.parent().css('margin-left', '' + val + 'px');
-  }//end initActive
-
-  $(window).resize(function() {
-    var active = $('.ic_active');
-    initActive(active); 
-  });//end window.resize
 
 </script> 
 
