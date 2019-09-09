@@ -1,17 +1,12 @@
-
 @import '../fonts/fonts.min.css';
 @import '../fonts/spartan/stylesheet.css';
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Hairline|Bai+Jamjuree');
 
 
 body{
 	color: #fdfbfb;
-}
-
-header {
-	height: 100vh;
 }
 
 section { 
@@ -36,31 +31,107 @@ section {
 h1{ /* Name */
 	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 70px;
+	font-size: 60px;
 	font-weight: 400;
 	text-align: center;
-	margin-top: 0;
-	padding-top: 0;
+	padding-top: 75px;
 }
 
 h2{ /* Degree */
 	font: 16px/1.9 "Proxima Nova",Helvetica,Arial,sans-serif;
-	font-size: 16px;
-	line-height: 0.5;
-	text-align: right;
+	font-size: 18px;
+	line-height: 0.8;
 	text-align: center;
 }
 
-h3{
-	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
-	font-family: 'Montserrat', sans-serif;
-	color: #008CBA;
-	padding-left: 70px;
-	font-size: 35px;
+h3{ /* Normal text */
+	width: 90%;
+	font: 16px/1.9 "Proxima Nova",Helvetica,Arial,sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: justify;
 }
 
+
+.container{
+	width: 95%;
+	padding-top: 25vh;
+}
+
+.play-anedocte{
+	margin-top: 15px;
+	width:auto; 
+	height:20px;
+}
+
+.anedoctes-row{
+	margin-top: 20px;
+}
+
+
+
+
+
 h4{ /* Project name  */ 
-	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
+	width: 80%;
+	font: 16px/1.9 "Proxima Nova",Helvetica,Arial,sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: justify;
+	color: #080510;
+}
+
+h5{ /* Skill title */ 
+	width: 90%;
+	font: 16px/1.9 "Proxima Nova",Helvetica,Arial,sans-serif;
+	font-size: 28px;
+	line-height: 1;
+	text-align: justify;
+	color: #080510;
+	font-weight: bold;
+}
+
+.skills-row{
+	margin-top: -45px;
+}
+
+.tech-skills{
+	padding-top: 80px;
+}
+
+
+
+
+i{
+	color:  #080510;
+}
+
+.ex1,.ex3{
+  padding: 60px 0;
+  text-align: center;
+  background: #fff;
+  i{
+    margin: 0 20px;
+    color: #333;
+    cursor: pointer;
+  }
+}
+
+i:hover{
+	color: #008CBA;
+}
+
+
+
+
+
+
+
+
+
+
+.deprecated-projects{
+font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 25px;
 	color: #008CBA;
@@ -68,18 +139,40 @@ h4{ /* Project name  */
 	padding-left: 35px;
 }
 
-h5{ /* Skill title */ 
-	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	color: #008CBA;
+
+.contact-r{
+	width: 40%;
+	text-align: center;
 }
 
-h6{ /* Project description */ 
-	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
-	font-size: 13px;
-	text-align: justify;
+.contact-row{
+	margin-top: 30px;
 }
+
+
+
+
+
+
+h6{
+    font-family: 'Bungee Hairline', cursive;
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 100px;
+    width: 45%;
+}
+
+
+.almendra-text{
+	padding-left: 50px;
+	text-align: center;
+	width: 40%;
+}
+
+
+
+
 
 .project_link{
 	background-color: #008CBA;
@@ -229,10 +322,6 @@ ultraviolet
 
 
 
-.container{
-	width: 85%;
-	padding-top: 25vh;
-}
 
 .no-landing-footer{
 	padding-bottom: 20px;
@@ -459,6 +548,7 @@ nav ul{
 
 .main-nav{
 	padding-right: 0px;
+	position: fixed;
 }
 /** *************************************************************************************************** **/
 @media (max-width:374px) {

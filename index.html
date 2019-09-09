@@ -30,61 +30,100 @@
   <link rel="stylesheet" type="text/css" href="css/navi.css" /> 
   <link rel="stylesheet" type="text/css" href="css/style.css?v={random number/string}" /> 
 
+  <script src="https://use.fontawesome.com/4227c9ce8f.js"></script>
+
+
+
 
 </head>
 <body>
-  <canvas id="canvas"></canvas>
-
-  <header id="home">
-    <div class="animation">
-      <img class="animated tada" src="img/logo-transp.webp">
-    </div>
-
-    <h1>ALBERTO GAONA</h1>
-    <h2 style="color: #008CBA">Computer Systems Engineer & Deep Learning Engineer</h2>
-   
-    <div class="c-scroll-icon">
-      <div class="c-scroll-icon-line-mask">
-        <div class="c-scroll-icon-line"></div>
-      </div>
-      <div class="c-scroll-icon-triangle">
-        <div class="c-scroll-icon-triangle-mask first">
-          <div class="c-scroll-icon-triangle-line first"></div>
-        </div>
-        <div class="c-scroll-icon-triangle-mask right">
-          <div class="c-scroll-icon-triangle-line right"></div>
-        </div>
-        <div class="c-scroll-icon-triangle-mask left">
-          <div class="c-scroll-icon-triangle-line left"></div>
-        </div>
-        <div class="c-scroll-icon-triangle-mask last">
-          <div class="c-scroll-icon-triangle-line last"></div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <section id="projects" style="height: auto;">
+  <section id="anedoctes" style="background-color: transparent;">
+    <canvas id="canvas"></canvas>
     <nav class="main-nav" id="MyNav">
       <div style="float: left;">
         <img class="logo" src="img/logo-transp.webp">
-        <p class="name"> Alberto Gaona </p> 
+        <p class="name" hidden="true" id="nav-name"> Alberto Gaona </p> 
       </div>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#anedoctes" hidden="true" id="nav-home">Anedoctes</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="./tmp/Resumenes/Alberto-Gaona-Resume(General).pdf" target="_blank" rel="noopener">Resume</a></li>
-        <li><a href="https://initiativealmendra.github.io" target="_blank" rel="noopener">Almendra</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Resume</a></li>
+        <li><a href="#almendra">Almendra</a></li>
         <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
       </ul>
     </nav>
 
+    <div class="container">
+      <div class="row anedoctes-row">
+        <div class="col-md-6" style="padding: 0;">
+          <h1>ALBERTO GAONA</h1>
+          <h2 style="color: #008CBA">Artificial Intelligence Specialist</h2>          
+        </div>
+        <div class="col-md-6">
+          <h3>
+            I have skill sets to give human qualities to devices by writing colorful words in a code editor. Maybe, you already knew it, but surely you are here to understand more about who I am. 
+            </br></br>
+            However, the answer to that question depends on you! So, instead of the typical and boring self-description, I will reveal anecdotes thus you can make your own conclusions about me.
+            </br></br>
+            Click the button to play a random one! 
+          </h3>
+          <div>
+            <button 
+                type="button" 
+                class="btn btn-secondary animated infinite pulse" 
+                data-container="body" 
+                data-toggle="popover" 
+                data-placement="right" 
+                data-html = true
+                data-title = 'I am sorry!'
+                data-content='Sorry, you came between the update transition. I still recording them, very soon will be available.'
+                style="display: block; margin-left: auto; margin-right: auto; background-color: transparent; outline: none;">
+                <img src="img/play.png" class="play-anedocte"> 
+              </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" style="background-color: #fdfdfd;">
+    <div class="container">
+      <div class="row skills-row">
+        <div class="col-md-6">
+          <h4>
+            I have experience in creating a product from the idea conception to the prototype presentation. This allowed me to lead a small multidisciplinary team, tested my knowledge in developing ideas with the potential to become businesses, managed myself to meet goals under pressure, and fine-tuned my communication skills by constantly explaining technical concepts to non-technical people; among other things.
+            </br></br>
+            Usually, I design and implement efficient solutions to competitive programming problems in online judges like HackerRank, A2, and URI.
+            </br></br>
+            Also, I regularly read AI-related papers to publish research insights on Almendra's Instagram and to make advanced deep learning videos on Youtube as well as mini-projects on GitHub.
+          </h4>
+        </div>
+        <div class="col-md-6">
+          <div class="tech-skills">
+            <h5> Proficient </h5>
+            <h4> C++, Python, Pytorch, Numpy, Git.</h4>
+            <div style="height: 25px;"></div>
+            <h5> Moderate </h5>
+            <h4> CUDA, OpenCV, Tensorflow, Keras, Pandas, Scikit-learn, Java.</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <section id="projects" style="height: auto;">
     <div class="container" style="width: 100%;">
       <div class="row">
         <div class="col-md-8">
-          <h4> Automatic Hair Segmentation 
+          <h4 class="deprecated-projects"> Automatic Hair Segmentation 
             <a href="https://github.com/betogaona7/hairstyle" target="_blank" rel="noopener" class="project_link">Source code</a>
           </h4>
           <p> 
@@ -105,7 +144,7 @@
 
       <div class="row">
         <div class="col-md-8">
-          <h4> Dermatologist AI
+          <h4 class="deprecated-projects"> Dermatologist AI
             <a href="https://github.com/betogaona7/dermatologist-AI" target="_blank" rel="noopener" class="project_link">Source code</a> 
           </h4>
           <p> 
@@ -126,7 +165,7 @@
 
       <div class="row">
         <div class="col-md-8">
-          <h4> Semantic Segmentation
+          <h4 class="deprecated-projects"> Semantic Segmentation
             <a href="https://github.com/betogaona7/FCN" target="_blank" rel="noopener" class="project_link">Source code</a> 
           </h4>
           <p>
@@ -147,7 +186,7 @@
 
       <div class="row">
         <div class="col-md-8">
-          <h4> YOLO v3 Implementation
+          <h4 class="deprecated-projects"> YOLO v3 Implementation
             <a href="https://github.com/betogaona7/computer_vision/blob/master/YOLO.ipynb" target="_blank" rel="noopener" class="project_link">Source code</a> 
           </h4>
           <p>
@@ -166,7 +205,7 @@
 
       <div class="row">
         <div class="col-md-8">
-          <h4> Mariya
+          <h4 class="deprecated-projects"> Mariya
             <a href="https://proyectomariya.github.io/" target="_blank" rel="noopener" class="project_link">Web site</a> 
           </h4>
           <p>
@@ -185,91 +224,56 @@
 
       <div class="row">
         <div class="col-md-12">
-          <p class="p-more">Want to see more projects? please sign u.... visit my
-            <a href="https://github.com/betogaona7" target="_blank" rel="noopener">GitHub profile</a>.
+          <p class="p-more"> Discover more projects on my
+            <a href="https://github.com/betogaona7" target="_blank" rel="noopener">GitHub</a> profile.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id=skills>
-    <div class="skill-row" ">
-      <div class="row">
-        <div class="col-md-6 col-lg-4 text-center">
-          <img src="img/lang-skills2.webp">
-          <h5>Programming Languages</h5>
-          <ul class="skills-ul">
-            <li>Python</li>
-            <li>C++</li>
-            <li>Java</li>
-            <li>C#</li>
-          </ul>
+
+
+  
+  <section id="contact" style="background-color: #fdfdfd;">
+    <div class="container">
+      <div class="row contact-row">
+        <div class="col-md-12">
+          <center>
+          <h4 class="contact-r center">
+            I want your consumers to love you, your new customers to go crazy over you, and your fans to create #hashtags in your honor. So, I must first understand your company.  For that reason, if interested, contact me for an exclusive personalized resume.
+          </h4>
+        </center>
         </div>
-        <div class="col-md-6 col-lg-4 text-center">
-          <img src="img/dl-skills2.webp">
-          <h5>DL Frameworks</h5>
-          <ul class="skills-ul">
-            <li>Pytorch</li>
-            <li>TensorFlow</li>
-            <li>Keras</li>
-          </ul>
-        </div>
-        <div class="col-md-6 col-lg-4 text-center">
-          <img src="img/tools-skills2.webp">
-          <h5>Libraries and other tools</h5>
-          <ul class="skills-ul">
-            <li>OpenCV</li>
-            <li>Numpy</li>
-            <li>AWS-EC2 instances</li>
-            <li>Git</li>
-          </ul>
-        </div>
+      </div>
+            <div class="ex1">
+            <a href="https://www.linkedin.com/in/betogaona7/" target="_blank" rel="noopener">
+              <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a> &ensp; &ensp;
+            <a href="https://www.facebook.com/betogaona07" target="_blank" rel="noopener">
+              <i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a> &ensp; &ensp;
+            <a href="https://www.instagram.com/betogaona7/" target="_blank" rel="noopener">
+              <i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a> &ensp; &ensp;
+            <a href="https://www.youtube.com/channel/UCNXHr_mzoplvXy0crvhJKRg" target="_blank" rel="noopener">
+              <i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a> &ensp; &ensp;
+            <a href="mailto:albertoo_3c@hotmail.com" target="_blank" rel="noopener">
+              <i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a> 
+          |</div>
       </div>
     </div>
   </section>
 
-  <section id=contact>
 
-    <h3 class="contactme"></h3>
-
-
-    <div>
-      <button 
-        type="button" 
-        class="btn btn-secondary animated infinite pulse" 
-        data-container="body" 
-        data-toggle="popover" 
-        data-placement="right" 
-        
-        data-html = true
-        data-title = 'Think fast!'
-        data-content='You are the captain of a pirate ship and your crew gets to vote on how the gold is divided up. If fewer than half of the pirates agree with you, you died. How do you recommend apportioning the gold in such a way that you get a good share of the booty, but still survive? </br></br>
-        Send me your answer, and let the conversation begin!
-
-        '
-        style="display: block; margin-left: auto; margin-right: auto; background-color: transparent; outline: none;"
-        >
-
-        <img src="img/alberto.jpg" width="auto" height="300px" style="border-radius: 30%; border: 1px solid #b1992c;"> 
-      </button>
+  <section id="almendra" style="background-image: url('./img/almendra-back.jpg'); background-size: cover;">
+    <div style="padding-top: 70px; padding-left: 50px;">
+      <h6><img src="img/almendra-logo.png" height="90px" style="margin-right: -10px;"> LMENDRA</h6>
+      <h3 class="almendra-text">
+        Do you believe humans will achieve to become multiplanetary species?, well, I do, and  I absolutely want to put my bit in making this 'crazy' idea come true by doing what I love to do,  so I created Almendra, an artificial intelligence open-research initiative for space exploration to create AI-powered software that relieves feasible multiplanetary-life hurdles.
+        <br/>
+        <br/>
+        <br/>
+        <a href="https://initiativealmendra.github.io/" target="_blank" rel="noopener" style="color: #008CBA">Website</a>
+      </h3>
     </div>
-
-    <footer class="footer">
-        <div class="inner-container">
-          <ul class="footer-links">
-            <li><a href="http://www.facebook.com/betogaona07" target="_blank" rel="noopener"> Facebook </a></li>
-            <li><a href="http://www.github.com/betogaona7" target="_blank" rel="noopener"> Github </a></li>
-            <li><a href="https://www.linkedin.com/in/betogaona7/" target="_blank" rel="noopener"> LinkedIn </a></li>
-            <li><a href="https://www.youtube.com/channel/UCNXHr_mzoplvXy0crvhJKRg" target="_blank" rel="noopener"> Youtube </a></li>
-            <li><a href="http://betogaona7.github.io/blog" target="_blank" rel="noopener"> Blog </a></li>
-          </ul>
-        </div>
-
-        <div class="footer-copy">
-          © 2019 Alberto Gaona - <a href="mailto:albertoo_3c@hotmail.com" style="color: #008CBA;"> Contact </a>
-        </div>
-    </footer>
   </section>
 
 
@@ -296,6 +300,16 @@
 
         $(this).addClass('active');
         nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+
+        /**/
+        if($(this).attr('id') == "anedoctes"){
+          document.getElementById("nav-name").hidden = true;
+          document.getElementById("nav-home").hidden = true;
+        }else{
+          document.getElementById("nav-name").hidden = false;
+          document.getElementById("nav-home").hidden = false;
+        }
+        
       }
     });
   });
