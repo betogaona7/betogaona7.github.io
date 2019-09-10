@@ -99,6 +99,9 @@ h5{ /* Skill title */
 	padding-top: 80px;
 }
 
+.skill-separator{
+	height: 25px;
+}
 
 
 
@@ -154,6 +157,13 @@ font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
 
 
 
+
+#almendra{
+	background-image: url('./../img/almendra-back.jpg') !important; 
+	background-size: cover;
+}
+
+
 h6{
     font-family: 'Bungee Hairline', cursive;
     font-size: 55px;
@@ -169,6 +179,18 @@ h6{
 	text-align: center;
 	width: 40%;
 }
+
+.almendra-p{
+	padding-top: 70px; 
+	padding-left: 50px;
+}
+
+.almendra-l{
+	margin-right: -10px;
+	height: 90px;
+}
+
+
 
 
 
@@ -552,14 +574,10 @@ nav ul{
 }
 /** *************************************************************************************************** **/
 @media (max-width:374px) {
+	/* anedoctes section */
 
-	/* Landing page */
-	.animation{
-		height: 150px; 
-	}
-
-	.animation img{
-		height: 70px;
+	.anedoctes-row{
+		margin-top: 0px;
 	}
 
 	h1{
@@ -567,9 +585,117 @@ nav ul{
 	}
 
 	h2{
-		font-size: 14px;
+		margin-top: 0px;
+		margin-bottom: 10px;
 		line-height: 1;
+		font-size: 16px;
 	}
+
+	h3{
+		width: 100%;
+		font-size: 13px;
+
+	}
+
+	#anedoctes h3{
+		padding-top: 40px;
+	}
+
+	#anedoctes .container{
+		padding: 0px;
+		margin: 0px;
+		padding-top: 2vh;
+		width: 100%;
+	}
+
+	/* Skills section  */
+	h4{
+		font-size: 13px;
+		width: 100%;
+		margin-top: 0px;
+	}
+
+	h5{
+		font-size: 15px;
+	}
+
+	#skills .container{
+		padding: 0px;
+		margin: 0px;
+		width: 100%;
+		padding-top: 85px;
+	}
+
+	.tech-skills{
+		padding-top: 10px;
+	}
+
+	.skill-separator{
+		height: 5px;
+	}
+
+	/* Projects (deprecated) */
+
+	#projects .container{
+		padding-top: 40px;
+		padding-left: 0px;
+		padding-right: 35px;
+		margin-right: 0px;
+		margin-left: 0px;
+		width: 100%;
+	}
+
+	.deprecated-projects{
+		font:16px/1.5 "Proxima Nova",Helvetica,Arial,sans-serif;
+		font-size: 16px;
+		text-align: left;
+	}
+
+	.col-md-4{
+		padding-left: 26px;
+		padding-right: 0px;
+		text-align: center;
+	}
+
+	/* Contact */
+	.contact-r{
+		width: 100%;
+	}
+
+
+	/* Almendra */
+	#almendra{
+		background-image: none !important;
+		background-color: rgb(8,5,16); 
+
+	}
+
+	h6{
+		font-size: 30px;
+		width: 100%;
+	}
+
+	.almendra-text{
+		padding-left: 20px;
+		padding-right: 20px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.almendra-p{
+		padding-top: 50px; 
+		padding-left: 0px;
+	}
+
+	.almendra-l{
+		margin-right: -5px;
+		height: 70px;
+	}
+
+
+
+
+
 
 /* Navigation */
 .main-nav{
@@ -646,14 +772,6 @@ nav ul li{
 		width: 90%;
 	}
 
-	h4{
-		font: 16px/1.4 "Proxima Nova",Helvetica,Arial,sans-serif;
-		font-size: 20px;
-	}
-
-	h6{
-		font-size: 12px;
-	}
 
 	.ic_title a{
 		font-size: 12px;
@@ -669,24 +787,9 @@ nav ul li{
 		stroke-width: 3;
 	}
 
-
-	.container{
-		padding-top: 2vh;
-		padding-left: 0px;
-		padding-right: 35px;
-		margin-right: 0px;
-		margin-left: 0px;
-	}
-
 	.col-md-8{
 		padding-left: 0px;
 		padding-right: 0px;
-	}
-
-	.col-md-4{
-		padding-left: 35px;
-		padding-right: 0px;
-		text-align: center;
 	}
 
 	p{
@@ -709,51 +812,14 @@ nav ul li{
 	}
 
 	/* Skills */ 
-
-	.skill-row{
-		top: 60%;
-	}
-
 	.text-center img{
 		width: auto;
 		height: 60px;
 	}
 
-	h5{
-		font-size: 12px;
-	}
-
-	.skills-ul{
-		font-size: 12px;
-	}
 
 	ul{
 		margin-bottom: 10px;
-	}
-
-	/* Contact */
-	.contactme{
-		padding-top: 250px;
-	}
-
-	h3{
-		font-size: 20px;
-	}
-
-	.footer{
-		margin-top: 70px;
-	}
-
-	.footer-links li{
-		margin-right: 11px;
-	}
-
-	.footer-links a{
-		font-size: 12px;
-	}
-
-	.footer-copy{
-		font-size: 10px;
 	}
 
 }
@@ -761,13 +827,10 @@ nav ul li{
 /** *************************************************************************************************** **/
 @media (min-width: 375px) and (max-width:424px) {
 
-	/* Landing page */
-	.animation{
-		height: 150px; 
-	}
+/* anedoctes section */
 
-	.animation img{
-		height: 70px;
+	.anedoctes-row{
+		margin-top: 0px;
 	}
 
 	h1{
@@ -775,9 +838,114 @@ nav ul li{
 	}
 
 	h2{
-		font-size: 14px;
+		margin-top: 0px;
+		margin-bottom: 10px;
 		line-height: 1;
+		font-size: 16px;
 	}
+
+	h3{
+		width: 100%;
+		font-size: 13px;
+
+	}
+
+	#anedoctes h3{
+		padding-top: 40px;
+	}
+
+	#anedoctes .container{
+		padding: 0px;
+		margin: 0px;
+		padding-top: 2vh;
+		width: 100%;
+	}
+
+	/* Skills section  */
+	h4{
+		font-size: 13px;
+		width: 100%;
+		margin-top: 0px;
+	}
+
+	h5{
+		font-size: 15px;
+	}
+
+	#skills .container{
+		padding: 0px;
+		margin: 0px;
+		width: 100%;
+		padding-top: 85px;
+	}
+
+	.tech-skills{
+		padding-top: 10px;
+	}
+
+	.skill-separator{
+		height: 5px;
+	}
+
+	/* Projects (deprecated) */
+
+	#projects .container{
+		padding-top: 40px;
+		padding-left: 0px;
+		padding-right: 35px;
+		margin-right: 0px;
+		margin-left: 0px;
+		width: 100%;
+	}
+
+	.deprecated-projects{
+		font:16px/1.5 "Proxima Nova",Helvetica,Arial,sans-serif;
+		font-size: 16px;
+		text-align: left;
+	}
+
+	.col-md-4{
+		padding-left: 26px;
+		padding-right: 0px;
+		text-align: center;
+	}
+
+	/* Contact */
+	.contact-r{
+		width: 100%;
+	}
+
+
+	/* Almendra */
+	#almendra{
+		background-image: none !important;
+		background-color: rgb(8,5,16); 
+
+	}
+
+	h6{
+		font-size: 30px;
+		width: 100%;
+	}
+
+	.almendra-text{
+		padding-left: 20px;
+		padding-right: 20px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.almendra-p{
+		padding-top: 50px; 
+		padding-left: 0px;
+	}
+
+	.almendra-l{
+		margin-right: -5px;
+		height: 70px;
+	}
+
+
 
 /* Navigation */
 .main-nav{
@@ -854,14 +1022,7 @@ nav ul li{
 		width: 90%;
 	}
 
-	h4{
-		font: 16px/1.4 "Proxima Nova",Helvetica,Arial,sans-serif;
-		font-size: 25px;
-	}
-
-	h6{
-		font-size: 12px;
-	}
+	
 
 	.ic_title a{
 		font-size: 12px;
@@ -877,24 +1038,9 @@ nav ul li{
 		stroke-width: 3;
 	}
 
-
-	.container{
-		padding-top: 2vh;
-		padding-left: 0px;
-		padding-right: 35px;
-		margin-right: 0px;
-		margin-left: 0px;
-	}
-
 	.col-md-8{
 		padding-left: 0px;
 		padding-right: 0px;
-	}
-
-	.col-md-4{
-		padding-left: 35px;
-		padding-right: 0px;
-		text-align: center;
 	}
 
 	p{
@@ -918,72 +1064,130 @@ nav ul li{
 
 	/* Skills */ 
 
-	.skill-row{
-		top: 60%;
-	}
-
-	.text-center img{
-		width: auto;
-		height: 60px;
-	}
-
-	h5{
-		font-size: 12px;
-	}
-
-	.skills-ul{
-		font-size: 12px;
-	}
-
 	ul{
 		margin-bottom: 10px;
-	}
-
-	/* Contact */
-	.contactme{
-		padding-top: 150px;
-	}
-
-	h3{
-		font-size: 20px;
-	}
-
-	.footer{
-		margin-top: 70px;
-	}
-
-	.footer-links li{
-		margin-right: 11px;
-	}
-
-	.footer-links a{
-		font-size: 12px;
-	}
-
-	.footer-copy{
-		font-size: 10px;
 	}
 
 }
 
 /** *************************************************************************************************** **/
 @media (min-width: 425px) and (max-width:767px) { /* TABLET */
-	/* Landing page */
-	.animation{
-		height: 150px; 
-	}
+	/* anedoctes section */
 
-	.animation img{
-		height: 70px;
+	.anedoctes-row{
+		margin-top: 0px;
 	}
 
 	h1{
-		font-size: 40px;
+		font-size: 30px;
 	}
 
 	h2{
-		font-size: 15px;
+		margin-top: 0px;
+		margin-bottom: 10px;
 		line-height: 1;
+		font-size: 16px;
+	}
+
+	h3{
+		width: 100%;
+		font-size: 13px;
+
+	}
+
+	#anedoctes h3{
+		padding-top: 40px;
+	}
+
+	#anedoctes .container{
+		padding: 0px;
+		margin: 0px;
+		padding-top: 2vh;
+		width: 100%;
+	}
+
+	/* Skills section  */
+	h4{
+		font-size: 13px;
+		width: 100%;
+		margin-top: 0px;
+	}
+
+	h5{
+		font-size: 15px;
+	}
+
+	#skills .container{
+		padding: 0px;
+		margin: 0px;
+		width: 100%;
+		padding-top: 85px;
+	}
+
+	.tech-skills{
+		padding-top: 10px;
+	}
+
+	.skill-separator{
+		height: 5px;
+	}
+
+	/* Projects (deprecated) */
+
+	#projects .container{
+		padding-top: 40px;
+		padding-left: 0px;
+		padding-right: 35px;
+		margin-right: 0px;
+		margin-left: 0px;
+		width: 100%;
+	}
+
+	.deprecated-projects{
+		font:16px/1.5 "Proxima Nova",Helvetica,Arial,sans-serif;
+		font-size: 16px;
+		text-align: left;
+	}
+
+	.col-md-4{
+		padding-left: 26px;
+		padding-right: 0px;
+		text-align: center;
+	}
+
+	/* Contact */
+	.contact-r{
+		width: 100%;
+	}
+
+
+	/* Almendra */
+	#almendra{
+		background-image: none !important;
+		background-color: rgb(8,5,16); 
+
+	}
+
+	h6{
+		font-size: 30px;
+		width: 100%;
+	}
+
+	.almendra-text{
+		padding-left: 20px;
+		padding-right: 20px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.almendra-p{
+		padding-top: 50px; 
+		padding-left: 0px;
+	}
+
+	.almendra-l{
+		margin-right: -5px;
+		height: 70px;
 	}
 
 /* Navigation */
@@ -1061,14 +1265,6 @@ nav ul li{
 		width: 90%;
 	}
 
-	h4{
-		font: 16px/1.4 "Proxima Nova",Helvetica,Arial,sans-serif;
-		font-size: 25px;
-	}
-
-	h6{
-		font-size: 12px;
-	}
 
 	.ic_title a{
 		font-size: 12px;
@@ -1085,24 +1281,13 @@ nav ul li{
 	}
 
 
-	.container{
-		padding-top: 2vh;
-		padding-left: 0px;
-		padding-right: 35px;
-		margin-right: 0px;
-		margin-left: 0px;
-	}
 
 	.col-md-8{
 		padding-left: 0px;
 		padding-right: 0px;
 	}
 
-	.col-md-4{
-		padding-left: 35px;
-		padding-right: 0px;
-		text-align: center;
-	}
+
 
 	p{
 		font: 16px/1.4 "Proxima Nova",Helvetica,Arial,sans-serif;
@@ -1118,59 +1303,131 @@ nav ul li{
 	}
 
 
-	/* Skills */ 
-
-	.skill-row{
-		top: 50%;
-	}
-
-	.text-center img{
-		width: auto;
-		height: 60px;
-	}
-
-	h5{
-		font-size: 12px;
-	}
-
-	.skills-ul{
-		font-size: 12px;
-	}
-
 	ul{
 		margin-bottom: 10px;
 	}
 
-	/* Contact */
-	.contactme{
-		padding-top: 150px;
-	}
-
-	h3{
-		font-size: 20px;
-	}
-
-	.footer{
-		margin-top: 70px;
-	}
-
-	.footer-links li{
-		margin-right: 11px;
-	}
-
-	.footer-links a{
-		font-size: 12px;
-	}
-
-	.footer-copy{
-		font-size: 10px;
-	}
 }
 
 /** *************************************************************************************************** **/
 @media (min-width: 768px) and (max-width:1023px) {
-	.animation{
-		height: 150px;
+
+	/* anedoctes section */
+
+	.anedoctes-row{
+		margin-top: 0px;
+	}
+
+	h1{
+		font-size: 30px;
+	}
+
+	h2{
+		margin-top: 0px;
+		margin-bottom: 10px;
+		line-height: 1;
+		font-size: 16px;
+	}
+
+	h3{
+		width: 100%;
+		font-size: 13px;
+
+	}
+
+	#anedoctes h3{
+		padding-top: 40px;
+	}
+
+	#anedoctes .container{
+		padding: 0px;
+		margin: 0px;
+		padding-top: 2vh;
+		width: 100%;
+	}
+
+	/* Skills section  */
+	h4{
+		font-size: 13px;
+		width: 100%;
+		margin-top: 0px;
+	}
+
+	h5{
+		font-size: 15px;
+	}
+
+	#skills .container{
+		padding: 0px;
+		margin: 0px;
+		width: 100%;
+		padding-top: 85px;
+	}
+
+	.tech-skills{
+		padding-top: 10px;
+	}
+
+	.skill-separator{
+		height: 5px;
+	}
+
+	/* Projects (deprecated) */
+
+	#projects .container{
+		padding-top: 40px;
+		padding-left: 0px;
+		padding-right: 35px;
+		margin-right: 0px;
+		margin-left: 0px;
+		width: 100%;
+	}
+
+	.deprecated-projects{
+		font:16px/1.5 "Proxima Nova",Helvetica,Arial,sans-serif;
+		font-size: 16px;
+		text-align: left;
+	}
+
+	.col-md-4{
+		padding-left: 26px;
+		padding-right: 0px;
+		text-align: center;
+	}
+
+	/* Contact */
+	.contact-r{
+		width: 100%;
+	}
+
+
+	/* Almendra */
+	#almendra{
+		background-image: none !important;
+		background-color: rgb(8,5,16); 
+
+	}
+
+	h6{
+		font-size: 30px;
+		width: 100%;
+	}
+
+	.almendra-text{
+		padding-left: 20px;
+		padding-right: 20px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.almendra-p{
+		padding-top: 50px; 
+		padding-left: 0px;
+	}
+
+	.almendra-l{
+		margin-right: -5px;
+		height: 70px;
 	}
 
 	nav ul{
@@ -1187,22 +1444,10 @@ nav ul li{
 
 
 
-	.container{
-		padding-left: 0px;
-		padding-right: 35px;
-		margin-right: 0px;
-		margin-left: 0px;
-	}
 
 	.col-md-8{
 		padding-left: 0px;
 		padding-right: 0px;
-	}
-
-	.col-md-4{
-		padding-left: 26px;
-		padding-right: 0px;
-		text-align: center;
 	}
 
 	p{
@@ -1218,21 +1463,6 @@ nav ul li{
 		font-size: 14px;
 	}
 
-	.skill-row{
-		top: 90%;
-	}
-
-	h3{
-		font-size: 25px;
-	}
-
-	.footer{
-		margin-top: 50px;
-	}
-
-	.contactme{
-		padding-top: 350px;
-	}
 
 }
 
