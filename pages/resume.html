@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alberto Gaona | Experience </title>
+        <link href='../assets/imgs/aglogo.ico' rel='icon' type='image/ico'/>
+        <meta charset="utf-8">
+        <meta name="author" content="Alberto Gaona">
+	      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	      <meta name="google" content="notranslate" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="./../css/main.css">
+        <link rel="stylesheet" type="text/css" href="./../css/animation.css">
+    </head>
+    <body class="project-body">
+        <nav class="main-nav" id="MyNav">
+            <div class="float: left;">
+                <img class="logo" src="../assets/imgs/alberto_logo.png"></a>
+                <a href="../index.html"class="name" id="nav-name"> Alberto Gaona </a>
+            </div>
+            <ul>
+                <li><a href="projects.html" id="nav-home">Exclusive projects,<br> not available on my resume</a></li>
+                <li class="active"><a href="resume.html">Traditional boring <br> one-page summary</a></li>
+                <li><a href="contact.html">No professional delivery <br> of contact details</a></li>
+                <li><a href="blog.html">My Big Location Online to <br> Gossip A.K.A Blog</a></li>
+                <li><a href="almendra.html">The Almendra <br> Project</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
+            </ul>
+        </nav>
+        <section id="cv-summary" style="position: relative; z-index:1000;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 p-summary">
+                        <p>
+                            Working in a startup allows you to grow exponentially since you get involved in almost everything. At least, I feel like that was my case. There have been several challenges along the way; For example, in <a href="https://restyle.ai/" style="color:cornflowerblue;" target="_blank">REstyle</a> , one of them was to constantly improve the pipeline while maintaining a balance between facial identity and hair attributes, or in <a href="https://dplace.ai/" style="color: cornflowerblue;" target="_blank">DPlace</a>, working with a VPP workflow where you need to replace something with high artistic quality, or fast-tracking cutting-edge technology like <a href="" style="color: cornflowerblue;" target="_blank">Stable Diffusion</a> (which is progressing too fast) while you build a product on top of it. The last two years have been a real boost. Especially adding the fact that all my work has been remote, so you learn to manage your time to meet all the milestones while keeping your personal life in harmony.
+                            <br><br>
+                            I got significant experience working with ML/CV algorithms, deep learning, generative models, CI/CD, Docker, YAML, git, python, PyTorch, C++, GCP, and LambdaLabs, among others. All this information has been condensed into the following one-page resume that's easy to read. Don't hesitate to let me know if you need someone like me to help you with your computer vision projects, let's make magic happen! 
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <center>
+                      <button class="r-yes-button" id="accepted" onclick="window.open('../assets/documents/Alberto-Gaona-ML-Engineer-GenericVersion.pdf')">Download a resume copy</button>
+                    </center>
+                  </div>
+                  <div class="col-md-6">
+                    <center>
+                      <button class="r-no-button" id="rejected" type="button">Don't download a resume copy</button>
+                    </center>
+                  </div>
+                </div>
+            </div> 
+        </section>
+        <section id="animation">
+        <div id="container" style="padding-top: 10px; display: none;"  type="button">
+            <canvas id="canvas"></canvas>
+            <div class="man" id="man1">
+              <div class="head"></div>
+              <div class="body"></div>
+              <div class="feet">
+                <div class="foot"></div>
+                <div class="foot"></div>
+              </div>
+            </div>
+        </div>
+        </section>
+          <!-- partial -->
+        <script  src="../js/animation.js"></script>
+        <script>
+            const targetDiv = document.getElementById("container");
+            const btn = document.getElementById("rejected");
+            const audio = new Audio(
+                    "../assets/imgs/custom.mp3"
+            );
+            const section = document.getElementById("animation"); 
+            btn.onclick = function () {
+              if (targetDiv.style.display !== "none") {
+                targetDiv.style.display = "none";
+                btn.textContent = "Don't download a resume copy"
+                audio.pause();
+              } else {
+                targetDiv.style.display = "block";
+                btn.textContent = "Changed my mind, will download it!!"
+                audio.play();
+              }
+              section.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+            };
+          </script>
+        
+    </body>
+</html>
