@@ -2,39 +2,50 @@
 <html>
     <head>
         <title>Alberto Gaona</title>
+        <link href='assets/imgs/aglogo.ico' rel='icon' type='image/ico'/>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Alberto Gaona">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="google" content="notranslate" />
+        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <style>
+            a:hover, a:visited, a:link, a:active {
+                text-decoration: none;
+                color: #000;
+            }
+        </style>
     </head>
     <body>
         
-        <nav class="navbar navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html"><img src="assets/imgs/alberto_logo.png" width="45px"></a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li><a href="pages/projects.html">Forgotten project I want to presume</a></li>
-                    <li><a href="pages/resume.html">professional one-page portfolio</a></li>
-                    <li><a href="pages/contact.html">Nothing professional contact info</a></li>
-                    <li><a href="pages/blog.html">Big Location Online to Gossip A.K.A Blog</a></li>
-                </ul>
+        <nav class="main-nav" id="MyNav">
+            <div class="float: left;">
+                <img class="logo" src="assets/imgs/alberto_logo.png"></a>
+                <p class="name" hidden="true" id="nav-name"> Alberto Gaona </p>
             </div>
+            <ul>
+                <li><a href="pages/projects.html" id="nav-home">Exclusive projects,<br> not available on my resume</a></li>
+                <li><a href="pages/resume.html">Traditional boring <br> one-page summary</a></li>
+                <li><a href="pages/contact.html">No professional delivery <br> of contact details</a></li>
+                <li><a href="pages/blog.html">My Big Location Online to <br> Gossip A.K.A Blog</a></li>
+                <li><a href="pages/almendra.html">The Almendra <br> Project</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
+            </ul>
         </nav>
         
         <div class="float-container">
             <div class="landing-text float-child" style="text-align: center">
                 <h1>ALBERTO GAONA</h1>
-                <h2><b>Deep Learning Engineer</b> at <img src="assets/imgs/dplace_logo.png" width="65px" style="vertical-align:baseline"> </h2>
-                <h2><b>Content Creator</b> at <img src="assets/imgs/almendra_logo.png" width="165px" style="vertical-align:baseline"> </h2>
-                <p class="landing-extra-text">And an attempt of idea maker for advertising campaings everywhere</p>
+                <h2><b>Deep Learning Engineer</b> at <img class="padding" src="assets/imgs/dplace_logo.png" width="65px" style="vertical-align:baseline"> </h2>
+                <h2><b>Content Creator</b> at <img class="padding" src="assets/imgs/almendra_logo.png" width="165px" style="vertical-align:baseline"> </h2>
             </div>
 
-            <div class="slider float-child" id="slider">
+            <div class="slider float-child" id="slider" hidden>
                 <div class="wrapper">
                     <div id="items" class="items">
 

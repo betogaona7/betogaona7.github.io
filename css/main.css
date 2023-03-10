@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+
+.project-body{
+    background: #000000;
+}
+
+
 body{
     background-color: #ffffff;
     /*background-image: url("https://www.transparenttextures.com/patterns/blu-stripes.png");*/
@@ -63,7 +69,22 @@ h2{
     text-align: center;
 }
 
+div video{ /* Video in technical descriptions */
+	width: 380px;
+	height: 215px;
+	border-radius: 4%;;
+	border: 1px solid #141b42;
+	opacity: 1;
+	outline: none;
+}
 
+.project-title{
+    color: #dff8ec;
+}
+
+.project-text{
+    color: #dff8ec;
+}
 
 /** ************carousel ******************* **/
 .slider {
@@ -211,3 +232,467 @@ h2{
 }
 
 /** ************************************ **/
+
+i:hover{
+	color: #008CBA;
+}
+
+
+.logo {
+    float: left;
+    height: 50px;
+    width: auto;
+    position: relative;
+}
+
+.name{
+    font: 16px "Proxima Nova",Helvetica,Arial,sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    float: left;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+nav ul {
+    float: right;
+    padding-top: 7px;
+    padding-right: 0px;
+  }
+
+  nav ul li a{
+    font-size: 16px;
+  }
+
+  .main-nav{
+	padding-right: 0px;
+	position: fixed;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    height: 80px; 
+    top: 0;
+    background: transparent;
+  }
+
+nav ul {
+list-style: none;
+text-align: center;
+}
+
+nav ul li {
+display: inline-block;
+margin: 0 30px;
+}
+
+nav ul li a {
+padding: 10px 0;
+color: #000;
+font-size: 1rem;
+text-decoration: none;
+font-weight: bold;
+transition: all 0.2s ease;
+font: 14px/1 "Proxima Nova",Helvetica,Arial,sans-serif;
+}
+
+nav ul li a:hover {
+color: #008CBA;
+text-decoration: none;
+}
+
+a:hover, a:visited, a:link, a:active {
+text-decoration: none;
+color: #fff;
+}
+
+li.active {
+border-bottom: 2px solid #008CBA;
+color: #fdfbfb;
+}
+
+.main-nav {
+position: relative; 
+padding: 0px 20px 0px 20px;
+}
+.main-nav {
+height: 50px;
+z-index: 150;
+}
+.main-nav-scrolled {
+position: fixed;
+width: 100%;
+top: 0;
+}
+
+#MyNav {
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1100;
+}
+
+
+.p-summary{
+    padding: 120px;
+    color: gray;
+    font-weight: bold;
+}
+
+.p-project-content{
+    font-weight: bold;
+    color: gray;
+    font-size: 14px;
+}
+
+h4{
+    font-size: 35px;
+}
+
+.p-project-link{
+    font-size: 12px;
+    color: cornflowerblue !important;
+}
+
+.p-section{
+    padding-bottom: 20px;
+}
+
+.r-yes-button{
+    background-color: cornflowerblue;
+    border: darkblue;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #dff8ec;
+    margin-right: 25px;
+}
+
+.r-no-button{
+    background-color: #9d0824;
+    border: darkblue;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #dff8ec;
+}
+
+.b-send-button{
+    background-color:cornflowerblue;
+    border: darkblue;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #dff8ec;
+}
+
+.a-logo{
+    width: 600px;
+    padding: 100px 50px 0px 50px;
+}
+
+.a-yt-logo{
+    width: 200px;
+}
+
+.a-slogan{
+    color:#fdfbfb;
+}
+
+
+
+
+@media (max-width:374px) {
+    h1{
+        font-size: 50px;
+    }
+
+    .float-child {
+        width: 100% !important;
+    }
+
+    .landing-text{
+        transform: translate(0%, 20%);
+    }
+
+    .padding {
+        padding-top: 15px;
+    }
+
+    .logo{
+        height: 30px;
+        padding-top: 3px;
+    }
+
+    .name{
+        font-size: 17px;
+        padding-top: 8px;
+    }
+
+    .p-summary{
+        padding: 20px;
+        padding-bottom: 120px;
+    }
+
+    h4{
+        font-size: 32px;
+    }
+
+    div video{
+        max-width: 290px;
+    }
+
+    .r-yes-button{
+        margin-right: 0px;
+        margin-bottom: 24px;
+    }
+
+    #MyNav{
+        z-index: 1100;
+    }
+
+    .a-logo{
+        width: 300px;
+        padding: 0px;
+        padding-top: 100px;
+    }
+
+    .a-yt-logo{
+        width: 100px;
+        
+    }
+
+    .a-slogan{
+        font-size: 12px;
+    }
+
+    ul{
+        display: none;
+    }
+
+}
+
+
+
+@media (min-width: 375px) and (max-width:424px) {
+    h1{
+        font-size: 50px;
+    }
+
+    .float-child {
+        width: 100% !important;
+    }
+
+    .landing-text{
+        transform: translate(0%, 20%);
+    }
+
+    .padding {
+        padding-top: 15px;
+    }
+
+    .logo{
+        height: 30px;
+        padding-top: 3px;
+    }
+
+    .name{
+        font-size: 17px;
+        padding-top: 8px;
+    }
+
+    .p-summary{
+        padding: 20px;
+        padding-bottom: 120px;
+    }
+
+    h4{
+        font-size: 33px;
+    }
+
+    div video{
+        max-width: 350px;
+    }
+
+    .r-yes-button{
+        margin-right: 0px;
+        margin-bottom: 24px;
+    }
+
+    #MyNav{
+        z-index: 1100;
+    }
+
+    .a-logo{
+        width: 300px;
+        padding: 0px;
+        padding-top: 100px;
+    }
+
+    .a-yt-logo{
+        width: 100px;
+    }
+
+    .a-slogan{
+        font-size: 12px;
+    }
+
+    ul{
+        display: none;
+    }
+
+    .r-no-button{
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (min-width: 425px) and (max-width:767px) {
+    .float-child {
+        width: 100% !important;
+    }
+
+    .landing-text{
+        transform: translate(0%, 20%);
+    }
+
+    .padding {
+        padding-top: 15px;
+    }
+
+
+
+
+    .p-summary{
+        padding: 20px;
+        padding-bottom: 120px;
+    }
+
+   
+
+    div video{
+        max-width: 420px;
+    }
+
+    .r-yes-button{
+        margin-right: 0px;
+        margin-bottom: 24px;
+    }
+
+    #MyNav{
+        z-index: 1100;
+    }
+
+    .a-logo{
+        width: 320px !important;
+        padding: 0px;
+        padding-top: 100px;
+    }
+
+    .a-yt-logo{
+        width: 150px;
+    }
+
+    .a-slogan{
+        font-size: 12px;
+    }
+
+    ul{
+        display: none;
+    }
+
+    .r-no-button{
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width:1023px) {
+    .float-child {
+        width: 100% !important;
+    }
+
+    .landing-text{
+        transform: translate(0%, 40%);
+    }
+
+    div video{
+        max-width: 720px;
+    }
+
+    .r-yes-button{
+        margin-right: 0px;
+        margin-bottom: 24px;
+    }
+
+    #MyNav{
+        z-index: 1100;
+    }
+
+    ul{
+        display: none;
+    }
+
+    .r-no-button{
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width:1480px){
+	/* Is the same as the default style */
+
+    h1{
+        font-size: 50px;
+    }
+
+    .float-child {
+        width: 100% !important;
+    }
+
+    .landing-text{
+        transform: translate(0%, 20%);
+    }
+
+    .p-summary{
+        padding: 100px;
+    }
+
+    .r-yes-button{
+        margin-right: 0px;
+        margin-bottom: 24px;
+    }
+
+    #MyNav{
+        z-index: 1100;
+    }
+
+    .a-logo{
+        width: 300px;
+        padding: 0px;
+        padding-top: 100px;
+    }
+
+    .a-yt-logo{
+        width: 100px;
+    }
+
+    .a-slogan{
+        font-size: 12px;
+    }
+
+    .r-no-button{
+        margin-bottom: 10px;
+    }
+
+    .main-nav {
+        padding: 0px 0px 0px 20px;
+    }
+
+
+    .logo {
+        height: 40px;
+        padding-top: 10px;
+    }
+    
+    .name {
+        font-size: 15px;
+        padding-top: 16px;
+    }
+
+}
